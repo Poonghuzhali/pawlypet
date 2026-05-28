@@ -1,5 +1,7 @@
 import { useState } from 'react'
 import { catBrands, catProducts } from '../../data/catPageData'
+import { CAT_PRODUCT_IDS } from '../../data/products'
+import AddToCartButton from '../AddToCartButton'
 import { StarIcon, CartAddIcon, ChevronDownIcon, PawIcon } from '../Icons'
 
 function ProductCard({ product }) {
@@ -25,13 +27,13 @@ function ProductCard({ product }) {
         </p>
         <div className="mt-4 flex items-center justify-between">
           <span className="text-lg font-extrabold text-[#A33B3B]">{product.price}</span>
-          <button
-            type="button"
+          <AddToCartButton
+            productId={CAT_PRODUCT_IDS[product.id]}
             aria-label="Add to cart"
             className="btn-zoom-hover flex h-10 w-10 items-center justify-center rounded-full bg-[#2D7A7A] text-white hover:bg-[#236060]"
           >
             <CartAddIcon className="h-4 w-4" />
-          </button>
+          </AddToCartButton>
         </div>
       </div>
     </article>

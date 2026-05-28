@@ -1,5 +1,6 @@
 import { useState } from 'react'
 import { Link, useLocation } from 'react-router-dom'
+import { useCart } from '../context/CartContext'
 import { navLinks } from '../data/navData'
 import Logo from './Logo'
 import {
@@ -31,6 +32,8 @@ export default function Header({
 }) {
   const [mobileOpen, setMobileOpen] = useState(false)
   const { pathname } = useLocation()
+  const { totals } = useCart()
+  const cartCount = totals.itemCount
   const isCartPage = cartActive || pathname === '/cart'
   const isFavoritesPage = favoritesActive || pathname === '/favorites'
   const isProfilePage = profileActive || pathname === '/account'
@@ -115,9 +118,11 @@ export default function Header({
               }`}
             >
               <CartIcon />
-              <span className="absolute -right-0.5 -top-0.5 flex h-4 w-4 items-center justify-center rounded-full bg-[#A33B3B] text-[10px] font-bold text-white">
-                3
-              </span>
+              {cartCount > 0 ? (
+                <span className="absolute -right-0.5 -top-0.5 flex h-4 w-4 items-center justify-center rounded-full bg-[#A33B3B] text-[10px] font-bold text-white">
+                  {cartCount > 9 ? '9+' : cartCount}
+                </span>
+              ) : null}
             </Link>
             <Link
               to="/account"

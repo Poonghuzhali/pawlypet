@@ -1,4 +1,5 @@
 import { HashRouter, Routes, Route } from 'react-router-dom'
+import { CartProvider } from './context/CartContext'
 import ScrollToTop from './components/ScrollToTop'
 import HomePage from './pages/HomePage'
 import ShopByBreedPage from './pages/ShopByBreedPage'
@@ -24,8 +25,9 @@ import ProductDetailPage from './pages/ProductDetailPage'
 export default function App() {
   return (
     <HashRouter>
-      <ScrollToTop />
-      <Routes>
+      <CartProvider>
+        <ScrollToTop />
+        <Routes>
         <Route path="/" element={<HomePage />} />
         <Route path="/shop-by-breed" element={<ShopByBreedPage />} />
         <Route path="/dog" element={<DogPage />} />
@@ -46,7 +48,8 @@ export default function App() {
         <Route path="/account/orders" element={<OrderHistoryPage />} />
         <Route path="/account/settings" element={<SettingsPage />} />
         <Route path="/dog/product/wilderness-salmon" element={<ProductDetailPage />} />
-      </Routes>
+        </Routes>
+      </CartProvider>
     </HashRouter>
   )
 }

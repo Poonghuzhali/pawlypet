@@ -1,14 +1,24 @@
 import { assetUrl } from '@/utils/assetUrl'
 import { useState } from 'react'
-import { Link, useNavigate } from 'react-router-dom'
+import { useNavigate } from 'react-router-dom'
 import { wildernessSalmonProduct } from '../../data/productDetailData'
+import { WILDERNESS_SALMON_SIZE_IDS } from '../../data/products'
+import { useCart } from '../../context/CartContext'
 import { StarIcon, CartAddIcon, MinusIcon, PlusIcon, LeafIcon, TruckIcon } from '../Icons'
 
 export default function ProductDetailMain() {
   const navigate = useNavigate()
+  const { addToCart } = useCart()
   const product = wildernessSalmonProduct
   const [selectedSize, setSelectedSize] = useState(product.defaultSize)
   const [quantity, setQuantity] = useState(1)
+
+  const handleAddToCart = () => {
+    const productId = WILDERNESS_SALMON_SIZE_IDS[selectedSize]
+    if (addToCart(productId, quantity)) {
+      navigate('/cart')
+    }
+  }
 
   return (
     <section className="px-4 pt-8 sm:px-6 lg:px-8">
@@ -97,7 +107,7 @@ export default function ProductDetailMain() {
 
             <button
               type="button"
-              onClick={() => navigate('/cart')}
+              onClick={handleAddToCart}
               className="btn-zoom-hover flex flex-1 items-center justify-center gap-2 rounded-full bg-[#D14D4D] px-8 py-3.5 text-sm font-bold uppercase tracking-wide text-white hover:bg-[#b84242] sm:flex-none sm:min-w-[220px]"
             >
               <CartAddIcon className="h-5 w-5" />

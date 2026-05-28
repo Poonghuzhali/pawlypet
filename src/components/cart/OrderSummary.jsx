@@ -1,9 +1,11 @@
 import { useNavigate } from 'react-router-dom'
-import { orderSummary } from '../../data/cartPageData'
+import { useCart } from '../../context/CartContext'
 import { ArrowRightIcon, ShieldCheckIcon, TruckIcon, CheckIcon } from '../Icons'
 
 export default function OrderSummary() {
   const navigate = useNavigate()
+  const { items, totals } = useCart()
+
   return (
     <aside className="space-y-5 lg:sticky lg:top-24 lg:self-start">
       <article className="rounded-3xl bg-white p-6 shadow-soft">
@@ -12,24 +14,24 @@ export default function OrderSummary() {
         <dl className="mt-5 space-y-3 text-sm">
           <div className="flex justify-between text-gray-600">
             <dt>Subtotal</dt>
-            <dd className="font-semibold text-gray-900">${orderSummary.subtotal.toFixed(2)}</dd>
+            <dd className="font-semibold text-gray-900">${totals.subtotal.toFixed(2)}</dd>
           </div>
           <div className="flex justify-between text-gray-600">
             <dt>Shipping</dt>
-            <dd className="font-semibold text-[#2D6A64]">${orderSummary.shipping.toFixed(2)}</dd>
+            <dd className="font-semibold text-[#2D6A64]">
+              {totals.shipping === 0 ? 'FREE' : `$${totals.shipping.toFixed(2)}`}
+            </dd>
           </div>
           <div className="flex justify-between text-gray-600">
             <dt>Est. Tax</dt>
-            <dd className="font-semibold text-gray-900">${orderSummary.tax.toFixed(2)}</dd>
+            <dd className="font-semibold text-gray-900">${totals.tax.toFixed(2)}</dd>
           </div>
         </dl>
 
         <div className="mt-5 border-t border-gray-100 pt-5">
-          <p className="text-3xl font-extrabold text-[#A33B3B]">
-            ${orderSummary.total.toFixed(2)}
-          </p>
+          <p className="text-3xl font-extrabold text-[#A33B3B]">${totals.total.toFixed(2)}</p>
           <p className="mt-1 text-[10px] font-bold uppercase tracking-wider text-gray-400">
-            Or ${orderSummary.pawPayMonthly}/mo with Paw Pay
+            Or ${totals.pawPayMonthly}/mo with Paw Pay
           </p>
         </div>
 
@@ -49,8 +51,9 @@ export default function OrderSummary() {
 
         <button
           type="button"
+          disabled={items.length === 0}
           onClick={() => navigate('/checkout')}
-          className="btn-zoom-hover mt-5 flex w-full items-center justify-center gap-2 rounded-full bg-[#A33B3B] px-6 py-3.5 text-sm font-bold text-white hover:bg-[#8f3232]"
+          className="btn-zoom-hover mt-5 flex w-full items-center justify-center gap-2 rounded-full bg-[#A33B3B] px-6 py-3.5 text-sm font-bold text-white hover:bg-[#8f3232] disabled:cursor-not-allowed disabled:opacity-50"
         >
           Proceed to Checkout
           <ArrowRightIcon className="h-4 w-4" />

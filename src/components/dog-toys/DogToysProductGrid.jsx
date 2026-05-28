@@ -1,4 +1,6 @@
 import { toyProducts } from '../../data/dogToysPageData'
+import { DOG_TOY_PRODUCT_IDS } from '../../data/products'
+import AddToCartButton from '../AddToCartButton'
 import { CartAddIcon, ChevronDownIcon } from '../Icons'
 
 function ProductCard({ product }) {
@@ -26,13 +28,13 @@ function ProductCard({ product }) {
         <p className="mt-1 text-sm text-gray-500">{product.description}</p>
         <div className="mt-4 flex items-center justify-between">
           <span className="text-lg font-extrabold text-[#D15151]">${product.price.toFixed(2)}</span>
-          <button
-            type="button"
+          <AddToCartButton
+            productId={DOG_TOY_PRODUCT_IDS[product.id]}
             aria-label="Add to cart"
             className="btn-zoom-hover flex h-10 w-10 items-center justify-center rounded-full bg-[#D15151] text-white hover:bg-[#b84242]"
           >
             <CartAddIcon className="h-4 w-4" />
-          </button>
+          </AddToCartButton>
         </div>
       </div>
     </article>

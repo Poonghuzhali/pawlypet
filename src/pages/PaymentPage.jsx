@@ -1,11 +1,23 @@
+import { useEffect } from 'react'
+import { useNavigate } from 'react-router-dom'
 import Header from '../components/Header'
 import PaymentMethodForm from '../components/checkout/PaymentMethodForm'
 import CheckoutOrderSummary from '../components/checkout/CheckoutOrderSummary'
 import CheckoutActions from '../components/checkout/CheckoutActions'
 import ShippingAddressSection from '../components/checkout/ShippingAddressSection'
 import PaymentFooter from '../components/checkout/PaymentFooter'
+import { useCart } from '../context/CartContext'
 
 export default function PaymentPage() {
+  const navigate = useNavigate()
+  const { items } = useCart()
+
+  useEffect(() => {
+    if (items.length === 0) {
+      navigate('/cart', { replace: true })
+    }
+  }, [items.length, navigate])
+
   return (
     <>
       <Header compact />

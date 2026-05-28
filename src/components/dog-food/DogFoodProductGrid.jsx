@@ -1,5 +1,7 @@
 import { useState } from 'react'
 import { dogFoodProducts, sortOptions } from '../../data/dogFoodPageData'
+import { DOG_FOOD_PRODUCT_IDS } from '../../data/products'
+import AddToCartButton from '../AddToCartButton'
 import { SearchIcon, StarIcon, CartAddIcon, ChevronDownIcon, ChevronLeftIcon, ChevronRightIcon } from '../Icons'
 
 function ProductCard({ product }) {
@@ -30,13 +32,13 @@ function ProductCard({ product }) {
         </div>
         <div className="mt-4 flex items-center justify-between">
           <span className="text-lg font-extrabold text-[#D15151]">${product.price.toFixed(2)}</span>
-          <button
-            type="button"
+          <AddToCartButton
+            productId={DOG_FOOD_PRODUCT_IDS[product.id]}
             aria-label="Add to cart"
             className="btn-zoom-hover flex h-10 w-10 items-center justify-center rounded-full bg-[#2D6A64] text-white hover:bg-[#245550]"
           >
             <CartAddIcon className="h-4 w-4" />
-          </button>
+          </AddToCartButton>
         </div>
       </div>
     </article>

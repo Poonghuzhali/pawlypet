@@ -1,7 +1,12 @@
-import { freeShippingThreshold, shippingProgress } from '../../data/cartPageData'
+import { useCart } from '../../context/CartContext'
+import { freeShippingThreshold } from '../../data/cartPageData'
 import { ClockIcon, PawIcon } from '../Icons'
 
 export default function CartPageHeader() {
+  const { totals } = useCart()
+  const progressPercent = totals.shippingProgressPercent
+  const remaining = totals.remainingForFreeShipping
+
   return (
     <section className="px-4 pt-8 sm:px-6 lg:px-8">
       <div className="mx-auto max-w-7xl">
@@ -11,36 +16,38 @@ export default function CartPageHeader() {
           safest paws in town.
         </p>
 
-        <div className="mt-8 rounded-3xl bg-white p-6 shadow-soft">
-          <div className="flex flex-wrap items-center justify-between gap-2">
-            <span className="text-xs font-bold uppercase tracking-wider text-[#2D6A64]">
-              Almost there!
-            </span>
-            <span className="text-sm font-semibold text-gray-700">
-              ${shippingProgress.remaining.toFixed(2)} more for free delivery
-            </span>
-          </div>
-
-          <div className="relative mt-4">
-            <div className="h-3 overflow-hidden rounded-full bg-[#E8E8E8]">
-              <div
-                className="h-full rounded-full bg-[#2D6A64] transition-all"
-                style={{ width: `${shippingProgress.percent}%` }}
-              />
+        {totals.subtotal > 0 && totals.subtotal < freeShippingThreshold ? (
+          <div className="mt-8 rounded-3xl bg-white p-6 shadow-soft">
+            <div className="flex flex-wrap items-center justify-between gap-2">
+              <span className="text-xs font-bold uppercase tracking-wider text-[#2D6A64]">
+                Almost there!
+              </span>
+              <span className="text-sm font-semibold text-gray-700">
+                ${remaining.toFixed(2)} more for free delivery
+              </span>
             </div>
-            <span
-              className="absolute top-1/2 flex h-7 w-7 -translate-y-1/2 items-center justify-center rounded-full border-2 border-[#2D6A64] bg-white shadow-sm"
-              style={{ left: `calc(${shippingProgress.percent}% - 14px)` }}
-            >
-              <PawIcon className="h-3.5 w-3.5 text-[#2D6A64]" />
-            </span>
-          </div>
 
-          <p className="mt-4 flex items-center gap-2 text-xs text-gray-500">
-            <ClockIcon className="h-4 w-4 text-gray-400" />
-            Free standard shipping on orders over ${freeShippingThreshold.toFixed(2)}
-          </p>
-        </div>
+            <div className="relative mt-4">
+              <div className="h-3 overflow-hidden rounded-full bg-[#E8E8E8]">
+                <div
+                  className="h-full rounded-full bg-[#2D6A64] transition-all"
+                  style={{ width: `${progressPercent}%` }}
+                />
+              </div>
+              <span
+                className="absolute top-1/2 flex h-7 w-7 -translate-y-1/2 items-center justify-center rounded-full border-2 border-[#2D6A64] bg-white shadow-sm"
+                style={{ left: `calc(${progressPercent}% - 14px)` }}
+              >
+                <PawIcon className="h-3.5 w-3.5 text-[#2D6A64]" />
+              </span>
+            </div>
+
+            <p className="mt-4 flex items-center gap-2 text-xs text-gray-500">
+              <ClockIcon className="h-4 w-4 text-gray-400" />
+              Free shipping on orders over ${freeShippingThreshold}
+            </p>
+          </div>
+        ) : null}
       </div>
     </section>
   )

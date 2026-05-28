@@ -1,5 +1,4 @@
-import { useState } from 'react'
-import { cartItems as initialItems } from '../../data/cartPageData'
+import { useCart } from '../../context/CartContext'
 import { MinusIcon, PlusIcon, HeartIcon, TrashIcon } from '../Icons'
 
 function CartItemRow({ item, onUpdateQty, onRemove }) {
@@ -22,7 +21,7 @@ function CartItemRow({ item, onUpdateQty, onRemove }) {
           <button
             type="button"
             aria-label="Decrease quantity"
-            onClick={() => onUpdateQty(item.id, Math.max(1, item.quantity - 1))}
+            onClick={() => onUpdateQty(item.lineKey, Math.max(1, item.quantity - 1))}
             className="px-3 py-2 text-gray-600 hover:text-gray-900"
           >
             <MinusIcon className="h-4 w-4" />
@@ -31,7 +30,7 @@ function CartItemRow({ item, onUpdateQty, onRemove }) {
           <button
             type="button"
             aria-label="Increase quantity"
-            onClick={() => onUpdateQty(item.id, item.quantity + 1)}
+            onClick={() => onUpdateQty(item.lineKey, item.quantity + 1)}
             className="px-3 py-2 text-gray-600 hover:text-gray-900"
           >
             <PlusIcon className="h-4 w-4" />
@@ -48,7 +47,7 @@ function CartItemRow({ item, onUpdateQty, onRemove }) {
           </button>
           <button
             type="button"
-            onClick={() => onRemove(item.id)}
+            onClick={() => onRemove(item.lineKey)}
             className="inline-flex items-center gap-1.5 font-medium text-gray-500 transition hover:text-[#A33B3B]"
           >
             <TrashIcon className="h-4 w-4" />
@@ -61,15 +60,7 @@ function CartItemRow({ item, onUpdateQty, onRemove }) {
 }
 
 export default function CartItemsList() {
-  const [items, setItems] = useState(initialItems)
-
-  const updateQty = (id, quantity) => {
-    setItems((prev) => prev.map((item) => (item.id === id ? { ...item, quantity } : item)))
-  }
-
-  const removeItem = (id) => {
-    setItems((prev) => prev.filter((item) => item.id !== id))
-  }
+  const { items, updateQuantity, removeFromCart } = useCart()
 
   return (
     <div>
@@ -80,11 +71,25 @@ export default function CartItemsList() {
         </span>
       </div>
 
-      <div className="space-y-4">
-        {items.map((item) => (
-          <CartItemRow key={item.id} item={item} onUpdateQty={updateQty} onRemove={removeItem} />
-        ))}
-      </div>
+      {items.length === 0 ? (
+        <div className="rounded-3xl bg-white p-10 text-center shadow-soft">
+          <p className="text-lg font-bold text-gray-900">Your cart is empty</p>
+          <p className="mt-2 text-sm text-gray-500">
+            Browse products and tap add to cart to start your order.
+          </p>
+        </div>
+      ) : (
+        <div className="space-y-4">
+          {items.map((item) => (
+            <CartItemRow
+              key={item.lineKey}
+              item={item}
+              onUpdateQty={updateQuantity}
+              onRemove={removeFromCart}
+            />
+          ))}
+        </div>
+      )}
     </div>
   )
 }

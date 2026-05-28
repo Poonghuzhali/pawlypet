@@ -1,4 +1,6 @@
 import { products } from '../data/homeData'
+import { HOME_PRODUCT_IDS } from '../data/products'
+import AddToCartButton from './AddToCartButton'
 import { PlusIcon } from './Icons'
 
 export default function Products() {
@@ -37,13 +39,13 @@ export default function Products() {
                   <h3 className="font-bold text-gray-900">{product.name}</h3>
                   <p className="mt-1 text-lg font-bold text-coral">{product.price}</p>
                 </div>
-                <button
-                  type="button"
+                <AddToCartButton
+                  productId={HOME_PRODUCT_IDS[product.name]}
                   aria-label={`Add ${product.name} to cart`}
                   className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-teal text-white transition hover:bg-teal-light"
                 >
                   <PlusIcon className="h-5 w-5" />
-                </button>
+                </AddToCartButton>
               </div>
             </article>
           ))}

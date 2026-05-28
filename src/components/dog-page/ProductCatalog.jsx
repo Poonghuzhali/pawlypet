@@ -1,6 +1,8 @@
 import { useState } from 'react'
 import { Link } from 'react-router-dom'
 import { brands, dogProducts } from '../../data/dogPageData'
+import { DOG_PAGE_PRODUCT_IDS } from '../../data/products'
+import AddToCartButton from '../AddToCartButton'
 import { HeartIcon, StarIcon, CartAddIcon } from '../Icons'
 
 function ProductCard({ product, onToggleFavorite }) {
@@ -41,17 +43,13 @@ function ProductCard({ product, onToggleFavorite }) {
         <p className="mt-1 text-sm leading-relaxed text-gray-500">{product.description}</p>
         <div className="mt-4 flex items-center justify-between">
           <span className="text-lg font-extrabold text-gray-900">{product.price}</span>
-          <button
-            type="button"
+          <AddToCartButton
+            productId={DOG_PAGE_PRODUCT_IDS[product.id]}
             aria-label="Add to cart"
-            onClick={(e) => {
-              e.preventDefault()
-              e.stopPropagation()
-            }}
             className="btn-zoom-hover flex h-10 w-10 items-center justify-center rounded-full bg-[#B03A3E] text-white hover:bg-[#9a3236]"
           >
             <CartAddIcon className="h-4 w-4" />
-          </button>
+          </AddToCartButton>
         </div>
       </div>
     </>

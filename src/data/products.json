@@ -1,0 +1,346 @@
+[
+  {
+    "id": "home-premium-dog-food",
+    "name": "Premium Dog Food",
+    "price": 45.0,
+    "image": "/images/product-food.png",
+    "details": "12lb Bag • Grain-Free • Organic",
+    "category": "home"
+  },
+  {
+    "id": "home-chew-bone",
+    "name": "Natural Chew Bone",
+    "price": 12.99,
+    "image": "/images/product-bone.png",
+    "details": "Large • Natural Rubber",
+    "category": "home"
+  },
+  {
+    "id": "home-organic-treats",
+    "name": "Organic Pet Treats",
+    "price": 24.99,
+    "image": "/images/product-treats.png",
+    "details": "8oz Pack • All-Natural",
+    "category": "home"
+  },
+  {
+    "id": "wilderness-salmon",
+    "name": "Grain-Free Salmon & Sweet Potato",
+    "price": 42.0,
+    "image": "/images/product-detail/main.png",
+    "details": "5 lb • Grain-Free • Organic",
+    "category": "dog-food"
+  },
+  {
+    "id": "wilderness-salmon-15lb",
+    "name": "Grain-Free Salmon & Sweet Potato",
+    "price": 54.0,
+    "image": "/images/product-detail/main.png",
+    "details": "15 lb • Grain-Free • Organic",
+    "category": "dog-food"
+  },
+  {
+    "id": "wilderness-salmon-30lb",
+    "name": "Grain-Free Salmon & Sweet Potato",
+    "price": 89.0,
+    "image": "/images/product-detail/main.png",
+    "details": "30 lb • Grain-Free • Organic",
+    "category": "dog-food"
+  },
+  {
+    "id": "dog-wilderness-salmon-feast",
+    "name": "Wilderness Salmon & Potato Feast",
+    "price": 24.99,
+    "image": "/images/dog-page/food.png",
+    "details": "High protein grain-free formula",
+    "category": "dog"
+  },
+  {
+    "id": "dog-helix-chew",
+    "name": "Indestructible Helix Chew",
+    "price": 18.5,
+    "image": "/images/dog-page/toy.png",
+    "details": "Aerospace rubber • Heavy duty",
+    "category": "dog"
+  },
+  {
+    "id": "dog-dreamcloud-bed",
+    "name": "DreamCloud Ortho Bed",
+    "price": 89.0,
+    "image": "/images/dog-page/bed.png",
+    "details": "Memory foam • Orthopedic support",
+    "category": "dog"
+  },
+  {
+    "id": "dog-food-1",
+    "name": "Royal Canin Golden Retriever Adult",
+    "price": 64.99,
+    "image": "/images/dog-food/product-1.png",
+    "details": "Dry Food • Adult • 30lb",
+    "category": "dog-food"
+  },
+  {
+    "id": "dog-food-2",
+    "name": "Blue Buffalo Wilderness Rocky Mountain",
+    "price": 58.49,
+    "image": "/images/dog-food/product-2.png",
+    "details": "Dry Food • Grain-Free • 24lb",
+    "category": "dog-food"
+  },
+  {
+    "id": "dog-food-3",
+    "name": "Purina Pro Plan Sensitive Skin",
+    "price": 52.99,
+    "image": "/images/dog-food/product-3.png",
+    "details": "Dry Food • Sensitive Skin • 30lb",
+    "category": "dog-food"
+  },
+  {
+    "id": "dog-food-4",
+    "name": "Hill's Science Diet Adult Sensitive",
+    "price": 48.0,
+    "image": "/images/dog-food/product-4.png",
+    "details": "Dry Food • Vet Recommended • 30lb",
+    "category": "dog-food"
+  },
+  {
+    "id": "dog-food-5",
+    "name": "ACANA Singles Limited Ingredient",
+    "price": 59.95,
+    "image": "/images/dog-food/product-5.png",
+    "details": "Dry Food • Limited Ingredient • 25lb",
+    "category": "dog-food"
+  },
+  {
+    "id": "dog-food-6",
+    "name": "Nutro Wholesome Essentials",
+    "price": 44.99,
+    "image": "/images/dog-food/product-6.png",
+    "details": "Dry Food • Adult • 30lb",
+    "category": "dog-food"
+  },
+  {
+    "id": "dog-food-7",
+    "name": "Wellness CORE Grain-Free",
+    "price": 62.5,
+    "image": "/images/dog-food/product-7.png",
+    "details": "Dry Food • Grain-Free • 26lb",
+    "category": "dog-food"
+  },
+  {
+    "id": "dog-food-8",
+    "name": "Taste of the Wild High Prairie",
+    "price": 54.99,
+    "image": "/images/dog-food/product-8.png",
+    "details": "Dry Food • High Protein • 28lb",
+    "category": "dog-food"
+  },
+  {
+    "id": "dog-toy-1",
+    "name": "Tough Chew Bone",
+    "price": 18.5,
+    "image": "/images/dog-toys/product-1.png",
+    "details": "Rubber • Super Durable",
+    "category": "dog-toys"
+  },
+  {
+    "id": "dog-toy-2",
+    "name": "Brainy Treat Slider",
+    "price": 24.99,
+    "image": "/images/dog-toys/product-2.png",
+    "details": "Puzzle • Interactive",
+    "category": "dog-toys"
+  },
+  {
+    "id": "dog-toy-3",
+    "name": "Triple-Knot Tug Rope",
+    "price": 12.0,
+    "image": "/images/dog-toys/product-3.png",
+    "details": "Rope • Tug Toy",
+    "category": "dog-toys"
+  },
+  {
+    "id": "dog-toy-4",
+    "name": "Squeaky Squirrel",
+    "price": 9.5,
+    "image": "/images/dog-toys/product-4.png",
+    "details": "Plush • Squeaker",
+    "category": "dog-toys"
+  },
+  {
+    "id": "dog-toy-5",
+    "name": "Pro Ball Launcher",
+    "price": 32.0,
+    "image": "/images/dog-toys/product-5.png",
+    "details": "Fetch • Outdoor",
+    "category": "dog-toys"
+  },
+  {
+    "id": "dog-toy-6",
+    "name": "Majestic Mallard",
+    "price": 15.99,
+    "image": "/images/dog-toys/product-6.png",
+    "details": "Plush • Classic Duck",
+    "category": "dog-toys"
+  },
+  {
+    "id": "dog-grooming-1",
+    "name": "Organic Oatmeal Shampoo",
+    "price": 24.0,
+    "image": "/images/dog-grooming/product-1.png",
+    "details": "Gentle cleansing for sensitive skin",
+    "category": "dog-grooming"
+  },
+  {
+    "id": "dog-grooming-2",
+    "name": "Shed-Free Brush Pro",
+    "price": 32.5,
+    "image": "/images/dog-grooming/product-2.png",
+    "details": "Professional deshedding tool",
+    "category": "dog-grooming"
+  },
+  {
+    "id": "dog-grooming-3",
+    "name": "Tear-Free Facial Wash",
+    "price": 18.0,
+    "image": "/images/dog-grooming/product-3.png",
+    "details": "Mild formula safe for eyes",
+    "category": "dog-grooming"
+  },
+  {
+    "id": "dog-grooming-4",
+    "name": "Healing Paw Balm",
+    "price": 15.99,
+    "image": "/images/dog-grooming/product-4.png",
+    "details": "Soothes cracked paws and dry nose",
+    "category": "dog-grooming"
+  },
+  {
+    "id": "dog-grooming-5",
+    "name": "Pro-Series Trimmers",
+    "price": 45.0,
+    "image": "/images/dog-grooming/product-5.png",
+    "details": "Quiet motor clippers",
+    "category": "dog-grooming"
+  },
+  {
+    "id": "dog-grooming-6",
+    "name": "Quick-Dry Spa Towel",
+    "price": 19.5,
+    "image": "/images/dog-grooming/product-6.png",
+    "details": "Ultra-absorbent microfiber",
+    "category": "dog-grooming"
+  },
+  {
+    "id": "dog-health-1",
+    "name": "Multi-Vitamin Chews",
+    "price": 24.99,
+    "image": "/images/dog-health/product-1.png",
+    "details": "8-in-1 immune and joint support",
+    "category": "dog-health"
+  },
+  {
+    "id": "dog-health-2",
+    "name": "Calming Treats",
+    "price": 19.5,
+    "image": "/images/dog-health/product-2.png",
+    "details": "Hemp and chamomile blend",
+    "category": "dog-health"
+  },
+  {
+    "id": "dog-health-3",
+    "name": "Plaque Remover",
+    "price": 32.0,
+    "image": "/images/dog-health/product-3.png",
+    "details": "Enzymatic dental formula",
+    "category": "dog-health"
+  },
+  {
+    "id": "dog-health-4",
+    "name": "First Aid Kit",
+    "price": 45.0,
+    "image": "/images/dog-health/product-4.png",
+    "details": "50-piece canine emergency kit",
+    "category": "dog-health"
+  },
+  {
+    "id": "cat-1",
+    "name": "Feather Wand Pro",
+    "price": 12.99,
+    "image": "/images/cat-page/feather-wand.png",
+    "details": "Cat Toy • Interactive",
+    "category": "cat"
+  },
+  {
+    "id": "cat-2",
+    "name": "Cactus Scratch Post",
+    "price": 45.0,
+    "image": "/images/cat-page/cactus.png",
+    "details": "Cat Furniture • Scratching",
+    "category": "cat"
+  },
+  {
+    "id": "cat-3",
+    "name": "Gourmet Salmon Bites",
+    "price": 28.99,
+    "image": "/images/cat-page/salmon-bites.png",
+    "details": "Cat Treats • Salmon",
+    "category": "cat"
+  },
+  {
+    "id": "cat-4",
+    "name": "Cozy Felt Cave",
+    "price": 59.0,
+    "image": "/images/cat-page/felt-cave.png",
+    "details": "Cat Bed • Cozy Hideout",
+    "category": "cat"
+  },
+  {
+    "id": "cat-5",
+    "name": "Smart Feeder v2",
+    "price": 89.0,
+    "image": "/images/cat-page/smart-feeder.png",
+    "details": "Cat Feeder • Automatic",
+    "category": "cat"
+  },
+  {
+    "id": "cat-6",
+    "name": "Velvet Charm Collar",
+    "price": 18.5,
+    "image": "/images/cat-page/collar.png",
+    "details": "Cat Collar • Velvet",
+    "category": "cat"
+  },
+  {
+    "id": "small-pet-1",
+    "name": "Timothy Hay",
+    "price": 18.99,
+    "image": "/images/small-pets/timothy-hay.png",
+    "details": "Small Pet • Hay • Premium",
+    "category": "small-pets"
+  },
+  {
+    "id": "small-pet-2",
+    "name": "Hamster Wheel Pro",
+    "price": 34.5,
+    "image": "/images/small-pets/hamster-wheel.png",
+    "details": "Small Pet • Ultra-quiet wheel",
+    "category": "small-pets"
+  },
+  {
+    "id": "small-pet-3",
+    "name": "Cozy Bunny Hideout",
+    "price": 42.0,
+    "image": "/images/small-pets/bunny-hideout.png",
+    "details": "Small Pet • Natural birch wood",
+    "category": "small-pets"
+  },
+  {
+    "id": "small-pet-4",
+    "name": "Veggie Treats",
+    "price": 12.99,
+    "image": "/images/small-pets/veggie-treats.png",
+    "details": "Small Pet • Organic veggies",
+    "category": "small-pets"
+  }
+]

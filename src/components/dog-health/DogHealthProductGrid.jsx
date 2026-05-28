@@ -1,4 +1,6 @@
 import { healthProducts } from '../../data/dogHealthPageData'
+import { DOG_HEALTH_PRODUCT_IDS } from '../../data/products'
+import AddToCartButton from '../AddToCartButton'
 import { StarIcon } from '../Icons'
 
 function ProductCard({ product }) {
@@ -23,12 +25,12 @@ function ProductCard({ product }) {
         <h3 className="font-bold text-gray-900">{product.name}</h3>
         <p className="mt-1 text-lg font-extrabold text-[#D15151]">${product.price.toFixed(2)}</p>
         <p className="mt-3 flex-1 text-sm leading-relaxed text-gray-500">{product.description}</p>
-        <button
-          type="button"
+        <AddToCartButton
+          productId={DOG_HEALTH_PRODUCT_IDS[product.id]}
           className="btn-zoom-hover mt-5 w-full rounded-full border-2 border-[#D15151] bg-white py-3 text-sm font-bold text-[#D15151] transition hover:bg-[#FDE8E8]"
         >
           Add to Cart
-        </button>
+        </AddToCartButton>
       </div>
     </article>
   )
