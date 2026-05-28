@@ -1,4 +1,5 @@
 import { HashRouter, Routes, Route } from 'react-router-dom'
+import ScrollToTop from './components/ScrollToTop'
 import HomePage from './pages/HomePage'
 import ShopByBreedPage from './pages/ShopByBreedPage'
 import DogPage from './pages/DogPage'
@@ -23,6 +24,7 @@ import ProductDetailPage from './pages/ProductDetailPage'
 export default function App() {
   return (
     <HashRouter>
+      <ScrollToTop />
       <Routes>
         <Route path="/" element={<HomePage />} />
         <Route path="/shop-by-breed" element={<ShopByBreedPage />} />
