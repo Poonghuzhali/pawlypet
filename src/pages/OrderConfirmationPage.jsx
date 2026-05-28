@@ -1,4 +1,4 @@
-import { useEffect } from 'react'
+import { useEffect, useRef } from 'react'
 import { useLocation, useNavigate } from 'react-router-dom'
 import OrderConfirmationHeader from '../components/order-confirmation/OrderConfirmationHeader'
 import OrderConfirmationHero from '../components/order-confirmation/OrderConfirmationHero'
@@ -23,17 +23,20 @@ export default function OrderConfirmationPage() {
   const location = useLocation()
   const { clearCart } = useCart()
   const order = getLastOrder()
+  const hasClearedCart = useRef(false)
 
   useEffect(() => {
-    if (location.state?.orderPlaced) {
+    if (location.state?.orderPlaced && !hasClearedCart.current) {
+      hasClearedCart.current = true
       clearCart()
-      return
     }
+  }, [location.state?.orderPlaced, clearCart])
 
-    if (!getLastOrder()) {
+  useEffect(() => {
+    if (!location.state?.orderPlaced && !getLastOrder()) {
       navigate('/cart', { replace: true })
     }
-  }, [location.state?.orderPlaced, clearCart, navigate])
+  }, [location.state?.orderPlaced, navigate])
 
   if (!order && !location.state?.orderPlaced) {
     return null
@@ -44,7 +47,7 @@ export default function OrderConfirmationPage() {
       <BackgroundDecor />
       <OrderConfirmationHeader />
 
-      <main className="relative z-10 px-4 py-10 sm:px-6 lg:px-8">
+      <main className="relative z-20 px-4 py-10 sm:px-6 lg:px-8">
         <div className="mx-auto max-w-3xl">
           <OrderConfirmationHero />
           <OrderConfirmationActions />

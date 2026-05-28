@@ -1,4 +1,4 @@
-import { Link, useNavigate } from 'react-router-dom'
+import { useNavigate } from 'react-router-dom'
 import { getLastOrder } from '../../utils/lastOrder'
 import { orderDetails as fallbackOrderDetails } from '../../data/orderConfirmationData'
 import { TruckIcon, GiftIcon } from '../Icons'
@@ -23,12 +23,13 @@ export default function OrderConfirmationActions() {
           <TruckIcon className="h-5 w-5" />
           Track My Treats
         </button>
-        <Link
-          to="/shop-by-breed"
-          className="btn-zoom-hover inline-flex flex-1 items-center justify-center rounded-full bg-[#F7F1EB] px-6 py-3.5 text-sm font-bold text-gray-700 no-underline transition hover:bg-[#efe8e0]"
+        <button
+          type="button"
+          onClick={() => navigate('/shop-by-breed')}
+          className="btn-zoom-hover inline-flex flex-1 items-center justify-center rounded-full bg-[#F7F1EB] px-6 py-3.5 text-sm font-bold text-gray-700 transition hover:bg-[#efe8e0]"
         >
           Continue Shopping
-        </Link>
+        </button>
       </div>
 
       <div className="mt-5 flex items-center gap-3 rounded-full bg-[#FFF3CD] px-5 py-3.5">

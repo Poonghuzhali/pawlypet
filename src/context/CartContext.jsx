@@ -1,4 +1,4 @@
-import { createContext, useContext, useEffect, useMemo, useState } from 'react'
+import { createContext, useCallback, useContext, useEffect, useMemo, useState } from 'react'
 import { getProductById } from '../data/products'
 import { calculateCartTotals } from '../utils/cartTotals'
 
@@ -79,7 +79,9 @@ export function CartProvider({ children }) {
     setItems((prev) => prev.filter((item) => item.lineKey !== lineKey))
   }
 
-  const clearCart = () => setItems([])
+  const clearCart = useCallback(() => {
+    setItems((prev) => (prev.length === 0 ? prev : []))
+  }, [])
 
   const value = {
     items,

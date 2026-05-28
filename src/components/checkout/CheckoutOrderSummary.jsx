@@ -1,8 +1,17 @@
+import { Link, useNavigate } from 'react-router-dom'
 import { useCart } from '../../context/CartContext'
-import { TicketIcon } from '../Icons'
+import { saveLastOrder } from '../../utils/lastOrder'
+import { TicketIcon, ArrowRightIcon } from '../Icons'
 
 export default function CheckoutOrderSummary() {
+  const navigate = useNavigate()
   const { items, totals } = useCart()
+
+  const handleCompleteOrder = () => {
+    if (items.length === 0) return
+    saveLastOrder({ items, totals })
+    navigate('/order-confirmation', { state: { orderPlaced: true } })
+  }
 
   return (
     <aside className="space-y-5 lg:sticky lg:top-24 lg:self-start">
@@ -73,6 +82,16 @@ export default function CheckoutOrderSummary() {
           </button>
         </div>
       </article>
+
+      <button
+        type="button"
+        disabled={items.length === 0}
+        onClick={handleCompleteOrder}
+        className="btn-zoom-hover flex w-full items-center justify-center gap-2 rounded-full bg-[#D15151] px-6 py-3.5 text-sm font-bold text-white hover:bg-[#b84242] disabled:cursor-not-allowed disabled:opacity-50"
+      >
+        Continue to Review
+        <ArrowRightIcon className="h-4 w-4" />
+      </button>
     </aside>
   )
 }
