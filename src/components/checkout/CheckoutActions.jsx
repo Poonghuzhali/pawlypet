@@ -14,10 +14,10 @@ export default function CheckoutActions() {
   }
 
   return (
-    <div className="mt-8 flex flex-col items-center gap-6 sm:flex-row sm:justify-between">
+    <div className="flex flex-col gap-6 sm:flex-row sm:items-center sm:justify-between">
       <Link
         to="/cart"
-        className="text-sm font-semibold text-[#D15151] transition hover:underline sm:order-1"
+        className="text-sm font-semibold text-[#D15151] transition hover:underline"
       >
         ← Back to Shipping
       </Link>
@@ -25,7 +25,7 @@ export default function CheckoutActions() {
         type="button"
         disabled={items.length === 0}
         onClick={handleCompleteOrder}
-        className="btn-zoom-hover order-3 inline-flex w-full items-center justify-center gap-2 rounded-full bg-[#D15151] px-8 py-3.5 text-sm font-bold text-white hover:bg-[#b84242] disabled:cursor-not-allowed disabled:opacity-50 sm:order-2 sm:w-auto sm:min-w-[280px]"
+        className="btn-zoom-hover inline-flex w-full items-center justify-center gap-2 rounded-full bg-[#D15151] px-8 py-3.5 text-sm font-bold text-white hover:bg-[#b84242] disabled:cursor-not-allowed disabled:opacity-50 sm:w-auto sm:min-w-[280px]"
       >
         Continue to Review
         <ArrowRightIcon className="h-4 w-4" />

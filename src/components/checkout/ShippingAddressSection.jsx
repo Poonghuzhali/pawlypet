@@ -16,7 +16,7 @@ function AddressField({ label, value }) {
 
 export default function ShippingAddressSection() {
   return (
-    <section className="mt-10 rounded-3xl bg-[#F7F1EB] p-6 shadow-soft sm:p-8">
+    <section className="rounded-3xl bg-[#F7F1EB] p-6 shadow-soft sm:p-8">
       <div className="flex flex-wrap items-center justify-between gap-3">
         <div className="flex items-center gap-2">
           <TruckIcon className="h-5 w-5 text-[#D15151]" />

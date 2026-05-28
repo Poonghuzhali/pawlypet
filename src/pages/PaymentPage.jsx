@@ -24,13 +24,14 @@ export default function PaymentPage() {
       <main className="bg-[#FCF8F4] pb-14">
         <section className="px-4 pt-8 sm:px-6 lg:px-8">
           <div className="mx-auto max-w-7xl">
-            <div className="grid gap-8 lg:grid-cols-[1fr_340px]">
-              <PaymentMethodForm />
+            <div className="grid gap-8 lg:grid-cols-[1fr_340px] lg:items-start">
+              <div className="space-y-8">
+                <PaymentMethodForm />
+                <ShippingAddressSection />
+                <CheckoutActions />
+              </div>
               <CheckoutOrderSummary />
             </div>
-
-            <CheckoutActions />
-            <ShippingAddressSection />
           </div>
         </section>
       </main>

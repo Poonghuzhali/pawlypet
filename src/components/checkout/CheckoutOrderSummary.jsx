@@ -5,7 +5,7 @@ export default function CheckoutOrderSummary() {
   const { items, totals } = useCart()
 
   return (
-    <aside className="lg:sticky lg:top-24 lg:self-start">
+    <aside className="space-y-5 lg:sticky lg:top-24 lg:self-start">
       <article className="rounded-3xl bg-[#F7F1EB] p-6 shadow-soft">
         <h2 className="text-lg font-extrabold text-[#3D2C2C]">Order Summary</h2>
 
