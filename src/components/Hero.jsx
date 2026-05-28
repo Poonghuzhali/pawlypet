@@ -20,12 +20,12 @@ export default function Hero() {
             furry friends happy, healthy, and thriving every single day.
           </p>
           <div className="mt-8 flex flex-wrap gap-4">
-            <a
-              href="#shop"
+            <Link
+              to="/shop-by-breed"
               className="btn-zoom-hover inline-flex items-center justify-center rounded-full bg-coral px-8 py-3.5 text-sm font-semibold text-white shadow-md hover:bg-[#b84242]"
             >
               Shop Now
-            </a>
+            </Link>
             <Link
               to="/shop-by-breed"
               className="btn-zoom-hover inline-flex items-center justify-center rounded-full bg-teal px-8 py-3.5 text-sm font-semibold text-white shadow-md hover:bg-teal-light"
