@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom'
 import { PawIcon, CatFaceIcon } from '../Icons'
 
 export default function DogHero() {
@@ -14,9 +15,9 @@ export default function DogHero() {
         </p>
 
         <div className="mx-auto mt-10 flex max-w-2xl flex-col gap-4 sm:flex-row sm:justify-center">
-          <button
-            type="button"
-            className="card-hover-lift flex flex-1 items-center gap-4 rounded-3xl bg-[#FDE8E8] px-6 py-5 text-left shadow-soft transition sm:max-w-xs"
+          <Link
+            to="/dog"
+            className="card-hover-lift flex flex-1 items-center gap-4 rounded-3xl bg-[#FDE8E8] px-6 py-5 text-left shadow-soft transition no-underline sm:max-w-xs"
           >
             <span className="flex h-12 w-12 shrink-0 items-center justify-center rounded-full bg-white text-brand-red shadow-sm">
               <PawIcon className="h-6 w-6" />
@@ -25,11 +26,11 @@ export default function DogHero() {
               <span className="block text-base font-bold text-gray-900">Shop for Dogs</span>
               <span className="mt-0.5 block text-sm text-gray-500">32+ Breeds support</span>
             </span>
-          </button>
+          </Link>
 
-          <button
-            type="button"
-            className="card-hover-lift flex flex-1 items-center gap-4 rounded-3xl bg-[#E0F5F3] px-6 py-5 text-left shadow-soft transition sm:max-w-xs"
+          <Link
+            to="/cat"
+            className="card-hover-lift flex flex-1 items-center gap-4 rounded-3xl bg-[#E0F5F3] px-6 py-5 text-left shadow-soft transition no-underline sm:max-w-xs"
           >
             <span className="flex h-12 w-12 shrink-0 items-center justify-center rounded-full bg-white text-teal shadow-sm">
               <CatFaceIcon className="h-6 w-6" />
@@ -38,7 +39,7 @@ export default function DogHero() {
               <span className="block text-base font-bold text-gray-900">Shop for Cats</span>
               <span className="mt-0.5 block text-sm text-gray-500">18+ Breeds support</span>
             </span>
-          </button>
+          </Link>
         </div>
       </div>
     </section>

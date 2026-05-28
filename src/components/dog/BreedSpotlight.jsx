@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom'
 import { assetUrl } from '@/utils/assetUrl'
 import { StarIcon, BookIcon } from '../Icons'
 
@@ -24,12 +25,12 @@ export default function BreedSpotlight() {
               to maintain that signature shine. Discover essentials tailored for their unique needs.
             </p>
             <div className="mt-8 flex flex-wrap gap-4">
-              <button
-                type="button"
-                className="btn-zoom-hover rounded-full bg-brand-red px-7 py-3 text-sm font-semibold text-white shadow-md hover:bg-brand-red-dark"
+              <Link
+                to="/dog"
+                className="btn-zoom-hover inline-block rounded-full bg-brand-red px-7 py-3 text-sm font-semibold text-white no-underline shadow-md hover:bg-brand-red-dark"
               >
                 Explore Shop
-              </button>
+              </Link>
               <button
                 type="button"
                 className="btn-zoom-hover inline-flex items-center gap-2 rounded-full border border-gray-300 bg-white px-7 py-3 text-sm font-semibold text-gray-800 hover:bg-gray-50"

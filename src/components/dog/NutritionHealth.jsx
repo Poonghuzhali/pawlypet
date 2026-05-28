@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom'
 import { assetUrl } from '@/utils/assetUrl'
 import { recommendedFood } from '../../data/shopByBreedData'
 import { CheckIcon } from '../Icons'
@@ -23,12 +24,12 @@ export default function NutritionHealth() {
                     </li>
                   ))}
                 </ul>
-                <button
-                  type="button"
-                  className="btn-zoom-hover mt-6 rounded-full bg-teal px-6 py-3 text-sm font-semibold text-white hover:bg-teal-light"
+                <Link
+                  to="/dog/food"
+                  className="btn-zoom-hover mt-6 inline-block rounded-full bg-teal px-6 py-3 text-sm font-semibold text-white no-underline hover:bg-teal-light"
                 >
                   Shop Nutrition
-                </button>
+                </Link>
               </div>
               <div className="overflow-hidden rounded-2xl">
                 <img
