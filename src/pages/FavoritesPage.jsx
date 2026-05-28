@@ -15,7 +15,7 @@ export default function FavoritesPage() {
   return (
     <>
       <Header compact favoritesActive />
-      <main className="bg-[#E1D8D2] pb-14">
+      <main className="bg-[#FFF9F5] pb-14">
         <FavoritesPageHeader onClearAll={handleClearAll} />
 
         <section className="px-4 pt-8 sm:px-6 lg:px-8">

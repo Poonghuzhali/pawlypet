@@ -8,7 +8,7 @@ export default function SmallPetsPage() {
   return (
     <>
       <Header compact />
-      <main className="bg-[#E1D8D2]">
+      <main className="bg-[#FFFBF5]">
         <SmallPetsHero />
         <SmallPetsCategoryLinks />
         <SmallPetsProductCatalog />

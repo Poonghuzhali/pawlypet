@@ -9,7 +9,7 @@ export default function PaymentPage() {
   return (
     <>
       <Header compact />
-      <main className="bg-[#E1D8D2] pb-14">
+      <main className="bg-[#FCF8F4] pb-14">
         <section className="px-4 pt-8 sm:px-6 lg:px-8">
           <div className="mx-auto max-w-7xl">
             <div className="grid gap-8 lg:grid-cols-[1fr_340px]">

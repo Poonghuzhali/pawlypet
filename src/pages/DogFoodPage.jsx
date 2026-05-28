@@ -9,7 +9,7 @@ export default function DogFoodPage() {
   return (
     <>
       <Header compact />
-      <main className="bg-[#E1D8D2]">
+      <main className="bg-[#FDF8F3]">
         <DogFoodHero />
 
         <section className="px-4 py-10 sm:px-6 lg:px-8">

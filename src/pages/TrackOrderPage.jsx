@@ -10,11 +10,11 @@ export default function TrackOrderPage() {
   return (
     <>
       <Header compact />
-      <main className="bg-[#E1D8D2] pb-14">
+      <main className="bg-[#FCF8F4] pb-14">
         <section className="px-4 pt-8 sm:px-6 lg:px-8">
           <div className="mx-auto max-w-7xl">
             <div>
-              <h1 className="text-3xl font-extrabold text-[#374151] sm:text-4xl">Secure Checkout</h1>
+              <h1 className="text-3xl font-extrabold text-[#3D2C2C] sm:text-4xl">Secure Checkout</h1>
               <p className="mt-2 text-sm text-gray-600 sm:text-base">
                 Almost there! Your furry friend is waiting for their treats.
               </p>

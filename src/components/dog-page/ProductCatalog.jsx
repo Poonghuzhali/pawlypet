@@ -6,7 +6,7 @@ import { HeartIcon, StarIcon, CartAddIcon } from '../Icons'
 function ProductCard({ product, onToggleFavorite }) {
   const cardInner = (
     <>
-      <div className="relative bg-[#E1D8D2] p-6">
+      <div className="relative bg-[#FAFAFA] p-6">
         <button
           type="button"
           aria-label="Toggle favorite"
@@ -16,7 +16,7 @@ function ProductCard({ product, onToggleFavorite }) {
             onToggleFavorite(product.id)
           }}
           className={`absolute right-4 top-4 z-10 rounded-full p-1.5 transition ${
-            product.favorited ? 'text-[#64E0D2]' : 'text-gray-300 hover:text-[#64E0D2]'
+            product.favorited ? 'text-[#B03A3E]' : 'text-gray-300 hover:text-[#B03A3E]'
           }`}
         >
           <HeartIcon className={`h-5 w-5 ${product.favorited ? 'fill-current' : ''}`} />
@@ -48,7 +48,7 @@ function ProductCard({ product, onToggleFavorite }) {
               e.preventDefault()
               e.stopPropagation()
             }}
-            className="btn-zoom-hover flex h-10 w-10 items-center justify-center rounded-full bg-[#64E0D2] text-gray-900 hover:bg-[#52CFC2]"
+            className="btn-zoom-hover flex h-10 w-10 items-center justify-center rounded-full bg-[#B03A3E] text-white hover:bg-[#9a3236]"
           >
             <CartAddIcon className="h-4 w-4" />
           </button>

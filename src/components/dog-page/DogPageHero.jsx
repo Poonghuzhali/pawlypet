@@ -11,7 +11,7 @@ export default function DogPageHero() {
         <div className="absolute inset-0 bg-gradient-to-r from-black/55 via-black/25 to-transparent" />
         <div className="absolute inset-0 flex items-center px-8 sm:px-12 lg:px-16">
           <div className="max-w-lg">
-            <h1 className="font-sans text-4xl font-extrabold leading-tight text-white sm:text-5xl lg:text-[3.25rem]">
+            <h1 className="font-serif text-4xl font-extrabold leading-tight text-white sm:text-5xl lg:text-[3.25rem]">
               Happy Tails,
               <br />
               Happy Hearts.
@@ -22,7 +22,7 @@ export default function DogPageHero() {
             </p>
             <button
               type="button"
-              className="btn-zoom-hover mt-8 rounded-full bg-gradient-to-r from-[#64E0D2] to-[#64E0D2] px-8 py-3.5 text-sm font-semibold text-white shadow-lg hover:from-[#52CFC2] hover:to-[#52CFC2]"
+              className="btn-zoom-hover mt-8 rounded-full bg-gradient-to-r from-[#B03A3E] to-[#D14D4D] px-8 py-3.5 text-sm font-semibold text-white shadow-lg hover:from-[#9a3236] hover:to-[#b84242]"
             >
               Explore Dog Shop
             </button>

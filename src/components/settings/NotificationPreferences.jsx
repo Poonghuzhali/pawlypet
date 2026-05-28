@@ -15,7 +15,7 @@ export default function NotificationPreferences() {
   return (
     <article className="rounded-[2rem] bg-white p-6 shadow-soft sm:p-8">
       <div className="flex items-center gap-2">
-        <BellIcon className="h-5 w-5 text-[#64E0D2]" />
+        <BellIcon className="h-5 w-5 text-[#D15151]" />
         <h2 className="text-lg font-extrabold text-gray-900">Notification Preferences</h2>
       </div>
 
@@ -23,7 +23,7 @@ export default function NotificationPreferences() {
         {preferences.map((item) => (
           <div
             key={item.id}
-            className="flex items-center justify-between gap-4 rounded-2xl border border-gray-100 bg-[#E1D8D2] px-5 py-4"
+            className="flex items-center justify-between gap-4 rounded-2xl border border-gray-100 bg-[#FAFAFA] px-5 py-4"
           >
             <div>
               <p className="font-bold text-gray-900">{item.label}</p>

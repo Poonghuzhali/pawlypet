@@ -5,7 +5,7 @@ import { ShareIcon, HeartIcon } from '../Icons'
 
 export default function DogHealthFooter() {
   return (
-    <footer className="bg-[#D9D6CE] px-4 py-10 sm:px-6 lg:px-8">
+    <footer className="bg-[#F5EDE4] px-4 py-10 sm:px-6 lg:px-8">
       <div className="mx-auto flex max-w-7xl flex-col items-center gap-6 sm:flex-row sm:justify-between">
         <div className="text-center sm:text-left">
           <Link to="/" className="inline-flex no-underline">
@@ -21,7 +21,7 @@ export default function DogHealthFooter() {
             <a
               key={link}
               href="#"
-              className="text-sm text-gray-600 transition hover:text-[#64E0D2]"
+              className="text-sm text-gray-600 transition hover:text-[#D15151]"
             >
               {link}
             </a>
@@ -32,14 +32,14 @@ export default function DogHealthFooter() {
           <button
             type="button"
             aria-label="Share"
-            className="flex h-9 w-9 items-center justify-center rounded-full border border-gray-300 bg-white text-gray-600 transition hover:text-[#64E0D2]"
+            className="flex h-9 w-9 items-center justify-center rounded-full border border-gray-300 bg-white text-gray-600 transition hover:text-[#D15151]"
           >
             <ShareIcon className="h-4 w-4" />
           </button>
           <Link
             to="/favorites"
             aria-label="Wishlist"
-            className="flex h-9 w-9 items-center justify-center rounded-full border border-gray-300 bg-white text-gray-600 transition hover:text-[#64E0D2]"
+            className="flex h-9 w-9 items-center justify-center rounded-full border border-gray-300 bg-white text-gray-600 transition hover:text-[#D15151]"
           >
             <HeartIcon className="h-4 w-4" />
           </Link>

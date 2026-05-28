@@ -6,7 +6,7 @@ export default function GroomingTraining() {
     <section className="px-4 py-10 pb-16 sm:px-6 lg:px-8">
       <div className="mx-auto max-w-7xl">
         <div className="grid gap-6 lg:grid-cols-2">
-          <article className="card-hover-lift flex flex-col justify-between rounded-[2rem] bg-[#64E0D2] p-6 text-white sm:p-8">
+          <article className="card-hover-lift flex flex-col justify-between rounded-[2rem] bg-[#F88E86] p-6 text-white sm:p-8">
             <div>
               <h3 className="text-xl font-extrabold sm:text-2xl">Grooming Essentials</h3>
               <p className="mt-4 text-sm leading-relaxed text-white/90 sm:text-base">
@@ -36,7 +36,7 @@ export default function GroomingTraining() {
             </div>
           </article>
 
-          <article className="card-hover-lift flex items-center gap-5 rounded-[2rem] bg-[#E1D8D2] p-6 sm:gap-6 sm:p-8">
+          <article className="card-hover-lift flex items-center gap-5 rounded-[2rem] bg-[#EFEBE6] p-6 sm:gap-6 sm:p-8">
             <div className="h-28 w-28 shrink-0 overflow-hidden rounded-2xl sm:h-32 sm:w-32">
               <img
                 src={assetUrl("/images/dog/treats.png")}

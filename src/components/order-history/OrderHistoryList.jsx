@@ -2,14 +2,14 @@ import { Link } from 'react-router-dom'
 import { orders } from '../../data/orderHistoryPageData'
 
 const statusStyles = {
-  delivered: 'bg-[#64E0D2] text-gray-900',
-  'in-transit': 'bg-[#CFE1E0] text-gray-900',
+  delivered: 'bg-[#2D6A64] text-white',
+  'in-transit': 'bg-[#F2C94C] text-gray-900',
   processing: 'bg-gray-200 text-gray-600',
 }
 
 const actionStyles = {
-  teal: 'bg-[#64E0D2] text-gray-900 hover:bg-[#52CFC2]',
-  coral: 'bg-[#64E0D2] text-gray-900 hover:bg-[#64E0D2]',
+  teal: 'bg-[#2D6A64] text-white hover:bg-[#245550]',
+  coral: 'bg-[#E56B6B] text-white hover:bg-[#d55a5a]',
   disabled: 'cursor-not-allowed bg-gray-200 text-gray-500',
 }
 
@@ -48,11 +48,11 @@ function OrderCard({ order }) {
                 key={image}
                 src={image}
                 alt=""
-                className="h-14 w-14 rounded-xl border border-gray-100 bg-[#E1D8D2] object-contain p-1"
+                className="h-14 w-14 rounded-xl border border-gray-100 bg-[#FAFAFA] object-contain p-1"
               />
             ))}
             {order.extraItems ? (
-              <span className="flex h-14 w-14 items-center justify-center rounded-xl bg-[#D9D6CE] text-sm font-bold text-gray-600">
+              <span className="flex h-14 w-14 items-center justify-center rounded-xl bg-[#F5EDE4] text-sm font-bold text-gray-600">
                 +{order.extraItems}
               </span>
             ) : null}
@@ -61,7 +61,7 @@ function OrderCard({ order }) {
           <div className="flex flex-col gap-2 sm:min-w-[160px]">
             <button
               type="button"
-              className="rounded-full bg-[#D9D6CE] px-5 py-2.5 text-sm font-semibold text-gray-800 transition hover:bg-[#D9D6CE]"
+              className="rounded-full bg-[#F0EBE4] px-5 py-2.5 text-sm font-semibold text-gray-800 transition hover:bg-[#e5ddd4]"
             >
               Order Details
             </button>

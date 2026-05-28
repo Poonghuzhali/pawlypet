@@ -26,7 +26,7 @@ export default function DogHealthSearchFilters() {
           <input
             type="search"
             placeholder="Find Treats..."
-            className="w-full rounded-full border border-gray-200 bg-white py-3.5 pl-12 pr-4 text-sm shadow-soft outline-none focus:border-[#64E0D2] focus:ring-1 focus:ring-[#64E0D2]"
+            className="w-full rounded-full border border-gray-200 bg-white py-3.5 pl-12 pr-4 text-sm shadow-soft outline-none focus:border-[#2D6A64] focus:ring-1 focus:ring-[#2D6A64]"
           />
         </div>
 
@@ -40,11 +40,11 @@ export default function DogHealthSearchFilters() {
                 onClick={() => setActiveFilter(filter.id)}
                 className={`inline-flex items-center gap-2 rounded-full px-5 py-2.5 text-sm font-semibold transition ${
                   activeFilter === filter.id
-                    ? 'bg-[#D9D6CE] text-[#4AB8AC] ring-1 ring-[#4AB8AC]/20'
-                    : 'bg-white text-gray-700 shadow-soft hover:bg-[#E1D8D2]'
+                    ? 'bg-[#F5EDE4] text-[#8B2E2E] ring-1 ring-[#8B2E2E]/20'
+                    : 'bg-white text-gray-700 shadow-soft hover:bg-[#FAFAFA]'
                 }`}
               >
-                <Icon className="h-4 w-4 text-[#64E0D2]" />
+                <Icon className="h-4 w-4 text-[#2D6A64]" />
                 {filter.label}
               </button>
             )

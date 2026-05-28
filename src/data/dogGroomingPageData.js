@@ -9,7 +9,7 @@ export const groomingProducts = [
     name: 'Organic Oatmeal Shampoo',
     description: 'Gentle cleansing for sensitive skin and coats.',
     price: 24.0,
-    tag: { label: 'Bestseller', style: 'bg-[#64E0D2] text-gray-900' },
+    tag: { label: 'Bestseller', style: 'bg-[#D15151] text-white' },
     image: assetUrl('/images/dog-grooming/product-1.png'),
   },
   {
@@ -17,7 +17,7 @@ export const groomingProducts = [
     name: 'Shed-Free Brush Pro',
     description: 'Professional deshedding tool for all coat types.',
     price: 32.5,
-    tag: { label: 'New Arrival', style: 'bg-[#64E0D2] text-gray-900' },
+    tag: { label: 'New Arrival', style: 'bg-[#2D6A64] text-white' },
     image: assetUrl('/images/dog-grooming/product-2.png'),
   },
   {
@@ -25,7 +25,7 @@ export const groomingProducts = [
     name: 'Tear-Free Facial Wash',
     description: 'Mild formula safe for eyes and sensitive areas.',
     price: 18.0,
-    tag: { label: 'Eco-Friendly', style: 'bg-[#64E0D2] text-gray-900' },
+    tag: { label: 'Eco-Friendly', style: 'bg-[#2D6A64] text-white' },
     image: assetUrl('/images/dog-grooming/product-3.png'),
   },
   {
@@ -33,7 +33,7 @@ export const groomingProducts = [
     name: 'Healing Paw Balm',
     description: 'Soothes cracked paws and dry nose areas.',
     price: 15.99,
-    tag: { label: 'Eco-Friendly', style: 'bg-[#64E0D2] text-gray-900' },
+    tag: { label: 'Eco-Friendly', style: 'bg-[#2D6A64] text-white' },
     image: assetUrl('/images/dog-grooming/product-4.png'),
   },
   {
@@ -48,7 +48,7 @@ export const groomingProducts = [
     name: 'Quick-Dry Spa Towel',
     description: 'Ultra-absorbent microfiber for post-bath drying.',
     price: 19.5,
-    tag: { label: 'Bestseller', style: 'bg-[#64E0D2] text-gray-900' },
+    tag: { label: 'Bestseller', style: 'bg-[#D15151] text-white' },
     image: assetUrl('/images/dog-grooming/product-6.png'),
   },
 ]

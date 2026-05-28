@@ -6,17 +6,17 @@ import OrderConfirmationFooter from '../components/order-confirmation/OrderConfi
 function BackgroundDecor() {
   return (
     <>
-      <span className="pointer-events-none absolute left-[8%] top-[28%] h-16 w-16 rounded-full bg-[#CFE1E0]/70 blur-sm" />
-      <span className="pointer-events-none absolute right-[12%] top-[22%] h-12 w-12 rounded-full bg-[#CFE1E0]/80 blur-sm" />
-      <span className="pointer-events-none absolute left-[15%] top-[55%] h-10 w-10 rounded-full bg-[#CFE1E0]/80 blur-sm" />
-      <span className="pointer-events-none absolute right-[18%] top-[48%] h-14 w-14 rounded-full bg-[#CFE1E0]/60 blur-sm" />
+      <span className="pointer-events-none absolute left-[8%] top-[28%] h-16 w-16 rounded-full bg-[#FDE8E8]/70 blur-sm" />
+      <span className="pointer-events-none absolute right-[12%] top-[22%] h-12 w-12 rounded-full bg-[#D4F5EF]/80 blur-sm" />
+      <span className="pointer-events-none absolute left-[15%] top-[55%] h-10 w-10 rounded-full bg-[#FFF3CD]/80 blur-sm" />
+      <span className="pointer-events-none absolute right-[18%] top-[48%] h-14 w-14 rounded-full bg-[#E8D5F5]/60 blur-sm" />
     </>
   )
 }
 
 export default function OrderConfirmationPage() {
   return (
-    <div className="relative min-h-screen bg-[#E1D8D2]">
+    <div className="relative min-h-screen bg-[#FCF8F4]">
       <BackgroundDecor />
       <OrderConfirmationHeader />
 

@@ -8,22 +8,22 @@ export default function OrderConfirmationActions() {
       <div className="flex flex-col gap-3 sm:flex-row">
         <Link
           to="/track-order"
-          className="btn-zoom-hover inline-flex flex-1 items-center justify-center gap-2 rounded-full bg-[#64E0D2] px-6 py-3.5 text-sm font-bold text-white no-underline hover:bg-[#64E0D2]"
+          className="btn-zoom-hover inline-flex flex-1 items-center justify-center gap-2 rounded-full bg-[#E56B6B] px-6 py-3.5 text-sm font-bold text-white no-underline hover:bg-[#d55a5a]"
         >
           <TruckIcon className="h-5 w-5" />
           Track My Treats
         </Link>
         <Link
           to="/dog"
-          className="btn-zoom-hover inline-flex flex-1 items-center justify-center rounded-full bg-[#E1D8D2] px-6 py-3.5 text-sm font-bold text-gray-700 no-underline transition hover:bg-[#D9D6CE]"
+          className="btn-zoom-hover inline-flex flex-1 items-center justify-center rounded-full bg-[#F7F1EB] px-6 py-3.5 text-sm font-bold text-gray-700 no-underline transition hover:bg-[#efe8e0]"
         >
           Continue Shopping
         </Link>
       </div>
 
-      <div className="mt-5 flex items-center gap-3 rounded-full bg-[#CFE1E0] px-5 py-3.5">
-        <span className="flex h-9 w-9 shrink-0 items-center justify-center rounded-full bg-[#CFE1E0]/40">
-          <GiftIcon className="h-5 w-5 text-[#CFE1E0]" />
+      <div className="mt-5 flex items-center gap-3 rounded-full bg-[#FFF3CD] px-5 py-3.5">
+        <span className="flex h-9 w-9 shrink-0 items-center justify-center rounded-full bg-[#F2C94C]/40">
+          <GiftIcon className="h-5 w-5 text-[#B8860B]" />
         </span>
         <p className="text-left text-sm text-gray-800">
           <span className="font-bold">{orderDetails.pawPointsEarned} Paw Points Earned!</span>

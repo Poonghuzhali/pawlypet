@@ -12,10 +12,10 @@ export default function FeaturedPetCard() {
 
         <div>
           <div className="flex flex-wrap items-center gap-2">
-            <span className="rounded-full bg-[#64E0D2] px-3 py-1 text-[10px] font-bold uppercase tracking-wider text-white">
+            <span className="rounded-full bg-[#2D6A64] px-3 py-1 text-[10px] font-bold uppercase tracking-wider text-white">
               {featuredPet.type}
             </span>
-            <span className="rounded-full bg-[#CFE1E0] px-3 py-1 text-[10px] font-bold uppercase tracking-wider text-gray-900">
+            <span className="rounded-full bg-[#F2C94C] px-3 py-1 text-[10px] font-bold uppercase tracking-wider text-gray-900">
               {featuredPet.status}
             </span>
           </div>
@@ -23,13 +23,13 @@ export default function FeaturedPetCard() {
           <h2 className="mt-4 text-3xl font-extrabold text-gray-900 sm:text-4xl">{featuredPet.name}</h2>
 
           <div className="mt-6 flex flex-wrap gap-4">
-            <div className="rounded-2xl bg-[#D9D6CE] px-5 py-3">
+            <div className="rounded-2xl bg-[#F5EDE4] px-5 py-3">
               <p className="text-[10px] font-bold uppercase tracking-wider text-gray-500">Breed</p>
-              <p className="mt-1 text-sm font-bold text-[#64E0D2]">{featuredPet.breed}</p>
+              <p className="mt-1 text-sm font-bold text-[#D15151]">{featuredPet.breed}</p>
             </div>
-            <div className="rounded-2xl bg-[#D9D6CE] px-5 py-3">
+            <div className="rounded-2xl bg-[#F5EDE4] px-5 py-3">
               <p className="text-[10px] font-bold uppercase tracking-wider text-gray-500">Age</p>
-              <p className="mt-1 text-sm font-bold text-[#64E0D2]">{featuredPet.age}</p>
+              <p className="mt-1 text-sm font-bold text-[#D15151]">{featuredPet.age}</p>
             </div>
           </div>
         </div>

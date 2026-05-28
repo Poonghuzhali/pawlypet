@@ -10,15 +10,15 @@ import { PlusIcon, ChevronDownIcon } from '../Icons'
 function ProductCard({ product }) {
   const badgeClass =
     product.badgeStyle === 'yellow'
-      ? 'bg-[#CFE1E0] text-gray-900'
-      : 'bg-[#64E0D2] text-gray-900'
+      ? 'bg-[#F2C94C] text-gray-900'
+      : 'bg-[#2D7A7A] text-white'
 
   const badgePosition =
     product.badgePosition === 'right' ? 'right-4 top-4' : 'left-4 top-4'
 
   return (
     <article className="card-hover-lift overflow-hidden rounded-3xl bg-white shadow-soft transition">
-      <div className="relative bg-[#E1D8D2] p-5">
+      <div className="relative bg-[#FAFAFA] p-5">
         {product.badge && (
           <span
             className={`absolute z-10 rounded-full px-2.5 py-0.5 text-[10px] font-bold uppercase tracking-wide ${badgeClass} ${badgePosition}`}
@@ -36,11 +36,11 @@ function ProductCard({ product }) {
         <h3 className="font-bold text-gray-900">{product.name}</h3>
         <p className="mt-1 text-sm text-gray-500">{product.tagline}</p>
         <div className="mt-4 flex items-center justify-between">
-          <span className="text-lg font-extrabold text-[#64E0D2]">{product.price}</span>
+          <span className="text-lg font-extrabold text-[#A33B3B]">{product.price}</span>
           <button
             type="button"
             aria-label="Add to cart"
-            className="btn-zoom-hover flex h-10 w-10 items-center justify-center rounded-full bg-[#64E0D2] text-gray-900 hover:bg-[#52CFC2]"
+            className="btn-zoom-hover flex h-10 w-10 items-center justify-center rounded-full bg-[#A33B3B] text-white hover:bg-[#8f3232]"
           >
             <PlusIcon className="h-5 w-5" />
           </button>
@@ -79,7 +79,7 @@ export default function SmallPetsProductCatalog() {
 
         <div className="grid gap-8 lg:grid-cols-[260px_1fr]">
           <aside className="space-y-6 lg:sticky lg:top-24 lg:self-start">
-            <div className="space-y-8 rounded-3xl bg-[#D9D6CE] p-6 shadow-soft">
+            <div className="space-y-8 rounded-3xl bg-[#F5EDE4] p-6 shadow-soft">
               <h3 className="text-lg font-extrabold text-gray-900">Filters</h3>
 
               <div>
@@ -144,7 +144,7 @@ export default function SmallPetsProductCatalog() {
               </div>
             </div>
 
-            <article className="overflow-hidden rounded-3xl bg-[#374151] p-5 shadow-soft">
+            <article className="overflow-hidden rounded-3xl bg-[#2D4A4A] p-5 shadow-soft">
               <div className="flex gap-4">
                 <img
                   src={promoCard.image}
@@ -152,7 +152,7 @@ export default function SmallPetsProductCatalog() {
                   className="h-20 w-20 shrink-0 rounded-2xl object-cover"
                 />
                 <div>
-                  <span className="text-[10px] font-bold uppercase tracking-wider text-[#CFE1E0]">
+                  <span className="text-[10px] font-bold uppercase tracking-wider text-[#F2C94C]">
                     {promoCard.badge}
                   </span>
                   <h4 className="mt-1 text-sm font-bold leading-snug text-white">
@@ -174,7 +174,7 @@ export default function SmallPetsProductCatalog() {
             <div className="mt-10 flex justify-center">
               <button
                 type="button"
-                className="btn-zoom-hover rounded-full border border-gray-300 bg-[#E1D8D2] px-10 py-3.5 text-sm font-semibold text-gray-700 transition hover:bg-[#D9D6CE]"
+                className="btn-zoom-hover rounded-full border border-gray-300 bg-[#FFFBF5] px-10 py-3.5 text-sm font-semibold text-gray-700 transition hover:bg-[#F5EDE4]"
               >
                 Load More Treats
               </button>

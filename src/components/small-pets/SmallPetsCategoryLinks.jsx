@@ -20,7 +20,7 @@ export default function SmallPetsCategoryLinks() {
               type="button"
               className="card-hover-lift flex flex-col items-center transition"
             >
-              <span className="flex h-16 w-16 items-center justify-center rounded-full bg-[#D9D6CE] text-[#374151] shadow-soft">
+              <span className="flex h-16 w-16 items-center justify-center rounded-full bg-[#F5EDE4] text-[#3D5A4A] shadow-soft">
                 <Icon className="h-6 w-6" />
               </span>
               <span className="mt-3 text-[11px] font-bold uppercase tracking-[0.15em] text-gray-600">

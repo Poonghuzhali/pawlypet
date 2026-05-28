@@ -13,7 +13,7 @@ export default function DogGroomingSearchFilters() {
           <input
             type="search"
             placeholder="Find products..."
-            className="w-full rounded-full border border-gray-200 bg-[#E1D8D2] py-3.5 pl-12 pr-4 text-sm outline-none focus:border-[#64E0D2] focus:ring-1 focus:ring-[#64E0D2]"
+            className="w-full rounded-full border border-gray-200 bg-[#F5F0EB] py-3.5 pl-12 pr-4 text-sm outline-none focus:border-[#2D6A64] focus:ring-1 focus:ring-[#2D6A64]"
           />
         </div>
 
@@ -25,8 +25,8 @@ export default function DogGroomingSearchFilters() {
               onClick={() => setActiveTab(tab)}
               className={`rounded-full px-5 py-2 text-sm font-semibold transition ${
                 activeTab === tab
-                  ? 'bg-[#4AB8AC] text-white'
-                  : 'bg-[#D9D6CE] text-gray-700 hover:bg-[#D9D6CE]'
+                  ? 'bg-[#8B2E2E] text-white'
+                  : 'bg-[#F0EBE4] text-gray-700 hover:bg-[#e5ddd4]'
               }`}
             >
               {tab}

@@ -5,7 +5,7 @@ export default function BreedSpotlight() {
   return (
     <section className="px-4 py-10 sm:px-6 lg:px-8">
       <div className="mx-auto max-w-7xl">
-        <div className="grid items-center gap-10 rounded-[2rem] bg-[#CFE1E0] p-8 sm:p-10 lg:grid-cols-2 lg:gap-12 lg:p-12">
+        <div className="grid items-center gap-10 rounded-[2rem] bg-[#FDEFEF] p-8 sm:p-10 lg:grid-cols-2 lg:gap-12 lg:p-12">
           <div>
             <div className="flex flex-wrap items-center gap-3">
               <span className="text-[11px] font-bold uppercase tracking-[0.2em] text-gray-500">

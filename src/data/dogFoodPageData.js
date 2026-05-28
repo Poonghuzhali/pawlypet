@@ -12,7 +12,7 @@ export const dogFoodProducts = [
     price: 64.99,
     reviews: 822,
     rating: 5,
-    tag: { label: 'Bestseller', style: 'bg-[#64E0D2] text-gray-900' },
+    tag: { label: 'Bestseller', style: 'bg-[#2D6A64] text-white' },
     image: assetUrl('/images/dog-food/product-1.png'),
   },
   {
@@ -21,7 +21,7 @@ export const dogFoodProducts = [
     price: 58.49,
     reviews: 415,
     rating: 5,
-    tag: { label: 'Hot Deal', style: 'bg-[#64E0D2] text-gray-900' },
+    tag: { label: 'Hot Deal', style: 'bg-[#D15151] text-white' },
     image: assetUrl('/images/dog-food/product-2.png'),
   },
   {
@@ -38,7 +38,7 @@ export const dogFoodProducts = [
     price: 48.0,
     reviews: 902,
     rating: 5,
-    tag: { label: 'Vet Recommended', style: 'bg-[#CFE1E0] text-white' },
+    tag: { label: 'Vet Recommended', style: 'bg-[#8B9A46] text-white' },
     image: assetUrl('/images/dog-food/product-4.png'),
   },
   {
@@ -55,7 +55,7 @@ export const dogFoodProducts = [
     price: 44.99,
     reviews: 231,
     rating: 5,
-    tag: { label: 'Hot Deal', style: 'bg-[#64E0D2] text-gray-900' },
+    tag: { label: 'Hot Deal', style: 'bg-[#D15151] text-white' },
     image: assetUrl('/images/dog-food/product-6.png'),
   },
   {
@@ -64,7 +64,7 @@ export const dogFoodProducts = [
     price: 62.5,
     reviews: 567,
     rating: 5,
-    tag: { label: 'Bestseller', style: 'bg-[#64E0D2] text-gray-900' },
+    tag: { label: 'Bestseller', style: 'bg-[#2D6A64] text-white' },
     image: assetUrl('/images/dog-food/product-7.png'),
   },
   {

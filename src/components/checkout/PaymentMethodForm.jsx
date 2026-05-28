@@ -17,7 +17,7 @@ const methodIcons = {
 function Field({ label, id, placeholder, type = 'text', className = '', trailing }) {
   return (
     <div className={className}>
-      <label htmlFor={id} className="text-[11px] font-bold uppercase tracking-wider text-[#374151]">
+      <label htmlFor={id} className="text-[11px] font-bold uppercase tracking-wider text-[#5C4033]">
         {label}
       </label>
       <div className="relative mt-2">
@@ -25,7 +25,7 @@ function Field({ label, id, placeholder, type = 'text', className = '', trailing
           id={id}
           type={type}
           placeholder={placeholder}
-          className="w-full rounded-2xl border border-transparent bg-[#E1D8D2] px-4 py-3 text-sm text-gray-900 outline-none placeholder:text-gray-400 focus:border-[#64E0D2] focus:ring-1 focus:ring-[#64E0D2]"
+          className="w-full rounded-2xl border border-transparent bg-[#F7F1EB] px-4 py-3 text-sm text-gray-900 outline-none placeholder:text-gray-400 focus:border-[#D15151] focus:ring-1 focus:ring-[#D15151]"
         />
         {trailing}
       </div>
@@ -38,7 +38,7 @@ export default function PaymentMethodForm() {
 
   return (
     <div>
-      <h1 className="text-3xl font-extrabold text-[#374151] sm:text-4xl">Payment Method</h1>
+      <h1 className="text-3xl font-extrabold text-[#3D2C2C] sm:text-4xl">Payment Method</h1>
       <p className="mt-2 text-sm text-gray-600 sm:text-base">
         Choose how you&apos;d like to fuel your pet&apos;s happiness.
       </p>
@@ -54,14 +54,14 @@ export default function PaymentMethodForm() {
               onClick={() => setMethod(item.id)}
               className={`flex flex-col items-center rounded-2xl px-3 py-5 transition ${
                 selected
-                  ? 'border-2 border-[#64E0D2] bg-[#CFE1E0]'
-                  : 'border border-transparent bg-[#E1D8D2] hover:bg-[#D9D6CE]'
+                  ? 'border-2 border-[#D15151] bg-[#FDE8E8]'
+                  : 'border border-transparent bg-[#F7F1EB] hover:bg-[#efe8e0]'
               }`}
             >
-              <Icon className={`h-6 w-6 ${selected ? 'text-[#64E0D2]' : 'text-gray-500'}`} />
+              <Icon className={`h-6 w-6 ${selected ? 'text-[#D15151]' : 'text-gray-500'}`} />
               <span
                 className={`mt-2 text-xs font-bold sm:text-sm ${
-                  selected ? 'text-[#64E0D2]' : 'text-gray-700'
+                  selected ? 'text-[#D15151]' : 'text-gray-700'
                 }`}
               >
                 {item.label}
@@ -92,9 +92,9 @@ export default function PaymentMethodForm() {
             <Field label="CVV" id="cvv" placeholder="***" type="password" />
           </div>
 
-          <div className="mt-6 flex items-center gap-2 rounded-2xl bg-[#CFE1E0] px-4 py-3">
-            <LockIcon className="h-4 w-4 shrink-0 text-[#64E0D2]" />
-            <p className="text-xs text-[#64E0D2] sm:text-sm">
+          <div className="mt-6 flex items-center gap-2 rounded-2xl bg-[#D4F5EF] px-4 py-3">
+            <LockIcon className="h-4 w-4 shrink-0 text-[#2D6A64]" />
+            <p className="text-xs text-[#2D6A64] sm:text-sm">
               Your payment details are encrypted and securely stored.
             </p>
           </div>

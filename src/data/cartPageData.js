@@ -39,14 +39,14 @@ export const savedForLater = [
     name: 'Handcrafted Leather Collar',
     price: 38.0,
     image: assetUrl('/images/cart/collar.png'),
-    bg: 'bg-[#64E0D2]',
+    bg: 'bg-[#2D6A64]',
   },
   {
     id: 2,
     name: 'Bamboo Intelligence Puzzle',
     price: 24.5,
     image: assetUrl('/images/cart/cat-toy.png'),
-    bg: 'bg-[#64E0D2]',
+    bg: 'bg-[#D14D4D]',
   },
 ]
 

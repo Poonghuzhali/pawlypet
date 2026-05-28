@@ -4,7 +4,7 @@ import Logo from '../Logo'
 
 export default function SmallPetsFooter() {
   return (
-    <footer className="bg-[#E1D8D2] px-4 pt-14 sm:px-6 lg:px-8">
+    <footer className="bg-[#FFFBF5] px-4 pt-14 sm:px-6 lg:px-8">
       <div className="mx-auto max-w-7xl text-center">
         <Link to="/" className="inline-flex justify-center no-underline">
           <Logo serif />
@@ -15,7 +15,7 @@ export default function SmallPetsFooter() {
             <a
               key={link}
               href="#"
-              className="text-[11px] font-bold uppercase tracking-[0.12em] text-gray-600 transition hover:text-[#64E0D2]"
+              className="text-[11px] font-bold uppercase tracking-[0.12em] text-gray-600 transition hover:text-[#A33B3B]"
             >
               {link}
             </a>

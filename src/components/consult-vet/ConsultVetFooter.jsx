@@ -5,7 +5,7 @@ import { GlobeIcon, InstagramIcon } from '../Icons'
 
 export default function ConsultVetFooter() {
   return (
-    <footer className="bg-[#E1D8D2] px-4 pt-14 sm:px-6 lg:px-8">
+    <footer className="bg-[#F7F1EB] px-4 pt-14 sm:px-6 lg:px-8">
       <div className="mx-auto max-w-7xl">
         <div className="grid gap-10 sm:grid-cols-2 lg:grid-cols-4">
           <div>
@@ -20,14 +20,14 @@ export default function ConsultVetFooter() {
               <button
                 type="button"
                 aria-label="Website"
-                className="flex h-10 w-10 items-center justify-center rounded-full border border-gray-300 bg-white text-gray-600 transition hover:text-[#52CFC2]"
+                className="flex h-10 w-10 items-center justify-center rounded-full border border-gray-300 bg-white text-gray-600 transition hover:text-[#005F54]"
               >
                 <GlobeIcon className="h-4 w-4" />
               </button>
               <button
                 type="button"
                 aria-label="Instagram"
-                className="flex h-10 w-10 items-center justify-center rounded-full border border-gray-300 bg-white text-gray-600 transition hover:text-[#52CFC2]"
+                className="flex h-10 w-10 items-center justify-center rounded-full border border-gray-300 bg-white text-gray-600 transition hover:text-[#005F54]"
               >
                 <InstagramIcon className="h-4 w-4" />
               </button>
@@ -39,7 +39,7 @@ export default function ConsultVetFooter() {
             <ul className="mt-4 space-y-2.5">
               {consultVetFooterLinks.expertise.map((link) => (
                 <li key={link}>
-                  <a href="#" className="text-sm text-gray-600 transition hover:text-[#52CFC2]">
+                  <a href="#" className="text-sm text-gray-600 transition hover:text-[#005F54]">
                     {link}
                   </a>
                 </li>
@@ -52,7 +52,7 @@ export default function ConsultVetFooter() {
             <ul className="mt-4 space-y-2.5">
               {consultVetFooterLinks.brand.map((link) => (
                 <li key={link}>
-                  <a href="#" className="text-sm text-gray-600 transition hover:text-[#52CFC2]">
+                  <a href="#" className="text-sm text-gray-600 transition hover:text-[#005F54]">
                     {link}
                   </a>
                 </li>
@@ -71,11 +71,11 @@ export default function ConsultVetFooter() {
               <input
                 type="email"
                 placeholder="Email address"
-                className="min-w-0 flex-1 rounded-full border border-gray-200 bg-white px-4 py-2.5 text-sm outline-none focus:border-[#52CFC2] focus:ring-1 focus:ring-[#52CFC2]"
+                className="min-w-0 flex-1 rounded-full border border-gray-200 bg-white px-4 py-2.5 text-sm outline-none focus:border-[#005F54] focus:ring-1 focus:ring-[#005F54]"
               />
               <button
                 type="submit"
-                className="btn-zoom-hover shrink-0 rounded-full bg-[#52CFC2] px-5 py-2.5 text-sm font-bold text-white hover:bg-[#52CFC2]"
+                className="btn-zoom-hover shrink-0 rounded-full bg-[#005F54] px-5 py-2.5 text-sm font-bold text-white hover:bg-[#004a42]"
               >
                 Subscribe
               </button>

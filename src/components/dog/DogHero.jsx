@@ -16,7 +16,7 @@ export default function DogHero() {
         <div className="mx-auto mt-10 flex max-w-2xl flex-col gap-4 sm:flex-row sm:justify-center">
           <button
             type="button"
-            className="card-hover-lift flex flex-1 items-center gap-4 rounded-3xl bg-[#CFE1E0] px-6 py-5 text-left shadow-soft transition sm:max-w-xs"
+            className="card-hover-lift flex flex-1 items-center gap-4 rounded-3xl bg-[#FDE8E8] px-6 py-5 text-left shadow-soft transition sm:max-w-xs"
           >
             <span className="flex h-12 w-12 shrink-0 items-center justify-center rounded-full bg-white text-brand-red shadow-sm">
               <PawIcon className="h-6 w-6" />
@@ -29,7 +29,7 @@ export default function DogHero() {
 
           <button
             type="button"
-            className="card-hover-lift flex flex-1 items-center gap-4 rounded-3xl bg-[#CFE1E0] px-6 py-5 text-left shadow-soft transition sm:max-w-xs"
+            className="card-hover-lift flex flex-1 items-center gap-4 rounded-3xl bg-[#E0F5F3] px-6 py-5 text-left shadow-soft transition sm:max-w-xs"
           >
             <span className="flex h-12 w-12 shrink-0 items-center justify-center rounded-full bg-white text-teal shadow-sm">
               <CatFaceIcon className="h-6 w-6" />

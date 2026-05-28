@@ -23,7 +23,7 @@ export default function DogFoodHero() {
             </p>
             <button
               type="button"
-              className="btn-zoom-hover mt-8 rounded-full bg-[#64E0D2] px-8 py-3.5 text-sm font-bold text-white shadow-lg hover:bg-[#64E0D2]"
+              className="btn-zoom-hover mt-8 rounded-full bg-[#E56B6B] px-8 py-3.5 text-sm font-bold text-white shadow-lg hover:bg-[#d55a5a]"
             >
               Shop Bestsellers
             </button>

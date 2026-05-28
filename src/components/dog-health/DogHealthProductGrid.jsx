@@ -10,7 +10,7 @@ function ProductCard({ product }) {
         >
           {product.tag.label}
         </span>
-        <div className="flex h-44 items-center justify-center rounded-2xl bg-[#E1D8D2] p-4">
+        <div className="flex h-44 items-center justify-center rounded-2xl bg-[#FAFAFA] p-4">
           <img
             src={product.image}
             alt={product.name}
@@ -21,11 +21,11 @@ function ProductCard({ product }) {
 
       <div className="flex flex-1 flex-col p-5 pt-4">
         <h3 className="font-bold text-gray-900">{product.name}</h3>
-        <p className="mt-1 text-lg font-extrabold text-[#64E0D2]">${product.price.toFixed(2)}</p>
+        <p className="mt-1 text-lg font-extrabold text-[#D15151]">${product.price.toFixed(2)}</p>
         <p className="mt-3 flex-1 text-sm leading-relaxed text-gray-500">{product.description}</p>
         <button
           type="button"
-          className="btn-zoom-hover mt-5 w-full rounded-full border-2 border-[#64E0D2] bg-white py-3 text-sm font-bold text-[#64E0D2] transition hover:bg-[#CFE1E0]"
+          className="btn-zoom-hover mt-5 w-full rounded-full border-2 border-[#D15151] bg-white py-3 text-sm font-bold text-[#D15151] transition hover:bg-[#FDE8E8]"
         >
           Add to Cart
         </button>
@@ -36,7 +36,7 @@ function ProductCard({ product }) {
 
 function SubscribeCard() {
   return (
-    <article className="flex flex-col justify-center rounded-3xl bg-[#64E0D2] p-8 text-white shadow-soft">
+    <article className="flex flex-col justify-center rounded-3xl bg-[#E56B6B] p-8 text-white shadow-soft">
       <span className="flex h-12 w-12 items-center justify-center rounded-full bg-white/20">
         <StarIcon className="h-6 w-6 text-white" />
       </span>
@@ -46,7 +46,7 @@ function SubscribeCard() {
       </p>
       <button
         type="button"
-        className="btn-zoom-hover mt-6 w-full rounded-full bg-white py-3 text-sm font-bold text-[#64E0D2] hover:bg-gray-50"
+        className="btn-zoom-hover mt-6 w-full rounded-full bg-white py-3 text-sm font-bold text-[#D15151] hover:bg-gray-50"
       >
         Learn More
       </button>

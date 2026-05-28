@@ -14,7 +14,7 @@ export default function HappyTails() {
           </div>
           <a
             href="#"
-            className="inline-flex items-center gap-1.5 text-sm font-semibold text-[#64E0D2] hover:underline"
+            className="inline-flex items-center gap-1.5 text-sm font-semibold text-[#D14D4D] hover:underline"
           >
             <PencilIcon className="h-4 w-4" />
             Write a Review

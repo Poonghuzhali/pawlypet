@@ -25,7 +25,7 @@ export default function Products() {
               >
                 {product.badge}
               </span>
-              <div className="overflow-hidden rounded-2xl bg-[#D9D6CE] p-4">
+              <div className="overflow-hidden rounded-2xl bg-[#F5EDE4] p-4">
                 <img
                   src={product.image}
                   alt={product.name}
@@ -40,7 +40,7 @@ export default function Products() {
                 <button
                   type="button"
                   aria-label={`Add ${product.name} to cart`}
-                  className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-teal text-gray-900 transition hover:bg-teal-light"
+                  className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-teal text-white transition hover:bg-teal-light"
                 >
                   <PlusIcon className="h-5 w-5" />
                 </button>

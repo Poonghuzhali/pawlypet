@@ -13,7 +13,7 @@ function ProductCard({ product }) {
         </span>
       ) : null}
 
-      <div className="flex h-44 items-center justify-center bg-[#E1D8D2] p-4">
+      <div className="flex h-44 items-center justify-center bg-[#FAFAFA] p-4">
         <img src={product.image} alt={product.name} className="max-h-full max-w-full object-contain" />
       </div>
 
@@ -29,11 +29,11 @@ function ProductCard({ product }) {
           <span className="ml-1 text-xs text-gray-500">({product.reviews})</span>
         </div>
         <div className="mt-4 flex items-center justify-between">
-          <span className="text-lg font-extrabold text-[#64E0D2]">${product.price.toFixed(2)}</span>
+          <span className="text-lg font-extrabold text-[#D15151]">${product.price.toFixed(2)}</span>
           <button
             type="button"
             aria-label="Add to cart"
-            className="btn-zoom-hover flex h-10 w-10 items-center justify-center rounded-full bg-[#64E0D2] text-gray-900 hover:bg-[#52CFC2]"
+            className="btn-zoom-hover flex h-10 w-10 items-center justify-center rounded-full bg-[#2D6A64] text-white hover:bg-[#245550]"
           >
             <CartAddIcon className="h-4 w-4" />
           </button>
@@ -78,7 +78,7 @@ export default function DogFoodProductGrid() {
         <input
           type="search"
           placeholder="Find food..."
-          className="w-full rounded-full border border-gray-200 bg-white py-3.5 pl-12 pr-4 text-sm outline-none focus:border-[#64E0D2] focus:ring-1 focus:ring-[#64E0D2]"
+          className="w-full rounded-full border border-gray-200 bg-white py-3.5 pl-12 pr-4 text-sm outline-none focus:border-[#2D6A64] focus:ring-1 focus:ring-[#2D6A64]"
         />
       </div>
 
@@ -104,7 +104,7 @@ export default function DogFoodProductGrid() {
             onClick={() => setCurrentPage(page)}
             className={`flex h-9 w-9 items-center justify-center rounded-full text-sm font-semibold transition ${
               currentPage === page
-                ? 'bg-[#4AB8AC] text-white'
+                ? 'bg-[#8B2E2E] text-white'
                 : 'text-gray-600 hover:bg-gray-100'
             }`}
           >

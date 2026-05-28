@@ -13,7 +13,7 @@ function ProductCard({ product }) {
             {product.tag.label}
           </span>
         ) : null}
-        <div className="overflow-hidden rounded-2xl bg-[#E1D8D2] p-4">
+        <div className="overflow-hidden rounded-2xl bg-[#FAFAFA] p-4">
           <img
             src={product.image}
             alt={product.name}
@@ -26,11 +26,11 @@ function ProductCard({ product }) {
         <h3 className="font-bold text-gray-900">{product.name}</h3>
         <p className="mt-1 text-sm text-gray-500">{product.description}</p>
         <div className="mt-4 flex items-center justify-between">
-          <span className="text-lg font-extrabold text-[#64E0D2]">${product.price.toFixed(2)}</span>
+          <span className="text-lg font-extrabold text-[#D15151]">${product.price.toFixed(2)}</span>
           <button
             type="button"
             aria-label="Add to cart"
-            className="btn-zoom-hover flex h-10 w-10 items-center justify-center rounded-full bg-[#64E0D2] text-gray-900 hover:bg-[#52CFC2]"
+            className="btn-zoom-hover flex h-10 w-10 items-center justify-center rounded-full bg-[#D15151] text-white hover:bg-[#b84242]"
           >
             <CartAddIcon className="h-4 w-4" />
           </button>
@@ -68,7 +68,7 @@ export default function DogGroomingProductGrid() {
             onClick={() => setCurrentPage(page)}
             className={`flex h-9 w-9 items-center justify-center rounded-full text-sm font-semibold transition ${
               currentPage === page
-                ? 'bg-[#4AB8AC] text-white'
+                ? 'bg-[#8B2E2E] text-white'
                 : 'text-gray-600 hover:bg-gray-100'
             }`}
           >

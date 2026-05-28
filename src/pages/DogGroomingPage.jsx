@@ -10,7 +10,7 @@ export default function DogGroomingPage() {
   return (
     <>
       <Header compact />
-      <main className="bg-[#E1D8D2]">
+      <main className="bg-[#FDF8F3]">
         <DogGroomingHero />
         <DogGroomingSearchFilters />
 

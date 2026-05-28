@@ -6,7 +6,7 @@ export default function SavedForLater() {
     <section className="mt-12">
       <div className="mb-6 flex items-center justify-between gap-4">
         <h2 className="text-xl font-extrabold text-gray-900">Saved for Later</h2>
-        <a href="#" className="text-sm font-semibold text-[#64E0D2] hover:underline">
+        <a href="#" className="text-sm font-semibold text-[#A33B3B] hover:underline">
           View All →
         </a>
       </div>

@@ -6,14 +6,14 @@ function FavoriteCard({ product, onRemove }) {
 
   return (
     <article className="card-hover-lift overflow-hidden rounded-3xl bg-white shadow-soft transition">
-      <div className="relative bg-[#E1D8D2] p-5">
+      <div className="relative bg-[#FAFAFA] p-5">
         <button
           type="button"
           aria-label="Remove from favorites"
           onClick={() => onRemove(product.id)}
           className="absolute right-4 top-4 z-10 flex h-9 w-9 items-center justify-center rounded-full bg-white shadow-sm"
         >
-          <HeartIcon className="h-4 w-4 fill-current text-[#64E0D2]" />
+          <HeartIcon className="h-4 w-4 fill-current text-[#D15151]" />
         </button>
         <img
           src={product.image}
@@ -33,7 +33,7 @@ function FavoriteCard({ product, onRemove }) {
         <button
           type="button"
           onClick={() => navigate('/cart')}
-          className="btn-zoom-hover mt-4 inline-flex w-full items-center justify-center gap-2 rounded-full bg-[#64E0D2] px-4 py-3 text-sm font-bold text-white hover:bg-[#52CFC2]"
+          className="btn-zoom-hover mt-4 inline-flex w-full items-center justify-center gap-2 rounded-full bg-[#D15151] px-4 py-3 text-sm font-bold text-white hover:bg-[#b84242]"
         >
           <CartAddIcon className="h-4 w-4" />
           Move to Cart

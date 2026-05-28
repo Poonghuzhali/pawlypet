@@ -4,10 +4,10 @@ import { ArrowRightIcon } from '../Icons'
 
 export default function FavoritesTrendingBanner() {
   return (
-    <section className="mt-12 overflow-hidden rounded-[2rem] bg-[#D9D6CE] p-6 sm:p-8 lg:p-10">
+    <section className="mt-12 overflow-hidden rounded-[2rem] bg-[#F0EBE4] p-6 sm:p-8 lg:p-10">
       <div className="grid items-center gap-8 lg:grid-cols-2">
         <div>
-          <span className="inline-block rounded-full bg-[#64E0D2] px-4 py-1.5 text-[10px] font-bold uppercase tracking-[0.12em] text-white">
+          <span className="inline-block rounded-full bg-[#2D6A64] px-4 py-1.5 text-[10px] font-bold uppercase tracking-[0.12em] text-white">
             {trendingBanner.badge}
           </span>
           <h2 className="mt-5 text-2xl font-extrabold leading-snug text-gray-900 sm:text-3xl">
@@ -31,7 +31,7 @@ export default function FavoritesTrendingBanner() {
             alt="Dog ready for travel"
             className="aspect-[4/3] w-full rounded-[1.75rem] object-cover shadow-md"
           />
-          <div className="absolute bottom-4 left-4 max-w-[220px] rounded-2xl bg-[#CFE1E0] px-4 py-3 shadow-md sm:bottom-6 sm:left-6">
+          <div className="absolute bottom-4 left-4 max-w-[220px] rounded-2xl bg-[#F2C94C] px-4 py-3 shadow-md sm:bottom-6 sm:left-6">
             <p className="text-sm font-bold italic leading-snug text-gray-900">
               &ldquo;{trendingBanner.testimonial.quote}&rdquo;
             </p>

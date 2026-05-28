@@ -14,7 +14,7 @@ export default function BrowseByNeed() {
     <section className="px-4 py-12 sm:px-6 lg:px-8">
       <div className="mx-auto max-w-7xl">
         <div className="flex flex-wrap items-center justify-between gap-4">
-          <h2 className="text-2xl font-extrabold text-[#374151] sm:text-3xl">Browse by Need</h2>
+          <h2 className="text-2xl font-extrabold text-[#3D2C2C] sm:text-3xl">Browse by Need</h2>
           <p className="flex items-center gap-1.5 text-[11px] font-bold uppercase tracking-[0.15em] text-teal">
             <PawIcon className="h-3.5 w-3.5" />
             Your pet will love this

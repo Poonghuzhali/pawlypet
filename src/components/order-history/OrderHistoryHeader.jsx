@@ -8,7 +8,7 @@ export default function OrderHistoryHeader() {
   return (
     <div className="flex flex-wrap items-start justify-between gap-4">
       <div>
-        <h1 className="text-3xl font-extrabold text-[#374151] sm:text-4xl">Order History</h1>
+        <h1 className="text-3xl font-extrabold text-[#3D2C2C] sm:text-4xl">Order History</h1>
         <p className="mt-2 text-sm text-gray-600 sm:text-base">
           Manage your recent orders and tracking status.
         </p>
@@ -20,7 +20,7 @@ export default function OrderHistoryHeader() {
           <select
             value={filter}
             onChange={(e) => setFilter(e.target.value)}
-            className="appearance-none rounded-full border border-gray-200 bg-white py-2 pl-4 pr-10 text-sm font-semibold text-gray-900 outline-none focus:border-[#64E0D2] focus:ring-1 focus:ring-[#64E0D2]"
+            className="appearance-none rounded-full border border-gray-200 bg-white py-2 pl-4 pr-10 text-sm font-semibold text-gray-900 outline-none focus:border-[#D15151] focus:ring-1 focus:ring-[#D15151]"
           >
             {orderHistoryFilters.map((option) => (
               <option key={option} value={option}>

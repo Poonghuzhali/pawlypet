@@ -80,14 +80,14 @@ export default function Contact() {
             </div>
           </div>
 
-          <div className="relative overflow-hidden rounded-3xl bg-[#D9D6CE] shadow-card">
+          <div className="relative overflow-hidden rounded-3xl bg-[#8B7E9B] shadow-card">
             <img
               src={assetUrl("/images/contact-map.png")}
               alt="Pawly Sanctuary location map"
               className="aspect-[4/3] w-full object-cover opacity-90 lg:aspect-auto lg:min-h-[380px] lg:h-full"
             />
             <div className="absolute bottom-6 right-6 flex flex-col items-end gap-3">
-              <div className="flex h-14 w-14 items-center justify-center rounded-full bg-coral text-gray-900 shadow-lg">
+              <div className="flex h-14 w-14 items-center justify-center rounded-full bg-coral text-white shadow-lg">
                 <PawIcon className="h-7 w-7" />
               </div>
               <div className="rounded-full bg-white px-5 py-2.5 text-center shadow-lg">

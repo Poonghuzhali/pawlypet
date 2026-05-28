@@ -4,12 +4,12 @@ import { InstagramIcon, TwitterIcon } from '../Icons'
 
 export default function FavoritesFooter() {
   return (
-    <footer className="bg-[#D9D6CE] px-4 pt-14 sm:px-6 lg:px-8">
+    <footer className="bg-[#F5EDE4] px-4 pt-14 sm:px-6 lg:px-8">
       <div className="mx-auto max-w-7xl">
         <div className="grid gap-10 sm:grid-cols-2 lg:grid-cols-3">
           <div>
             <Link to="/" className="inline-flex no-underline">
-              <span className="font-sans text-2xl font-extrabold tracking-wide text-[#4AB8AC]">
+              <span className="font-serif text-2xl font-extrabold tracking-wide text-[#8B2E2E]">
                 PAWLY
               </span>
             </Link>
@@ -21,14 +21,14 @@ export default function FavoritesFooter() {
               <button
                 type="button"
                 aria-label="Instagram"
-                className="flex h-10 w-10 items-center justify-center rounded-full border border-gray-300 bg-white text-gray-600 transition hover:text-[#64E0D2]"
+                className="flex h-10 w-10 items-center justify-center rounded-full border border-gray-300 bg-white text-gray-600 transition hover:text-[#A33B3B]"
               >
                 <InstagramIcon className="h-4 w-4" />
               </button>
               <button
                 type="button"
                 aria-label="Twitter"
-                className="flex h-10 w-10 items-center justify-center rounded-full border border-gray-300 bg-white text-gray-600 transition hover:text-[#64E0D2]"
+                className="flex h-10 w-10 items-center justify-center rounded-full border border-gray-300 bg-white text-gray-600 transition hover:text-[#A33B3B]"
               >
                 <TwitterIcon className="h-4 w-4" />
               </button>
@@ -39,7 +39,7 @@ export default function FavoritesFooter() {
             <ul className="space-y-2.5">
               {favoritesFooterLinks.column1.map((link) => (
                 <li key={link}>
-                  <a href="#" className="text-sm text-gray-600 transition hover:text-[#64E0D2]">
+                  <a href="#" className="text-sm text-gray-600 transition hover:text-[#A33B3B]">
                     {link}
                   </a>
                 </li>
@@ -51,7 +51,7 @@ export default function FavoritesFooter() {
             <ul className="space-y-2.5">
               {favoritesFooterLinks.column2.map((link) => (
                 <li key={link}>
-                  <a href="#" className="text-sm text-gray-600 transition hover:text-[#64E0D2]">
+                  <a href="#" className="text-sm text-gray-600 transition hover:text-[#A33B3B]">
                     {link}
                   </a>
                 </li>

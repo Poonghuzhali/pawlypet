@@ -6,7 +6,7 @@ function ToggleSwitch({ enabled, onChange }) {
       aria-checked={enabled}
       onClick={() => onChange(!enabled)}
       className={`relative h-7 w-12 shrink-0 rounded-full transition ${
-        enabled ? 'bg-[#64E0D2]' : 'bg-gray-300'
+        enabled ? 'bg-[#2D6A64]' : 'bg-gray-300'
       }`}
     >
       <span

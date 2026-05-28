@@ -5,7 +5,7 @@ import { InstagramIcon, TwitterIcon } from '../Icons'
 
 export default function CartFooter() {
   return (
-    <footer className="bg-[#D9D6CE] px-4 pt-14 sm:px-6 lg:px-8">
+    <footer className="bg-[#F5EDE4] px-4 pt-14 sm:px-6 lg:px-8">
       <div className="mx-auto max-w-7xl">
         <div className="grid gap-10 sm:grid-cols-2 lg:grid-cols-4">
           <div>
@@ -20,14 +20,14 @@ export default function CartFooter() {
               <button
                 type="button"
                 aria-label="Instagram"
-                className="flex h-10 w-10 items-center justify-center rounded-full border border-gray-300 bg-white text-gray-600 transition hover:text-[#64E0D2]"
+                className="flex h-10 w-10 items-center justify-center rounded-full border border-gray-300 bg-white text-gray-600 transition hover:text-[#A33B3B]"
               >
                 <InstagramIcon className="h-4 w-4" />
               </button>
               <button
                 type="button"
                 aria-label="Twitter"
-                className="flex h-10 w-10 items-center justify-center rounded-full border border-gray-300 bg-white text-gray-600 transition hover:text-[#64E0D2]"
+                className="flex h-10 w-10 items-center justify-center rounded-full border border-gray-300 bg-white text-gray-600 transition hover:text-[#A33B3B]"
               >
                 <TwitterIcon className="h-4 w-4" />
               </button>
@@ -39,7 +39,7 @@ export default function CartFooter() {
             <ul className="mt-4 space-y-2.5">
               {cartFooterLinks.petCare.map((link) => (
                 <li key={link}>
-                  <a href="#" className="text-sm text-gray-600 transition hover:text-[#64E0D2]">
+                  <a href="#" className="text-sm text-gray-600 transition hover:text-[#A33B3B]">
                     {link}
                   </a>
                 </li>
@@ -52,7 +52,7 @@ export default function CartFooter() {
             <ul className="mt-4 space-y-2.5">
               {cartFooterLinks.support.map((link) => (
                 <li key={link}>
-                  <a href="#" className="text-sm text-gray-600 transition hover:text-[#64E0D2]">
+                  <a href="#" className="text-sm text-gray-600 transition hover:text-[#A33B3B]">
                     {link}
                   </a>
                 </li>
@@ -67,11 +67,11 @@ export default function CartFooter() {
               <input
                 type="email"
                 placeholder="Email address"
-                className="min-w-0 flex-1 rounded-full border border-gray-200 bg-white px-4 py-2.5 text-sm outline-none focus:border-[#64E0D2] focus:ring-1 focus:ring-[#64E0D2]"
+                className="min-w-0 flex-1 rounded-full border border-gray-200 bg-white px-4 py-2.5 text-sm outline-none focus:border-[#A33B3B] focus:ring-1 focus:ring-[#A33B3B]"
               />
               <button
                 type="submit"
-                className="btn-zoom-hover shrink-0 rounded-full bg-[#64E0D2] px-5 py-2.5 text-sm font-bold text-white hover:bg-[#52CFC2]"
+                className="btn-zoom-hover shrink-0 rounded-full bg-[#A33B3B] px-5 py-2.5 text-sm font-bold text-white hover:bg-[#8f3232]"
               >
                 Subscribe
               </button>

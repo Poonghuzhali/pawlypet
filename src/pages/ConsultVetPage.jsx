@@ -9,7 +9,7 @@ export default function ConsultVetPage() {
   return (
     <>
       <Header compact />
-      <main className="bg-[#E1D8D2]">
+      <main className="bg-[#FDF8F3]">
         <ConsultVetHero />
         <ConsultationBooking />
         <WellnessPlan />

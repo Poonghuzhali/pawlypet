@@ -36,8 +36,8 @@ export default function DogGroomingFilters() {
               onClick={() => setSelectedScent(scent)}
               className={`rounded-full px-4 py-2 text-xs font-semibold transition ${
                 selectedScent === scent
-                  ? 'bg-[#D9D6CE] text-[#4AB8AC] ring-1 ring-[#4AB8AC]/30'
-                  : 'bg-[#E1D8D2] text-gray-600 hover:bg-[#D9D6CE]'
+                  ? 'bg-[#F5EDE4] text-[#8B2E2E] ring-1 ring-[#8B2E2E]/30'
+                  : 'bg-[#F5F0EB] text-gray-600 hover:bg-[#ebe4dc]'
               }`}
             >
               {scent}

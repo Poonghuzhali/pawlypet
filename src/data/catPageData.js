@@ -2,26 +2,26 @@ import { assetUrl } from '@/utils/assetUrl'
 export const catCategories = [
   {
     label: 'Cat Food',
-    bg: 'bg-[#CFE1E0]',
-    iconBg: 'bg-[#64E0D2]',
+    bg: 'bg-[#FDE8E8]',
+    iconBg: 'bg-[#2D7A7A]',
     icon: 'food',
   },
   {
     label: 'Grooming',
-    bg: 'bg-[#CFE1E0]',
-    iconBg: 'bg-[#64E0D2]',
+    bg: 'bg-[#E0F5F3]',
+    iconBg: 'bg-[#2D7A7A]',
     icon: 'grooming',
   },
   {
     label: 'Litter & Accessories',
-    bg: 'bg-[#CFE1E0]',
-    iconBg: 'bg-[#64E0D2]',
+    bg: 'bg-[#FFF8E1]',
+    iconBg: 'bg-[#2D7A7A]',
     icon: 'litter',
   },
   {
     label: 'Toys',
-    bg: 'bg-[#CFE1E0]',
-    iconBg: 'bg-[#64E0D2]',
+    bg: 'bg-[#FDE8E8]',
+    iconBg: 'bg-[#2D7A7A]',
     icon: 'toys',
   },
 ]
