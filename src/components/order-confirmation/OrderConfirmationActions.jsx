@@ -1,22 +1,28 @@
-import { Link } from 'react-router-dom'
+import { Link, useNavigate } from 'react-router-dom'
 import { getLastOrder } from '../../utils/lastOrder'
 import { orderDetails as fallbackOrderDetails } from '../../data/orderConfirmationData'
 import { TruckIcon, GiftIcon } from '../Icons'
 
 export default function OrderConfirmationActions() {
+  const navigate = useNavigate()
   const order = getLastOrder()
   const pawPointsEarned = order?.totals?.pawPoints ?? fallbackOrderDetails.pawPointsEarned
+
+  const handleTrackOrder = () => {
+    navigate('/secure-checkout')
+  }
 
   return (
     <div className="mx-auto mt-8 max-w-lg">
       <div className="flex flex-col gap-3 sm:flex-row">
-        <Link
-          to="/track-order"
-          className="btn-zoom-hover inline-flex flex-1 items-center justify-center gap-2 rounded-full bg-[#E56B6B] px-6 py-3.5 text-sm font-bold text-white no-underline hover:bg-[#d55a5a]"
+        <button
+          type="button"
+          onClick={handleTrackOrder}
+          className="btn-zoom-hover inline-flex flex-1 items-center justify-center gap-2 rounded-full bg-[#E56B6B] px-6 py-3.5 text-sm font-bold text-white hover:bg-[#d55a5a]"
         >
           <TruckIcon className="h-5 w-5" />
           Track My Treats
-        </Link>
+        </button>
         <Link
           to="/dog"
           className="btn-zoom-hover inline-flex flex-1 items-center justify-center rounded-full bg-[#F7F1EB] px-6 py-3.5 text-sm font-bold text-gray-700 no-underline transition hover:bg-[#efe8e0]"

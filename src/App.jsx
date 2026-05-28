@@ -42,6 +42,7 @@ export default function App() {
         <Route path="/checkout" element={<PaymentPage />} />
         <Route path="/order-confirmation" element={<OrderConfirmationPage />} />
         <Route path="/track-order" element={<TrackOrderPage />} />
+        <Route path="/secure-checkout" element={<TrackOrderPage />} />
         <Route path="/favorites" element={<FavoritesPage />} />
         <Route path="/account" element={<AccountSettingsPage />} />
         <Route path="/account/my-pets" element={<MyPetsPage />} />

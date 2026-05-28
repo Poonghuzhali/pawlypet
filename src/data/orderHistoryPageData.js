@@ -22,7 +22,7 @@ export const orders = [
     date: 'Oct 24, 2024',
     total: 89.0,
     images: [assetUrl('/images/order-history/item-2.png')],
-    primaryAction: { label: 'Track Order', variant: 'coral', path: '/track-order' },
+    primaryAction: { label: 'Track Order', variant: 'coral', path: '/secure-checkout' },
   },
   {
     id: 'PWL-12352',

@@ -1,3 +1,5 @@
+import { useEffect } from 'react'
+import { useNavigate } from 'react-router-dom'
 import Header from '../components/Header'
 import TrackOrderShippingAddress from '../components/track-order/TrackOrderShippingAddress'
 import TrackOrderProgress from '../components/track-order/TrackOrderProgress'
@@ -5,8 +7,21 @@ import TrackOrderBasket from '../components/track-order/TrackOrderBasket'
 import TrackOrderRewards from '../components/track-order/TrackOrderRewards'
 import TrackOrderTrustBadges from '../components/track-order/TrackOrderTrustBadges'
 import TrackOrderFooter from '../components/track-order/TrackOrderFooter'
+import { getLastOrder } from '../utils/lastOrder'
 
 export default function TrackOrderPage() {
+  const navigate = useNavigate()
+
+  useEffect(() => {
+    if (!getLastOrder()) {
+      navigate('/cart', { replace: true })
+    }
+  }, [navigate])
+
+  if (!getLastOrder()) {
+    return null
+  }
+
   return (
     <>
       <Header compact />
