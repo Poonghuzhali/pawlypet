@@ -1,3 +1,4 @@
+import { assetUrl } from '@/utils/assetUrl'
 export const paymentMethods = [
   { id: 'card', label: 'Card', icon: 'card' },
   { id: 'mobile', label: 'Mobile Banking', icon: 'mobile' },
@@ -9,13 +10,13 @@ export const checkoutOrderItems = [
     name: 'Vitality Plus - Organic Kibble',
     details: '2 x 5kg Bags',
     price: 84.0,
-    image: '/images/checkout/kibble.png',
+    image: assetUrl('/images/checkout/kibble.png'),
   },
   {
     name: 'Braided Adventure Leash',
     details: 'Ocean Blue • L',
     price: 32.0,
-    image: '/images/checkout/leash.png',
+    image: assetUrl('/images/checkout/leash.png'),
   },
 ]
 

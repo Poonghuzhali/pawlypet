@@ -1,9 +1,10 @@
+import { assetUrl } from '@/utils/assetUrl'
 export default function DogPageHero() {
   return (
     <section className="px-4 pt-6 sm:px-6 lg:px-8">
       <div className="relative mx-auto max-w-7xl overflow-hidden rounded-[2rem] shadow-card">
         <img
-          src="/images/dog-page/hero.png"
+          src={assetUrl("/images/dog-page/hero.png")}
           alt="Happy golden retriever"
           className="aspect-[21/9] min-h-[280px] w-full object-cover object-center sm:min-h-[340px] lg:min-h-[400px]"
         />

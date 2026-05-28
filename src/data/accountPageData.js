@@ -1,3 +1,4 @@
+import { assetUrl } from '@/utils/assetUrl'
 export const accountUser = {
   fullName: 'Elena Rodriguez',
   displayName: 'Alex',
@@ -6,7 +7,7 @@ export const accountUser = {
   preferredName: 'Elena',
   membership: 'Premium Member',
   bio: 'Proud pet parent to Oliver the Golden Retriever and Luna the Siamese cat. Passionate about animal wellness and organic treats!',
-  profileImage: '/images/account/profile.png',
+  profileImage: assetUrl('/images/account/profile.png'),
 }
 
 export const accountNavItems = [

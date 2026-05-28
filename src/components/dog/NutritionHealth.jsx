@@ -1,3 +1,4 @@
+import { assetUrl } from '@/utils/assetUrl'
 import { recommendedFood } from '../../data/shopByBreedData'
 import { CheckIcon } from '../Icons'
 
@@ -31,7 +32,7 @@ export default function NutritionHealth() {
               </div>
               <div className="overflow-hidden rounded-2xl">
                 <img
-                  src="/images/dog/food-bowl.png"
+                  src={assetUrl("/images/dog/food-bowl.png")}
                   alt="Dog food bowl"
                   className="aspect-square w-full object-cover"
                 />

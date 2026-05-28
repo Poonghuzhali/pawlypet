@@ -1,3 +1,4 @@
+import { assetUrl } from '@/utils/assetUrl'
 import { StarIcon, BookIcon } from '../Icons'
 
 export default function BreedSpotlight() {
@@ -42,7 +43,7 @@ export default function BreedSpotlight() {
           <div className="relative">
             <div className="overflow-hidden rounded-[2rem] shadow-card">
               <img
-                src="/images/dog/golden-spotlight.png"
+                src={assetUrl("/images/dog/golden-spotlight.png")}
                 alt="Golden Retriever with tennis ball"
                 className="aspect-square w-full object-cover"
               />

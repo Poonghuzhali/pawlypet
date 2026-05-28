@@ -1,3 +1,4 @@
+import { assetUrl } from '@/utils/assetUrl'
 import { PawIcon } from '../Icons'
 
 export default function SmallPetsHero() {
@@ -5,7 +6,7 @@ export default function SmallPetsHero() {
     <section className="px-4 pt-6 sm:px-6 lg:px-8">
       <div className="relative mx-auto max-w-7xl overflow-hidden rounded-[2rem] shadow-card">
         <img
-          src="/images/small-pets/hero.png"
+          src={assetUrl("/images/small-pets/hero.png")}
           alt="Rabbit and guinea pig"
           className="aspect-[21/9] min-h-[280px] w-full object-cover object-center sm:min-h-[340px] lg:min-h-[400px]"
         />

@@ -1,9 +1,10 @@
+import { assetUrl } from '@/utils/assetUrl'
 export default function CatPageHero() {
   return (
     <section className="px-4 pt-6 sm:px-6 lg:px-8">
       <div className="relative mx-auto max-w-7xl overflow-hidden rounded-[2rem] shadow-card">
         <img
-          src="/images/cat-page/hero.png"
+          src={assetUrl("/images/cat-page/hero.png")}
           alt="Ginger cat with yarn ball"
           className="aspect-[21/9] min-h-[280px] w-full object-cover object-center sm:min-h-[340px] lg:min-h-[400px]"
         />

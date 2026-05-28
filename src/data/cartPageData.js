@@ -1,3 +1,4 @@
+import { assetUrl } from '@/utils/assetUrl'
 export const freeShippingThreshold = 110
 export const shippingProgress = {
   current: 95,
@@ -12,7 +13,7 @@ export const cartItems = [
     details: '12lb Bag • Grain-Free • Organic Ingredients',
     price: 45.0,
     quantity: 1,
-    image: '/images/cart/kibble.png',
+    image: assetUrl('/images/cart/kibble.png'),
   },
   {
     id: 2,
@@ -20,7 +21,7 @@ export const cartItems = [
     details: 'Medium • Mist Grey • Orthopedic Foam',
     price: 32.0,
     quantity: 1,
-    image: '/images/cart/bed.png',
+    image: assetUrl('/images/cart/bed.png'),
   },
   {
     id: 3,
@@ -28,7 +29,7 @@ export const cartItems = [
     details: 'Large • Cherry Red • Natural Rubber',
     price: 18.0,
     quantity: 1,
-    image: '/images/cart/chew-bone.png',
+    image: assetUrl('/images/cart/chew-bone.png'),
   },
 ]
 
@@ -37,14 +38,14 @@ export const savedForLater = [
     id: 1,
     name: 'Handcrafted Leather Collar',
     price: 38.0,
-    image: '/images/cart/collar.png',
+    image: assetUrl('/images/cart/collar.png'),
     bg: 'bg-[#2D6A64]',
   },
   {
     id: 2,
     name: 'Bamboo Intelligence Puzzle',
     price: 24.5,
-    image: '/images/cart/cat-toy.png',
+    image: assetUrl('/images/cart/cat-toy.png'),
     bg: 'bg-[#D14D4D]',
   },
 ]

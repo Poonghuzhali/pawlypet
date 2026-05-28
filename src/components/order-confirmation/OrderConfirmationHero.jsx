@@ -1,3 +1,4 @@
+import { assetUrl } from '@/utils/assetUrl'
 import { orderDetails } from '../../data/orderConfirmationData'
 
 export default function OrderConfirmationHero() {
@@ -5,7 +6,7 @@ export default function OrderConfirmationHero() {
     <div className="text-center">
       <div className="mx-auto w-fit rounded-[2rem] bg-white p-2 shadow-[0_8px_40px_rgba(209,81,81,0.15)]">
         <img
-          src="/images/order-confirmation/hero.png"
+          src={assetUrl("/images/order-confirmation/hero.png")}
           alt="Happy customer"
           className="h-44 w-44 rounded-[1.75rem] object-cover sm:h-52 sm:w-52"
         />

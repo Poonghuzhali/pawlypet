@@ -1,3 +1,4 @@
+import { assetUrl } from '@/utils/assetUrl'
 import { Link } from 'react-router-dom'
 import { PawIcon } from './Icons'
 
@@ -37,7 +38,7 @@ export default function Hero() {
         <div className="relative">
           <div className="overflow-hidden rounded-4xl shadow-card">
             <img
-              src="/images/hero.png"
+              src={assetUrl("/images/hero.png")}
               alt="Golden retriever and rabbit together"
               className="aspect-[4/3] w-full object-cover lg:aspect-[5/4]"
             />

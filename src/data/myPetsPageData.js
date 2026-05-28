@@ -1,3 +1,4 @@
+import { assetUrl } from '@/utils/assetUrl'
 export const featuredPet = {
   id: 'cooper',
   name: 'Cooper',
@@ -5,7 +6,7 @@ export const featuredPet = {
   status: 'ACTIVE',
   breed: 'Golden Retriever',
   age: '3 Years Old',
-  image: '/images/my-pets/cooper.png',
+  image: assetUrl('/images/my-pets/cooper.png'),
 }
 
 export const pets = [
@@ -16,7 +17,7 @@ export const pets = [
     breed: 'Domestic Shorthair',
     age: '2y',
     gender: 'female',
-    image: '/images/my-pets/luna.png',
+    image: assetUrl('/images/my-pets/luna.png'),
   },
   {
     id: 'mochi',
@@ -25,7 +26,7 @@ export const pets = [
     breed: 'Maltese Terrier',
     age: '5y',
     gender: 'male',
-    image: '/images/my-pets/mochi.png',
+    image: assetUrl('/images/my-pets/mochi.png'),
   },
   {
     id: 'bento',
@@ -34,6 +35,6 @@ export const pets = [
     breed: 'French Bulldog',
     age: '1y',
     gender: 'male',
-    image: '/images/my-pets/bento.png',
+    image: assetUrl('/images/my-pets/bento.png'),
   },
 ]

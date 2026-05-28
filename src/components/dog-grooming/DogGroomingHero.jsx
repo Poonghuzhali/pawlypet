@@ -1,3 +1,4 @@
+import { assetUrl } from '@/utils/assetUrl'
 export default function DogGroomingHero() {
   return (
     <section className="bg-gradient-to-br from-[#FFF0E8] via-[#FDF8F3] to-[#FDF8F3] px-4 pt-8 sm:px-6 lg:px-8">
@@ -23,7 +24,7 @@ export default function DogGroomingHero() {
 
         <div className="overflow-hidden rounded-[2rem] shadow-card">
           <img
-            src="/images/dog-grooming/hero.png"
+            src={assetUrl("/images/dog-grooming/hero.png")}
             alt="Golden retriever being groomed"
             className="aspect-[4/3] w-full object-cover object-center"
           />

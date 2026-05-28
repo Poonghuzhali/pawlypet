@@ -1,3 +1,4 @@
+import { assetUrl } from '@/utils/assetUrl'
 export const browseCategories = [
   {
     label: 'Food',
@@ -40,7 +41,7 @@ export const dogProducts = [
     name: 'Wilderness Salmon & Potato Feast',
     description: 'High protein grain-free formula for active adult dogs.',
     price: '$24.99',
-    image: '/images/dog-page/food.png',
+    image: assetUrl('/images/dog-page/food.png'),
     favorited: false,
   },
   {
@@ -50,7 +51,7 @@ export const dogProducts = [
     name: 'Indestructible Helix Chew',
     description: 'Engineered for the toughest chewers using aerospace rubber.',
     price: '$18.50',
-    image: '/images/dog-page/toy.png',
+    image: assetUrl('/images/dog-page/toy.png'),
     favorited: false,
   },
   {
@@ -60,7 +61,7 @@ export const dogProducts = [
     name: 'DreamCloud Ortho Bed',
     description: 'Pressure-relieving memory foam for ultimate joint support.',
     price: '$89.00',
-    image: '/images/dog-page/bed.png',
+    image: assetUrl('/images/dog-page/bed.png'),
     favorited: true,
   },
 ]

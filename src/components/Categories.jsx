@@ -1,3 +1,4 @@
+import { assetUrl } from '@/utils/assetUrl'
 import { Link } from 'react-router-dom'
 import { dogCategories } from '../data/homeData'
 
@@ -36,7 +37,7 @@ export default function Categories() {
               Shop Now
             </Link>
             <img
-              src="/images/dog-category.png"
+              src={assetUrl("/images/dog-category.png")}
               alt="Happy dog"
               className="absolute bottom-0 right-0 h-52 w-52 rounded-tl-3xl object-cover object-center sm:h-60 sm:w-60 lg:h-72 lg:w-72"
             />
@@ -54,7 +55,7 @@ export default function Categories() {
               Shop Now
             </Link>
             <img
-              src="/images/cat-category.png"
+              src={assetUrl("/images/cat-category.png")}
               alt="Cat"
               className="absolute -bottom-4 -right-4 h-36 w-36 rounded-2xl object-cover sm:h-44 sm:w-44"
             />
@@ -75,7 +76,7 @@ export default function Categories() {
               Shop Now
             </Link>
             <img
-              src="/images/rabbit-category.png"
+              src={assetUrl("/images/rabbit-category.png")}
               alt="Rabbit"
               className="absolute -bottom-2 -right-2 h-32 w-32 rounded-2xl object-cover sm:h-40 sm:w-40"
             />

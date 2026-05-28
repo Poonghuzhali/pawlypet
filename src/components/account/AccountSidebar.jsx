@@ -1,3 +1,4 @@
+import { assetUrl } from '@/utils/assetUrl'
 import { Link } from 'react-router-dom'
 import { accountNavItems, accountUser } from '../../data/accountPageData'
 import Logo from '../Logo'
@@ -24,7 +25,7 @@ export default function AccountSidebar({ activeItem = 'personal-info' }) {
 
       <div className="mt-8 flex items-center gap-3">
         <img
-          src="/images/account/avatar.png"
+          src={assetUrl("/images/account/avatar.png")}
           alt={accountUser.fullName}
           className="h-12 w-12 rounded-full object-cover"
         />

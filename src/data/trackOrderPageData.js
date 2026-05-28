@@ -1,3 +1,4 @@
+import { assetUrl } from '@/utils/assetUrl'
 export const shippingAddress = {
   firstName: 'Jane',
   lastName: 'Doe',
@@ -19,13 +20,13 @@ export const basketItems = [
     name: 'Gourmet Duck Bites (Organic)',
     details: 'Qty: 2 • 500g',
     price: 24.9,
-    image: '/images/track-order/duck-bites.png',
+    image: assetUrl('/images/track-order/duck-bites.png'),
   },
   {
     name: 'Indestructible Tug Knot',
     details: 'Qty: 1 • Large',
     price: 18.0,
-    image: '/images/track-order/tug-knot.png',
+    image: assetUrl('/images/track-order/tug-knot.png'),
   },
 ]
 

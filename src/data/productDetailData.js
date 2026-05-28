@@ -1,3 +1,4 @@
+import { assetUrl } from '@/utils/assetUrl'
 export const wildernessSalmonProduct = {
   slug: 'wilderness-salmon',
   badge: 'Nutrition Specialist',
@@ -30,20 +31,20 @@ export const happyTailsReviews = [
   {
     name: 'Cooper & Sarah',
     text: "Cooper's coat has never looked better! He absolutely loves the salmon flavor and we love the clean ingredients list.",
-    avatar: '/images/product-detail/review-1.png',
-    photo: '/images/product-detail/review-1.png',
+    avatar: assetUrl('/images/product-detail/review-1.png'),
+    photo: assetUrl('/images/product-detail/review-1.png'),
   },
   {
     name: 'Bella & Mike',
     text: "Finally found a food that doesn't upset Bella's stomach. The grain-free formula is a game changer for her allergies.",
-    avatar: '/images/product-detail/review-2.png',
-    photo: '/images/product-detail/review-2.png',
+    avatar: assetUrl('/images/product-detail/review-2.png'),
+    photo: assetUrl('/images/product-detail/review-2.png'),
   },
   {
     name: 'Luna & James',
     text: 'Luna has so much more energy on this food. Highly recommend for active breeds who love long hikes!',
-    avatar: '/images/product-detail/review-3.png',
-    photo: '/images/product-detail/review-3.png',
+    avatar: assetUrl('/images/product-detail/review-3.png'),
+    photo: assetUrl('/images/product-detail/review-3.png'),
   },
 ]
 
@@ -51,17 +52,17 @@ export const pairsPerfectlyWith = [
   {
     name: 'Organic Chicken Jerky',
     price: 15.0,
-    image: '/images/product-detail/jerky.png',
+    image: assetUrl('/images/product-detail/jerky.png'),
   },
   {
     name: 'Cloud Comfort Bed',
     price: 85.0,
-    image: '/images/product-detail/bed.png',
+    image: assetUrl('/images/product-detail/bed.png'),
   },
   {
     name: 'Sustainable Rubber Bone',
     price: 12.0,
-    image: '/images/product-detail/toy.png',
+    image: assetUrl('/images/product-detail/toy.png'),
   },
 ]
 

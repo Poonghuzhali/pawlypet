@@ -1,3 +1,4 @@
+import { assetUrl } from '@/utils/assetUrl'
 export default function CTABanner() {
   return (
     <section className="px-4 py-10 sm:px-6 lg:px-8">
@@ -26,7 +27,7 @@ export default function CTABanner() {
             </div>
             <div className="relative flex justify-center lg:justify-end">
               <img
-                src="/images/cta-vet.png"
+                src={assetUrl("/images/cta-vet.png")}
                 alt="Veterinarian holding a puppy"
                 className="relative z-10 h-64 w-64 rounded-3xl object-cover object-top sm:h-72 sm:w-72 lg:-mr-4 lg:h-80 lg:w-80"
               />

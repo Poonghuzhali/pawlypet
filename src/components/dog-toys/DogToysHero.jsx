@@ -1,3 +1,4 @@
+import { assetUrl } from '@/utils/assetUrl'
 import { PawPrintIcon } from '../Icons'
 
 export default function DogToysHero() {
@@ -32,7 +33,7 @@ export default function DogToysHero() {
 
         <div className="overflow-hidden rounded-[1.75rem] bg-[#1a2744] shadow-lg">
           <img
-            src="/images/dog-toys/hero.png"
+            src={assetUrl("/images/dog-toys/hero.png")}
             alt="Golden retriever ready to play"
             className="aspect-square w-full object-cover object-center"
           />

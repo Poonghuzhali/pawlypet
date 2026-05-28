@@ -1,3 +1,4 @@
+import { assetUrl } from '@/utils/assetUrl'
 export const quickFilters = [
   { id: 'supplements', label: 'Supplements', icon: 'nutrition' },
   { id: 'dental', label: 'Dental Care', icon: 'tooth' },
@@ -16,7 +17,7 @@ export const healthProducts = [
     price: 24.99,
     description: '8-in-1 formula for immune, joint, and heart health. Made with real salmon.',
     tag: { label: 'Expert Pick', style: 'bg-[#F2C94C] text-gray-900' },
-    image: '/images/dog-health/product-1.png',
+    image: assetUrl('/images/dog-health/product-1.png'),
     type: 'product',
   },
   {
@@ -25,7 +26,7 @@ export const healthProducts = [
     price: 19.5,
     description: 'Hemp and Chamomile blend to reduce anxiety during storms or travel.',
     tag: { label: 'Vet Approved', style: 'bg-[#2D6A64] text-white' },
-    image: '/images/dog-health/product-2.png',
+    image: assetUrl('/images/dog-health/product-2.png'),
     type: 'product',
   },
   {
@@ -34,7 +35,7 @@ export const healthProducts = [
     price: 32.0,
     description: 'Advanced enzymatic formula for fresh breath and healthy gums.',
     tag: { label: 'Expert Pick', style: 'bg-[#F2C94C] text-gray-900' },
-    image: '/images/dog-health/product-3.png',
+    image: assetUrl('/images/dog-health/product-3.png'),
     type: 'product',
   },
   {
@@ -43,7 +44,7 @@ export const healthProducts = [
     price: 45.0,
     description: '50-piece medical grade kit specifically designed for canine emergencies.',
     tag: { label: 'Essential', style: 'bg-[#2D6A64] text-white' },
-    image: '/images/dog-health/product-4.png',
+    image: assetUrl('/images/dog-health/product-4.png'),
     type: 'product',
   },
   {

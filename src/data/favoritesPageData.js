@@ -1,3 +1,4 @@
+import { assetUrl } from '@/utils/assetUrl'
 export const favoriteProducts = [
   {
     id: 1,
@@ -5,7 +6,7 @@ export const favoriteProducts = [
     rating: 4.9,
     reviews: 128,
     price: 45.0,
-    image: '/images/favorites/collar.png',
+    image: assetUrl('/images/favorites/collar.png'),
   },
   {
     id: 2,
@@ -13,7 +14,7 @@ export const favoriteProducts = [
     rating: 5.0,
     reviews: 84,
     price: 89.0,
-    image: '/images/favorites/bed.png',
+    image: assetUrl('/images/favorites/bed.png'),
   },
   {
     id: 3,
@@ -21,7 +22,7 @@ export const favoriteProducts = [
     rating: 4.7,
     reviews: 56,
     price: 18.5,
-    image: '/images/favorites/toy.png',
+    image: assetUrl('/images/favorites/toy.png'),
   },
   {
     id: 4,
@@ -29,7 +30,7 @@ export const favoriteProducts = [
     rating: 4.8,
     reviews: 42,
     price: 120.0,
-    image: '/images/favorites/feeder.png',
+    image: assetUrl('/images/favorites/feeder.png'),
   },
 ]
 
@@ -39,7 +40,7 @@ export const trendingBanner = {
   description:
     'Our top-rated travel kit is currently on sale. Keep your furry friend comfortable wherever the trail leads.',
   cta: 'Explore Travel Collection',
-  image: '/images/favorites/travel-dog.png',
+  image: assetUrl('/images/favorites/travel-dog.png'),
   testimonial: {
     quote: "The best gear we've ever bought for Luna!",
     author: 'Sarah K.',

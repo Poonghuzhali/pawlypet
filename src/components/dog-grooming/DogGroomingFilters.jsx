@@ -1,3 +1,4 @@
+import { assetUrl } from '@/utils/assetUrl'
 import { useState } from 'react'
 import { scentFilters } from '../../data/dogGroomingPageData'
 
@@ -47,7 +48,7 @@ export default function DogGroomingFilters() {
 
       <div className="relative overflow-hidden rounded-3xl shadow-soft">
         <img
-          src="/images/dog-grooming/promo-dog.png"
+          src={assetUrl("/images/dog-grooming/promo-dog.png")}
           alt="Dog after grooming"
           className="aspect-[4/3] w-full object-cover grayscale"
         />

@@ -1,3 +1,4 @@
+import { assetUrl } from '@/utils/assetUrl'
 export const lifeStageFilters = ['Puppy', 'Adult', 'Senior']
 
 export const foodTypeFilters = ['Dry Food', 'Wet Food', 'Raw Diet']
@@ -12,7 +13,7 @@ export const dogFoodProducts = [
     reviews: 822,
     rating: 5,
     tag: { label: 'Bestseller', style: 'bg-[#2D6A64] text-white' },
-    image: '/images/dog-food/product-1.png',
+    image: assetUrl('/images/dog-food/product-1.png'),
   },
   {
     id: 2,
@@ -21,7 +22,7 @@ export const dogFoodProducts = [
     reviews: 415,
     rating: 5,
     tag: { label: 'Hot Deal', style: 'bg-[#D15151] text-white' },
-    image: '/images/dog-food/product-2.png',
+    image: assetUrl('/images/dog-food/product-2.png'),
   },
   {
     id: 3,
@@ -29,7 +30,7 @@ export const dogFoodProducts = [
     price: 52.99,
     reviews: 128,
     rating: 4,
-    image: '/images/dog-food/product-3.png',
+    image: assetUrl('/images/dog-food/product-3.png'),
   },
   {
     id: 4,
@@ -38,7 +39,7 @@ export const dogFoodProducts = [
     reviews: 902,
     rating: 5,
     tag: { label: 'Vet Recommended', style: 'bg-[#8B9A46] text-white' },
-    image: '/images/dog-food/product-4.png',
+    image: assetUrl('/images/dog-food/product-4.png'),
   },
   {
     id: 5,
@@ -46,7 +47,7 @@ export const dogFoodProducts = [
     price: 59.95,
     reviews: 56,
     rating: 4,
-    image: '/images/dog-food/product-5.png',
+    image: assetUrl('/images/dog-food/product-5.png'),
   },
   {
     id: 6,
@@ -55,7 +56,7 @@ export const dogFoodProducts = [
     reviews: 231,
     rating: 5,
     tag: { label: 'Hot Deal', style: 'bg-[#D15151] text-white' },
-    image: '/images/dog-food/product-6.png',
+    image: assetUrl('/images/dog-food/product-6.png'),
   },
   {
     id: 7,
@@ -64,7 +65,7 @@ export const dogFoodProducts = [
     reviews: 567,
     rating: 5,
     tag: { label: 'Bestseller', style: 'bg-[#2D6A64] text-white' },
-    image: '/images/dog-food/product-7.png',
+    image: assetUrl('/images/dog-food/product-7.png'),
   },
   {
     id: 8,
@@ -72,7 +73,7 @@ export const dogFoodProducts = [
     price: 54.99,
     reviews: 341,
     rating: 4,
-    image: '/images/dog-food/product-8.png',
+    image: assetUrl('/images/dog-food/product-8.png'),
   },
 ]
 

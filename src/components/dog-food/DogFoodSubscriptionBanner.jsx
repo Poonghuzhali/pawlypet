@@ -1,3 +1,4 @@
+import { assetUrl } from '@/utils/assetUrl'
 import { PawPrintIcon } from '../Icons'
 
 export default function DogFoodSubscriptionBanner() {
@@ -35,7 +36,7 @@ export default function DogFoodSubscriptionBanner() {
           </div>
 
           <img
-            src="/images/dog-food/subscribe-puppy.png"
+            src={assetUrl("/images/dog-food/subscribe-puppy.png")}
             alt="Happy puppy"
             className="mx-auto aspect-square w-full max-w-[280px] rounded-[1.75rem] object-cover shadow-lg"
           />

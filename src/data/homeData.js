@@ -1,3 +1,4 @@
+import { assetUrl } from '@/utils/assetUrl'
 export const navLinks = [
   { label: 'Home', href: '#home' },
   { label: 'Dog', href: '#dog' },
@@ -44,25 +45,25 @@ export const experts = [
   {
     name: 'Dr. Sarah Miller',
     role: 'Senior Veterinarian',
-    image: '/images/vet-1.png',
+    image: assetUrl('/images/vet-1.png'),
     bg: 'bg-[#E8F5F3]',
   },
   {
     name: 'Dr. James Wilson',
     role: 'Veterinary Surgeon',
-    image: '/images/vet-2.png',
+    image: assetUrl('/images/vet-2.png'),
     bg: 'bg-[#FFF6E5]',
   },
   {
     name: 'Dr. Emily Chen',
     role: 'Pet Nutritionist',
-    image: '/images/vet-3.png',
+    image: assetUrl('/images/vet-3.png'),
     bg: 'bg-[#FFF0E5]',
   },
   {
     name: 'Dr. Michael Brown',
     role: 'Animal Behaviorist',
-    image: '/images/vet-4.png',
+    image: assetUrl('/images/vet-4.png'),
     bg: 'bg-[#E8F0FA]',
   },
 ]
@@ -71,22 +72,22 @@ export const breeds = [
   {
     name: 'Golden Retriever',
     description: 'Friendly, intelligent, and devoted family companions loved worldwide.',
-    image: '/images/breed-golden.png',
+    image: assetUrl('/images/breed-golden.png'),
   },
   {
     name: 'Persian Cat',
     description: 'Calm, gentle souls with luxurious coats and sweet personalities.',
-    image: '/images/breed-persian.png',
+    image: assetUrl('/images/breed-persian.png'),
   },
   {
     name: 'French Bulldog',
     description: 'Playful, adaptable, and perfect for apartment living.',
-    image: '/images/breed-frenchie.png',
+    image: assetUrl('/images/breed-frenchie.png'),
   },
   {
     name: 'Maine Coon',
     description: 'Gentle giants with striking coats and affectionate personalities.',
-    image: '/images/breed-maine-coon.png',
+    image: assetUrl('/images/breed-maine-coon.png'),
   },
 ]
 
@@ -96,21 +97,21 @@ export const products = [
     price: '$45.00',
     badge: 'Hot',
     badgeColor: 'bg-coral text-white',
-    image: '/images/product-food.png',
+    image: assetUrl('/images/product-food.png'),
   },
   {
     name: 'Natural Chew Bone',
     price: '$12.99',
     badge: 'New',
     badgeColor: 'bg-teal text-white',
-    image: '/images/product-bone.png',
+    image: assetUrl('/images/product-bone.png'),
   },
   {
     name: 'Organic Pet Treats',
     price: '$24.99',
     badge: 'Best Seller',
     badgeColor: 'bg-amber-500 text-white',
-    image: '/images/product-treats.png',
+    image: assetUrl('/images/product-treats.png'),
   },
 ]
 

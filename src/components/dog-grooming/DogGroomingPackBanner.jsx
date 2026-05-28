@@ -1,3 +1,4 @@
+import { assetUrl } from '@/utils/assetUrl'
 export default function DogGroomingPackBanner() {
   return (
     <section className="px-4 pb-14 sm:px-6 lg:px-8">
@@ -26,7 +27,7 @@ export default function DogGroomingPackBanner() {
         </div>
 
         <img
-          src="/images/dog-grooming/pack-dogs.png"
+          src={assetUrl("/images/dog-grooming/pack-dogs.png")}
           alt="Two happy dogs"
           className="mx-auto aspect-square w-full max-w-[280px] rounded-[1.75rem] object-cover shadow-md"
         />

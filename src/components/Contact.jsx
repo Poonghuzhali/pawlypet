@@ -1,3 +1,4 @@
+import { assetUrl } from '@/utils/assetUrl'
 import { contactInfo } from '../data/homeData'
 import {
   LocationIcon,
@@ -81,7 +82,7 @@ export default function Contact() {
 
           <div className="relative overflow-hidden rounded-3xl bg-[#8B7E9B] shadow-card">
             <img
-              src="/images/contact-map.png"
+              src={assetUrl("/images/contact-map.png")}
               alt="Pawly Sanctuary location map"
               className="aspect-[4/3] w-full object-cover opacity-90 lg:aspect-auto lg:min-h-[380px] lg:h-full"
             />

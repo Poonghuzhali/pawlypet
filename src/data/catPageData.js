@@ -1,3 +1,4 @@
+import { assetUrl } from '@/utils/assetUrl'
 export const catCategories = [
   {
     label: 'Cat Food',
@@ -33,7 +34,7 @@ export const catProducts = [
     name: 'Feather Wand Pro',
     tagline: 'Your kitty will love this!',
     price: '$12.99',
-    image: '/images/cat-page/feather-wand.png',
+    image: assetUrl('/images/cat-page/feather-wand.png'),
     badge: 'Best Seller',
   },
   {
@@ -41,35 +42,35 @@ export const catProducts = [
     name: 'Cactus Scratch Post',
     tagline: 'Perfect for active claws!',
     price: '$45.00',
-    image: '/images/cat-page/cactus.png',
+    image: assetUrl('/images/cat-page/cactus.png'),
   },
   {
     id: 3,
     name: 'Gourmet Salmon Bites',
     tagline: 'Pure nutrition, zero fillers',
     price: '$28.99',
-    image: '/images/cat-page/salmon-bites.png',
+    image: assetUrl('/images/cat-page/salmon-bites.png'),
   },
   {
     id: 4,
     name: 'Cozy Felt Cave',
     tagline: 'Nap time just got better',
     price: '$59.00',
-    image: '/images/cat-page/felt-cave.png',
+    image: assetUrl('/images/cat-page/felt-cave.png'),
   },
   {
     id: 5,
     name: 'Smart Feeder v2',
     tagline: 'Meal time, on time!',
     price: '$89.00',
-    image: '/images/cat-page/smart-feeder.png',
+    image: assetUrl('/images/cat-page/smart-feeder.png'),
   },
   {
     id: 6,
     name: 'Velvet Charm Collar',
     tagline: 'A touch of elegance',
     price: '$18.50',
-    image: '/images/cat-page/collar.png',
+    image: assetUrl('/images/cat-page/collar.png'),
   },
 ]
 

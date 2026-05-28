@@ -1,3 +1,4 @@
+import { assetUrl } from '@/utils/assetUrl'
 import { BrushIcon, BottleIcon, ArrowRightIcon } from '../Icons'
 
 export default function GroomingTraining() {
@@ -38,7 +39,7 @@ export default function GroomingTraining() {
           <article className="card-hover-lift flex items-center gap-5 rounded-[2rem] bg-[#EFEBE6] p-6 sm:gap-6 sm:p-8">
             <div className="h-28 w-28 shrink-0 overflow-hidden rounded-2xl sm:h-32 sm:w-32">
               <img
-                src="/images/dog/treats.png"
+                src={assetUrl("/images/dog/treats.png")}
                 alt="Pet training treats"
                 className="h-full w-full object-cover"
               />

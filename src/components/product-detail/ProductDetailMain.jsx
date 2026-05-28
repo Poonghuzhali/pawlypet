@@ -1,3 +1,4 @@
+import { assetUrl } from '@/utils/assetUrl'
 import { useState } from 'react'
 import { Link, useNavigate } from 'react-router-dom'
 import { wildernessSalmonProduct } from '../../data/productDetailData'
@@ -14,7 +15,7 @@ export default function ProductDetailMain() {
       <div className="mx-auto grid max-w-7xl gap-10 lg:grid-cols-2 lg:gap-14">
         <div className="overflow-hidden rounded-[2rem] bg-[#E8D5C4] shadow-soft">
           <img
-            src="/images/product-detail/main.png"
+            src={assetUrl("/images/product-detail/main.png")}
             alt={product.title}
             className="aspect-[4/5] w-full object-cover object-center"
           />
