@@ -1,5 +1,5 @@
-import { Link } from 'react-router-dom'
-import { orders } from '../../data/orderHistoryPageData'
+import { Link, useNavigate } from 'react-router-dom'
+import { filterOrderHistory, getOrderHistory, setLastOrder } from '../../data/orderHistory'
 
 const statusStyles = {
   delivered: 'bg-[#2D6A64] text-white',
@@ -14,7 +14,13 @@ const actionStyles = {
 }
 
 function OrderCard({ order }) {
+  const navigate = useNavigate()
   const primaryClass = actionStyles[order.primaryAction.variant]
+
+  const handleTrackOrder = () => {
+    setLastOrder(order)
+    navigate('/secure-checkout')
+  }
 
   return (
     <article className="rounded-[1.75rem] bg-white p-5 shadow-soft sm:p-6">
@@ -27,7 +33,7 @@ function OrderCard({ order }) {
           </span>
 
           <div>
-            <p className="text-sm font-bold text-gray-900">#{order.id}</p>
+            <p className="text-sm font-bold text-gray-900">{order.orderId ?? `#${order.id}`}</p>
             <div className="mt-2 flex flex-wrap gap-x-6 gap-y-1 text-xs text-gray-500">
               <span>
                 <span className="font-bold uppercase tracking-wider">Date Placed</span>
@@ -43,7 +49,7 @@ function OrderCard({ order }) {
 
         <div className="flex flex-col gap-4 sm:flex-row sm:items-center lg:gap-6">
           <div className="flex items-center gap-2">
-            {order.images.map((image, index) => (
+            {order.images.map((image) => (
               <img
                 key={image}
                 src={image}
@@ -66,12 +72,22 @@ function OrderCard({ order }) {
               Order Details
             </button>
             {order.primaryAction.path ? (
-              <Link
-                to={order.primaryAction.path}
-                className={`btn-zoom-hover inline-flex items-center justify-center rounded-full px-5 py-2.5 text-sm font-bold no-underline ${primaryClass}`}
-              >
-                {order.primaryAction.label}
-              </Link>
+              order.primaryAction.path === '/secure-checkout' ? (
+                <button
+                  type="button"
+                  onClick={handleTrackOrder}
+                  className={`btn-zoom-hover inline-flex items-center justify-center rounded-full px-5 py-2.5 text-sm font-bold ${primaryClass}`}
+                >
+                  {order.primaryAction.label}
+                </button>
+              ) : (
+                <Link
+                  to={order.primaryAction.path}
+                  className={`btn-zoom-hover inline-flex items-center justify-center rounded-full px-5 py-2.5 text-sm font-bold no-underline ${primaryClass}`}
+                >
+                  {order.primaryAction.label}
+                </Link>
+              )
             ) : (
               <button
                 type="button"
@@ -88,7 +104,26 @@ function OrderCard({ order }) {
   )
 }
 
-export default function OrderHistoryList() {
+export default function OrderHistoryList({ filter = 'All Orders' }) {
+  const orders = filterOrderHistory(getOrderHistory(), filter)
+
+  if (orders.length === 0) {
+    return (
+      <div className="mt-8 rounded-[1.75rem] bg-white px-6 py-16 text-center shadow-soft">
+        <p className="text-lg font-bold text-gray-900">No orders yet</p>
+        <p className="mt-2 text-sm text-gray-500">
+          Complete a checkout and your orders will appear here automatically.
+        </p>
+        <Link
+          to="/shop-by-breed"
+          className="btn-zoom-hover mt-6 inline-flex rounded-full bg-[#D15151] px-6 py-3 text-sm font-bold text-white no-underline hover:bg-[#b84242]"
+        >
+          Start Shopping
+        </Link>
+      </div>
+    )
+  }
+
   return (
     <div className="mt-8 space-y-4">
       {orders.map((order) => (

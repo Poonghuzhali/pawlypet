@@ -2,8 +2,14 @@ import { useState } from 'react'
 import { orderHistoryFilters } from '../../data/orderHistoryPageData'
 import { ChevronDownIcon } from '../Icons'
 
-export default function OrderHistoryHeader() {
-  const [filter, setFilter] = useState(orderHistoryFilters[0])
+export default function OrderHistoryHeader({ filter, onFilterChange }) {
+  const [localFilter, setLocalFilter] = useState(orderHistoryFilters[0])
+  const activeFilter = filter ?? localFilter
+
+  const handleChange = (value) => {
+    setLocalFilter(value)
+    onFilterChange?.(value)
+  }
 
   return (
     <div className="flex flex-wrap items-start justify-between gap-4">
@@ -18,8 +24,8 @@ export default function OrderHistoryHeader() {
         <span>Filter:</span>
         <div className="relative">
           <select
-            value={filter}
-            onChange={(e) => setFilter(e.target.value)}
+            value={activeFilter}
+            onChange={(e) => handleChange(e.target.value)}
             className="appearance-none rounded-full border border-gray-200 bg-white py-2 pl-4 pr-10 text-sm font-semibold text-gray-900 outline-none focus:border-[#D15151] focus:ring-1 focus:ring-[#D15151]"
           >
             {orderHistoryFilters.map((option) => (

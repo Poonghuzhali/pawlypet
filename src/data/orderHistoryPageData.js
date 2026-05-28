@@ -1,42 +1,4 @@
-import { assetUrl } from '@/utils/assetUrl'
 export const orderHistoryFilters = ['All Orders', 'Delivered', 'In Transit', 'Processing']
-
-export const orders = [
-  {
-    id: 'PWL-12345',
-    status: 'delivered',
-    statusLabel: 'Delivered',
-    date: 'Oct 12, 2024',
-    total: 142.5,
-    images: [
-      assetUrl('/images/order-history/item-1a.png'),
-      assetUrl('/images/order-history/item-1b.png'),
-    ],
-    extraItems: 1,
-    primaryAction: { label: 'Buy Again', variant: 'teal' },
-  },
-  {
-    id: 'PWL-12348',
-    status: 'in-transit',
-    statusLabel: 'In Transit',
-    date: 'Oct 24, 2024',
-    total: 89.0,
-    images: [assetUrl('/images/order-history/item-2.png')],
-    primaryAction: { label: 'Track Order', variant: 'coral', path: '/secure-checkout' },
-  },
-  {
-    id: 'PWL-12352',
-    status: 'processing',
-    statusLabel: 'Processing',
-    date: 'Yesterday, 4:32 PM',
-    total: 214.2,
-    images: [
-      assetUrl('/images/order-history/item-3a.png'),
-      assetUrl('/images/order-history/item-3b.png'),
-    ],
-    primaryAction: { label: 'Pending Ship', variant: 'disabled' },
-  },
-]
 
 export const supportCards = [
   {
