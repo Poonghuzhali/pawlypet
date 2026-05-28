@@ -10,7 +10,7 @@ export default function OrderConfirmationHeader() {
           <Logo serif />
         </Link>
         <Link
-          to="/"
+          to="/cart"
           aria-label="Close"
           className="rounded-full p-2 text-gray-500 transition hover:bg-gray-100 hover:text-gray-800"
         >
