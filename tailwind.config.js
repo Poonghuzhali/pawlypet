@@ -4,15 +4,19 @@ export default {
   theme: {
     extend: {
       colors: {
-        cream: '#FCF8F4',
+        cream: '#FEF9F5',
         teal: {
-          DEFAULT: '#004D40',
-          light: '#00695C',
+          DEFAULT: '#1B6B6B',
+          light: '#238585',
           pale: '#E0F2F1',
         },
         coral: {
-          DEFAULT: '#D32F2F',
+          DEFAULT: '#D14D4D',
           light: '#FFEBEE',
+        },
+        'brand-red': {
+          DEFAULT: '#8B2E2E',
+          dark: '#6E2424',
         },
         pastel: {
           yellow: '#FFF8E1',
@@ -22,11 +26,15 @@ export default {
         },
       },
       fontFamily: {
-        sans: ['Inter', 'system-ui', 'sans-serif'],
+        sans: ['Poppins', 'system-ui', 'sans-serif'],
+        serif: ['Playfair Display', 'Georgia', 'serif'],
       },
       boxShadow: {
         card: '0 4px 24px rgba(0, 0, 0, 0.06)',
         soft: '0 2px 12px rgba(0, 0, 0, 0.04)',
+      },
+      borderRadius: {
+        '4xl': '2rem',
       },
     },
   },

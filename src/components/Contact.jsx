@@ -1,3 +1,4 @@
+import { contactInfo } from '../data/homeData'
 import {
   LocationIcon,
   PhoneIcon,
@@ -5,84 +6,93 @@ import {
   FacebookIcon,
   InstagramIcon,
   TwitterIcon,
+  PawIcon,
 } from './Icons'
 
 export default function Contact() {
   return (
     <section id="contact" className="px-4 py-14 sm:px-6 sm:py-20 lg:px-8">
       <div className="mx-auto max-w-7xl">
-        <div className="grid gap-10 lg:grid-cols-2 lg:gap-16">
-          <div>
-            <h2 className="text-3xl font-extrabold text-gray-900 sm:text-4xl">
-              Let&apos;s Stay in Touch
-            </h2>
-            <p className="mt-3 text-gray-600">
-              Have questions? We&apos;d love to hear from you. Reach out anytime.
-            </p>
+        <h2 className="text-3xl font-extrabold text-gray-900 sm:text-4xl">
+          Let&apos;s Stay in Touch
+        </h2>
+        <p className="mt-3 max-w-xl text-gray-600">
+          Visit our sanctuary, call us, or drop a line — we&apos;re always here for you and your pets.
+        </p>
 
-            <ul className="mt-8 space-y-5">
-              <li className="flex items-start gap-4">
-                <div className="flex h-11 w-11 shrink-0 items-center justify-center rounded-full bg-teal/10 text-teal">
-                  <LocationIcon />
-                </div>
-                <div>
-                  <p className="font-semibold text-gray-900">Visit Us</p>
-                  <p className="mt-1 text-sm text-gray-600">
-                    123 Pet Care Avenue, San Francisco, CA 94102
-                  </p>
-                </div>
-              </li>
-              <li className="flex items-start gap-4">
-                <div className="flex h-11 w-11 shrink-0 items-center justify-center rounded-full bg-teal/10 text-teal">
-                  <PhoneIcon />
-                </div>
-                <div>
-                  <p className="font-semibold text-gray-900">Call Us</p>
-                  <p className="mt-1 text-sm text-gray-600">+1 (555) 123-4567</p>
-                </div>
-              </li>
-              <li className="flex items-start gap-4">
-                <div className="flex h-11 w-11 shrink-0 items-center justify-center rounded-full bg-teal/10 text-teal">
-                  <MailIcon />
-                </div>
-                <div>
-                  <p className="font-semibold text-gray-900">Email Us</p>
-                  <p className="mt-1 text-sm text-gray-600">hello@petify.com</p>
-                </div>
-              </li>
-            </ul>
+        <div className="mt-10 grid gap-8 lg:grid-cols-2 lg:gap-12">
+          <div className="space-y-6">
+            <div className="flex items-start gap-4 rounded-2xl bg-white p-5 shadow-soft">
+              <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-full bg-coral/10 text-coral">
+                <LocationIcon className="h-5 w-5" />
+              </div>
+              <div>
+                <p className="font-bold text-gray-900">{contactInfo.location.title}</p>
+                <p className="mt-1 text-sm leading-relaxed text-gray-600">
+                  {contactInfo.location.address}
+                </p>
+              </div>
+            </div>
 
-            <div className="mt-8 flex gap-3">
+            <div className="flex items-start gap-4 rounded-2xl bg-white p-5 shadow-soft">
+              <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-full bg-teal/10 text-teal">
+                <PhoneIcon className="h-5 w-5" />
+              </div>
+              <div>
+                <p className="font-bold text-gray-900">Phone</p>
+                <p className="mt-1 text-sm text-gray-600">{contactInfo.phone}</p>
+              </div>
+            </div>
+
+            <div className="flex items-start gap-4 rounded-2xl bg-white p-5 shadow-soft">
+              <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-full bg-teal/10 text-teal">
+                <MailIcon className="h-5 w-5" />
+              </div>
+              <div>
+                <p className="font-bold text-gray-900">Email</p>
+                <p className="mt-1 text-sm text-gray-600">{contactInfo.email}</p>
+              </div>
+            </div>
+
+            <div className="flex gap-3 pt-2">
               <a
                 href="#"
                 aria-label="Facebook"
-                className="flex h-10 w-10 items-center justify-center rounded-full bg-white text-gray-600 shadow-soft transition hover:bg-teal hover:text-white"
+                className="flex h-11 w-11 items-center justify-center rounded-full border border-gray-200 bg-white text-gray-600 shadow-soft transition hover:border-teal hover:bg-teal hover:text-white"
               >
-                <FacebookIcon className="w-4 h-4" />
+                <FacebookIcon className="h-4 w-4" />
               </a>
               <a
                 href="#"
                 aria-label="Instagram"
-                className="flex h-10 w-10 items-center justify-center rounded-full bg-white text-gray-600 shadow-soft transition hover:bg-teal hover:text-white"
+                className="flex h-11 w-11 items-center justify-center rounded-full border border-gray-200 bg-white text-gray-600 shadow-soft transition hover:border-teal hover:bg-teal hover:text-white"
               >
-                <InstagramIcon className="w-4 h-4" />
+                <InstagramIcon className="h-4 w-4" />
               </a>
               <a
                 href="#"
                 aria-label="Twitter"
-                className="flex h-10 w-10 items-center justify-center rounded-full bg-white text-gray-600 shadow-soft transition hover:bg-teal hover:text-white"
+                className="flex h-11 w-11 items-center justify-center rounded-full border border-gray-200 bg-white text-gray-600 shadow-soft transition hover:border-teal hover:bg-teal hover:text-white"
               >
-                <TwitterIcon className="w-4 h-4" />
+                <TwitterIcon className="h-4 w-4" />
               </a>
             </div>
           </div>
 
-          <div className="overflow-hidden rounded-3xl shadow-card">
+          <div className="relative overflow-hidden rounded-3xl bg-[#8B7E9B] shadow-card">
             <img
-              src="https://images.unsplash.com/photo-1524661135-423995f22d0b?w=800&h=600&fit=crop"
-              alt="Map showing store location"
-              className="aspect-[4/3] w-full object-cover lg:aspect-auto lg:h-full lg:min-h-[360px]"
+              src="/images/contact-map.png"
+              alt="Pawly Sanctuary location map"
+              className="aspect-[4/3] w-full object-cover opacity-90 lg:aspect-auto lg:min-h-[380px] lg:h-full"
             />
+            <div className="absolute bottom-6 right-6 flex flex-col items-end gap-3">
+              <div className="flex h-14 w-14 items-center justify-center rounded-full bg-coral text-white shadow-lg">
+                <PawIcon className="h-7 w-7" />
+              </div>
+              <div className="rounded-full bg-white px-5 py-2.5 text-center shadow-lg">
+                <p className="text-sm font-bold text-gray-900">Pawly Sanctuary</p>
+              </div>
+            </div>
           </div>
         </div>
       </div>

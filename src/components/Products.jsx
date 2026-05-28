@@ -14,25 +14,25 @@ export default function Products() {
           </p>
         </div>
 
-        <div className="mt-10 grid gap-6 sm:grid-cols-2 lg:mt-14 lg:grid-cols-3">
+        <div className="mt-10 grid gap-6 sm:grid-cols-2 lg:mt-12 lg:grid-cols-3">
           {products.map((product) => (
             <article
               key={product.name}
-              className="relative overflow-hidden rounded-3xl bg-[#F5EDE4] p-5 shadow-soft transition hover:-translate-y-1 hover:shadow-card"
+              className="relative overflow-hidden rounded-3xl border border-gray-100 bg-white p-5 shadow-soft"
             >
               <span
-                className={`absolute right-5 top-5 z-10 rounded-full px-3 py-1 text-xs font-bold ${product.badgeColor}`}
+                className={`absolute right-7 top-7 z-10 rounded-full px-3 py-1 text-xs font-bold ${product.badgeColor}`}
               >
                 {product.badge}
               </span>
-              <div className="overflow-hidden rounded-2xl bg-white">
+              <div className="overflow-hidden rounded-2xl bg-[#F5EDE4] p-4">
                 <img
                   src={product.image}
                   alt={product.name}
-                  className="aspect-square w-full object-cover"
+                  className="aspect-square w-full object-contain"
                 />
               </div>
-              <div className="mt-4 flex items-end justify-between gap-3">
+              <div className="mt-4 flex items-end justify-between gap-3 px-1">
                 <div>
                   <h3 className="font-bold text-gray-900">{product.name}</h3>
                   <p className="mt-1 text-lg font-bold text-coral">{product.price}</p>
@@ -42,7 +42,7 @@ export default function Products() {
                   aria-label={`Add ${product.name} to cart`}
                   className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-teal text-white transition hover:bg-teal-light"
                 >
-                  <PlusIcon className="w-5 h-5" />
+                  <PlusIcon className="h-5 w-5" />
                 </button>
               </div>
             </article>

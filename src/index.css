@@ -10,4 +10,140 @@
   body {
     @apply bg-cream font-sans text-gray-900 antialiased;
   }
+
+  a {
+    text-decoration: none;
+  }
+}
+
+@layer components {
+  .btn-zoom-hover {
+    @apply transition-transform duration-200 ease-out;
+  }
+
+  .btn-zoom-hover:hover {
+    transform: scale(0.94);
+  }
+
+  .btn-zoom-hover:active {
+    transform: scale(0.9);
+  }
+
+  .card-hover-lift {
+    @apply transition-all duration-300 ease-out;
+  }
+
+  .card-hover-lift:hover {
+    transform: translateY(-4px) scale(0.98);
+    @apply shadow-card;
+  }
+
+  .dog-range {
+    -webkit-appearance: none;
+    appearance: none;
+    height: 4px;
+    border-radius: 9999px;
+    background: #e5e7eb;
+    outline: none;
+  }
+
+  .dog-range::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    background: #B03A3E;
+    cursor: pointer;
+    border: 2px solid white;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.15);
+  }
+
+  .dog-range::-moz-range-thumb {
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    background: #B03A3E;
+    cursor: pointer;
+    border: 2px solid white;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.15);
+  }
+
+  .dog-checkbox {
+    accent-color: #B03A3E;
+  }
+
+  .cat-range {
+    -webkit-appearance: none;
+    appearance: none;
+    height: 4px;
+    border-radius: 9999px;
+    background: #e5e7eb;
+    outline: none;
+  }
+
+  .cat-range::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    background: #A33B3B;
+    cursor: pointer;
+    border: 2px solid white;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.15);
+  }
+
+  .cat-range::-moz-range-thumb {
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    background: #A33B3B;
+    cursor: pointer;
+    border: 2px solid white;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.15);
+  }
+
+  .cat-checkbox {
+    accent-color: #A33B3B;
+  }
+
+  .small-pets-range {
+    -webkit-appearance: none;
+    appearance: none;
+    height: 4px;
+    border-radius: 9999px;
+    background: #e5e7eb;
+    outline: none;
+  }
+
+  .small-pets-range::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    background: #2D7A7A;
+    cursor: pointer;
+    border: 2px solid white;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.15);
+  }
+
+  .small-pets-range::-moz-range-thumb {
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    background: #2D7A7A;
+    cursor: pointer;
+    border: 2px solid white;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.15);
+  }
+
+  .small-pets-checkbox {
+    accent-color: #2D7A7A;
+  }
+
+  .small-pets-radio {
+    accent-color: #2D7A7A;
+  }
 }

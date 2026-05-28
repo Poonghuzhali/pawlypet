@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom'
 import { dogCategories } from '../data/homeData'
 
 export default function Categories() {
@@ -12,8 +13,10 @@ export default function Categories() {
         </div>
 
         <div className="grid gap-5 lg:grid-cols-2 lg:grid-rows-2 lg:gap-6">
-          {/* Dogs - large left card */}
-          <div className="relative overflow-hidden rounded-3xl bg-[#F5EDE4] p-6 sm:p-8 lg:row-span-2">
+          <div
+            id="dog"
+            className="relative min-h-[320px] overflow-hidden rounded-3xl bg-[#F5EDE4] p-6 sm:p-8 lg:row-span-2"
+          >
             <span className="text-6xl font-extrabold text-gray-900/10 sm:text-8xl">01</span>
             <h3 className="mt-2 text-2xl font-extrabold text-gray-900 sm:text-3xl">
               Everything for Dogs
@@ -26,46 +29,53 @@ export default function Categories() {
                 </li>
               ))}
             </ul>
-            <a
-              href="#"
-              className="mt-6 inline-flex rounded-full bg-coral px-6 py-2.5 text-sm font-semibold text-white transition hover:bg-red-700"
+            <Link
+              to="/dog"
+              className="relative z-10 mt-6 inline-flex rounded-full bg-coral px-6 py-2.5 text-sm font-semibold text-white transition hover:bg-[#b84242]"
             >
               Shop Now
-            </a>
+            </Link>
             <img
-              src="https://images.unsplash.com/photo-1587300003388-59208cc962cb?w=500&h=500&fit=crop"
+              src="/images/dog-category.png"
               alt="Happy dog"
-              className="absolute bottom-0 right-0 h-48 w-48 object-cover object-top sm:h-56 sm:w-56 lg:h-64 lg:w-64"
+              className="absolute bottom-0 right-0 h-52 w-52 rounded-tl-3xl object-cover object-center sm:h-60 sm:w-60 lg:h-72 lg:w-72"
             />
           </div>
 
-          {/* Cats - top right */}
-          <div className="relative overflow-hidden rounded-3xl bg-teal p-6 sm:p-8">
-            <h3 className="text-xl font-extrabold text-white sm:text-2xl">Follow the Whiskers</h3>
+          <div id="cat" className="relative min-h-[200px] overflow-hidden rounded-3xl bg-teal p-6 sm:p-8">
+            <h3 className="text-xl font-extrabold text-white sm:text-2xl">Feline Favorites</h3>
             <p className="mt-2 max-w-xs text-sm text-white/80">
               Discover premium food, toys, and accessories for your feline friends.
             </p>
+            <Link
+              to="/cat"
+              className="relative z-10 mt-4 inline-flex rounded-full bg-white/20 px-5 py-2 text-sm font-semibold text-white backdrop-blur-sm transition hover:bg-white/30"
+            >
+              Shop Now
+            </Link>
             <img
-              src="https://images.unsplash.com/photo-1514888286974-6c03e2ca1dba?w=400&h=400&fit=crop"
+              src="/images/cat-category.png"
               alt="Cat"
               className="absolute -bottom-4 -right-4 h-36 w-36 rounded-2xl object-cover sm:h-44 sm:w-44"
             />
           </div>
 
-          {/* Small pets - bottom right */}
-          <div className="relative overflow-hidden rounded-3xl bg-pastel-yellow p-6 sm:p-8">
+          <div
+            id="small-pets"
+            className="relative min-h-[200px] overflow-hidden rounded-3xl bg-[#FFF8E1] p-6 sm:p-8"
+          >
             <h3 className="text-xl font-extrabold text-gray-900 sm:text-2xl">Small Pet Kingdom</h3>
             <p className="mt-2 max-w-xs text-sm text-gray-600">
               Rabbits, hamsters, and more — everything for your tiny companions.
             </p>
-            <a
-              href="#"
-              className="mt-4 inline-flex rounded-full bg-gray-800 px-6 py-2.5 text-sm font-semibold text-white transition hover:bg-gray-900"
+            <Link
+              to="/small-pets"
+              className="relative z-10 mt-4 inline-flex rounded-full bg-teal px-6 py-2.5 text-sm font-semibold text-white transition hover:bg-teal-light"
             >
-              View Category
-            </a>
+              Shop Now
+            </Link>
             <img
-              src="https://images.unsplash.com/photo-1585110396000-c9ffd4e4b308?w=400&h=400&fit=crop"
+              src="/images/rabbit-category.png"
               alt="Rabbit"
               className="absolute -bottom-2 -right-2 h-32 w-32 rounded-2xl object-cover sm:h-40 sm:w-40"
             />

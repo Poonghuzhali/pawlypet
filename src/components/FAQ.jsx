@@ -23,7 +23,7 @@ export default function FAQ() {
             return (
               <div
                 key={faq.question}
-                className="overflow-hidden rounded-2xl border border-gray-200 bg-white"
+                className="overflow-hidden rounded-2xl bg-[#F5EDE4]/60"
               >
                 <button
                   type="button"
@@ -35,11 +35,11 @@ export default function FAQ() {
                     {faq.question}
                   </span>
                   <ChevronDownIcon
-                    className={`w-5 h-5 shrink-0 text-gray-400 transition-transform ${isOpen ? 'rotate-180' : ''}`}
+                    className={`h-5 w-5 shrink-0 text-gray-500 transition-transform ${isOpen ? 'rotate-180' : ''}`}
                   />
                 </button>
                 {isOpen && (
-                  <div className="border-t border-gray-100 px-5 pb-4 pt-2 sm:px-6 sm:pb-5">
+                  <div className="border-t border-gray-200/50 px-5 pb-4 pt-2 sm:px-6 sm:pb-5">
                     <p className="text-sm leading-relaxed text-gray-600">{faq.answer}</p>
                   </div>
                 )}

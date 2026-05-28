@@ -1,33 +1,40 @@
-export const navLinks = ['Home', 'Shop', 'Services', 'Blog', 'About Us']
+export const navLinks = [
+  { label: 'Home', href: '#home' },
+  { label: 'Dog', href: '#dog' },
+  { label: 'Cat', href: '#cat' },
+  { label: 'Small Pets', href: '#small-pets' },
+  { label: 'Shop by Breed', href: '#shop-by-breed' },
+  { label: 'Consult Vet', href: '#consult-vet' },
+]
 
 export const features = [
   {
-    title: 'Affordable Prices',
-    description: 'Quality pet products at prices that keep tails wagging.',
+    title: '24/7 Care Support',
+    description: 'Round-the-clock assistance whenever your pet needs help.',
     bg: 'bg-pastel-yellow',
-    iconBg: 'bg-yellow-200',
-    icon: '💰',
+    iconBg: 'bg-yellow-300/60',
+    icon: 'support',
   },
   {
-    title: 'Expert Care',
-    description: 'Trusted veterinarians and specialists at your service.',
+    title: 'Easy Online Booking',
+    description: 'Schedule vet visits and grooming in just a few clicks.',
     bg: 'bg-pastel-teal',
-    iconBg: 'bg-teal-200',
-    icon: '🩺',
+    iconBg: 'bg-teal-200/70',
+    icon: 'booking',
   },
   {
-    title: 'Fast Delivery',
-    description: 'Quick, reliable shipping straight to your doorstep.',
+    title: 'Professional Groomers',
+    description: 'Certified groomers who treat every pet like family.',
     bg: 'bg-pastel-orange',
-    iconBg: 'bg-orange-200',
-    icon: '🚚',
+    iconBg: 'bg-orange-200/70',
+    icon: 'grooming',
   },
   {
-    title: 'Premium Quality',
-    description: 'Only the best brands and products for your pets.',
+    title: 'Trusted Veterinarians',
+    description: 'Experienced vets dedicated to your pet\'s health and happiness.',
     bg: 'bg-pastel-blue',
-    iconBg: 'bg-blue-200',
-    icon: '⭐',
+    iconBg: 'bg-blue-200/70',
+    icon: 'vet',
   },
 ]
 
@@ -37,100 +44,110 @@ export const experts = [
   {
     name: 'Dr. Sarah Miller',
     role: 'Senior Veterinarian',
-    image: 'https://images.unsplash.com/photo-1559839734-2b71ea197ec2?w=400&h=500&fit=crop',
-    bg: 'bg-pastel-teal',
+    image: '/images/vet-1.png',
+    bg: 'bg-[#E8F5F3]',
   },
   {
     name: 'Dr. James Wilson',
     role: 'Veterinary Surgeon',
-    image: 'https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?w=400&h=500&fit=crop',
-    bg: 'bg-pastel-yellow',
+    image: '/images/vet-2.png',
+    bg: 'bg-[#FFF6E5]',
   },
   {
     name: 'Dr. Emily Chen',
     role: 'Pet Nutritionist',
-    image: 'https://images.unsplash.com/photo-1594824476967-48c8b964273f?w=400&h=500&fit=crop',
-    bg: 'bg-pastel-orange',
+    image: '/images/vet-3.png',
+    bg: 'bg-[#FFF0E5]',
   },
   {
     name: 'Dr. Michael Brown',
     role: 'Animal Behaviorist',
-    image: 'https://images.unsplash.com/photo-1622253692010-333f2da6031d?w=400&h=500&fit=crop',
-    bg: 'bg-pastel-blue',
+    image: '/images/vet-4.png',
+    bg: 'bg-[#E8F0FA]',
   },
 ]
 
 export const breeds = [
   {
     name: 'Golden Retriever',
-    description: 'Friendly, intelligent, and devoted family companions.',
-    image: 'https://images.unsplash.com/photo-1633722715463-d30f4f325e24?w=400&h=400&fit=crop',
+    description: 'Friendly, intelligent, and devoted family companions loved worldwide.',
+    image: '/images/breed-golden.png',
   },
   {
     name: 'Persian Cat',
     description: 'Calm, gentle souls with luxurious coats and sweet personalities.',
-    image: 'https://images.unsplash.com/photo-1529778873920-4da4926a72c2?w=400&h=400&fit=crop',
+    image: '/images/breed-persian.png',
   },
   {
     name: 'French Bulldog',
     description: 'Playful, adaptable, and perfect for apartment living.',
-    image: 'https://images.unsplash.com/photo-1583511655857-d19b40a7a548?w=400&h=400&fit=crop',
+    image: '/images/breed-frenchie.png',
   },
   {
-    name: 'Bengal Cat',
-    description: 'Energetic, curious cats with striking wild-like markings.',
-    image: 'https://images.unsplash.com/photo-1513360371669-4adf7dd7df8?w=400&h=400&fit=crop',
+    name: 'Maine Coon',
+    description: 'Gentle giants with striking coats and affectionate personalities.',
+    image: '/images/breed-maine-coon.png',
   },
 ]
 
 export const products = [
   {
     name: 'Premium Dog Food',
-    price: '$49.99',
+    price: '$45.00',
     badge: 'Hot',
     badgeColor: 'bg-coral text-white',
-    image: 'https://images.unsplash.com/photo-1589924691995-400dc9ecc119?w=400&h=400&fit=crop',
+    image: '/images/product-food.png',
   },
   {
     name: 'Natural Chew Bone',
     price: '$12.99',
     badge: 'New',
     badgeColor: 'bg-teal text-white',
-    image: 'https://images.unsplash.com/photo-1601758228041-f3b2795255f1?w=400&h=400&fit=crop',
+    image: '/images/product-bone.png',
   },
   {
-    name: 'Organic Cat Litter',
+    name: 'Organic Pet Treats',
     price: '$24.99',
     badge: 'Best Seller',
     badgeColor: 'bg-amber-500 text-white',
-    image: 'https://images.unsplash.com/photo-1514888286974-6c03e2ca1dba?w=400&h=400&fit=crop',
+    image: '/images/product-treats.png',
   },
 ]
 
 export const faqs = [
+  {
+    question: 'What type of pets do you cater to?',
+    answer:
+      'We cater to dogs, cats, rabbits, hamsters, birds, and many other small pets. Browse our Shop by Category section to find products tailored to your companion.',
+  },
   {
     question: 'How do I choose the right food for my pet?',
     answer:
       'Consider your pet\'s age, size, breed, and any health conditions. Our experts can help you find the perfect nutrition plan tailored to your furry friend\'s needs.',
   },
   {
+    question: 'Do you offer veterinary consultations?',
+    answer:
+      'Yes! Book a virtual or in-person consultation with our certified veterinarians anytime through our Consult Vet page.',
+  },
+  {
     question: 'What is your return policy?',
     answer:
       'We offer a 30-day hassle-free return policy on most products. If you\'re not satisfied, contact us and we\'ll make it right.',
   },
-  {
-    question: 'Do you offer veterinary consultations?',
-    answer:
-      'Yes! Book a virtual or in-person consultation with our certified veterinarians anytime through our Services page.',
-  },
-  {
-    question: 'How long does shipping take?',
-    answer:
-      'Standard shipping takes 3–5 business days. Express options are available at checkout for faster delivery.',
-  },
 ]
 
 export const footerLinks = {
-  quickLinks: ['Home', 'Shop', 'Services', 'Blog', 'About Us'],
-  information: ['Privacy Policy', 'Terms of Service', 'Shipping Info', 'FAQ'],
+  company: ['About Us', 'Our Story', 'Careers', 'Press', 'Blog'],
+  services: ['Vet Consultation', 'Pet Grooming', 'Pet Boarding', 'Training', 'Nutrition Plans'],
+  support: ['Help Center', 'Shipping Info', 'Returns', 'Privacy Policy', 'Terms of Service'],
+}
+
+export const contactInfo = {
+  location: {
+    title: 'Pawly Sanctuary',
+    address: '742 Evergreen Terrace, Springfield, IL 62704',
+  },
+  phone: '+1 (555) 987-6543',
+  email: 'hello@pawly.com',
 }

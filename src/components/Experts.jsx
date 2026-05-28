@@ -2,7 +2,7 @@ import { experts } from '../data/homeData'
 
 export default function Experts() {
   return (
-    <section id="services" className="px-4 py-14 sm:px-6 sm:py-20 lg:px-8">
+    <section id="consult-vet" className="px-4 py-14 sm:px-6 sm:py-20 lg:px-8">
       <div className="mx-auto max-w-7xl">
         <div className="text-center">
           <h2 className="text-3xl font-extrabold text-gray-900 sm:text-4xl">Meet Our Experts</h2>
@@ -11,27 +11,29 @@ export default function Experts() {
           </p>
         </div>
 
-        <div className="mt-10 grid gap-6 sm:grid-cols-2 lg:mt-14 lg:grid-cols-4">
+        <div className="mt-10 grid gap-6 sm:grid-cols-2 lg:mt-12 lg:grid-cols-4">
           {experts.map((expert) => (
             <article
               key={expert.name}
-              className="overflow-hidden rounded-3xl bg-white shadow-soft transition hover:-translate-y-1 hover:shadow-card"
+              className="flex flex-col overflow-hidden rounded-[1.75rem] border border-gray-100 bg-white shadow-soft"
             >
-              <div className={`relative ${expert.bg} px-4 pt-4`}>
-                <img
-                  src={expert.image}
-                  alt={expert.name}
-                  className="mx-auto h-56 w-full rounded-2xl object-cover object-top sm:h-60"
-                />
+              <div className={`px-5 pb-0 pt-5 ${expert.bg}`}>
+                <div className="overflow-hidden rounded-2xl bg-white/40">
+                  <img
+                    src={expert.image}
+                    alt={expert.name}
+                    className="mx-auto h-52 w-full object-cover object-top sm:h-56"
+                  />
+                </div>
               </div>
-              <div className="p-5 text-center">
-                <h3 className="text-lg font-bold text-gray-900">{expert.name}</h3>
+              <div className="flex flex-1 flex-col px-5 pb-5 pt-4 text-center">
+                <h3 className="text-base font-bold text-gray-900">{expert.name}</h3>
                 <p className="mt-1 text-sm text-gray-500">{expert.role}</p>
                 <button
                   type="button"
-                  className="mt-4 w-full rounded-full border-2 border-teal py-2.5 text-sm font-semibold text-teal transition hover:bg-teal hover:text-white"
+                  className="mt-auto pt-5 w-full rounded-full border border-teal py-2.5 text-sm font-semibold text-teal transition hover:bg-teal hover:text-white"
                 >
-                  Read Bio
+                  Book Consultation
                 </button>
               </div>
             </article>

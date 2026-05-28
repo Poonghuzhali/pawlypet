@@ -1,0 +1,80 @@
+export const catCategories = [
+  {
+    label: 'Cat Food',
+    bg: 'bg-[#FDE8E8]',
+    iconBg: 'bg-[#2D7A7A]',
+    icon: 'food',
+  },
+  {
+    label: 'Grooming',
+    bg: 'bg-[#E0F5F3]',
+    iconBg: 'bg-[#2D7A7A]',
+    icon: 'grooming',
+  },
+  {
+    label: 'Litter & Accessories',
+    bg: 'bg-[#FFF8E1]',
+    iconBg: 'bg-[#2D7A7A]',
+    icon: 'litter',
+  },
+  {
+    label: 'Toys',
+    bg: 'bg-[#FDE8E8]',
+    iconBg: 'bg-[#2D7A7A]',
+    icon: 'toys',
+  },
+]
+
+export const catBrands = ['Royal Canin', 'Purina One', 'Meow Mix']
+
+export const catProducts = [
+  {
+    id: 1,
+    name: 'Feather Wand Pro',
+    tagline: 'Your kitty will love this!',
+    price: '$12.99',
+    image: '/images/cat-page/feather-wand.png',
+    badge: 'Best Seller',
+  },
+  {
+    id: 2,
+    name: 'Cactus Scratch Post',
+    tagline: 'Perfect for active claws!',
+    price: '$45.00',
+    image: '/images/cat-page/cactus.png',
+  },
+  {
+    id: 3,
+    name: 'Gourmet Salmon Bites',
+    tagline: 'Pure nutrition, zero fillers',
+    price: '$28.99',
+    image: '/images/cat-page/salmon-bites.png',
+  },
+  {
+    id: 4,
+    name: 'Cozy Felt Cave',
+    tagline: 'Nap time just got better',
+    price: '$59.00',
+    image: '/images/cat-page/felt-cave.png',
+  },
+  {
+    id: 5,
+    name: 'Smart Feeder v2',
+    tagline: 'Meal time, on time!',
+    price: '$89.00',
+    image: '/images/cat-page/smart-feeder.png',
+  },
+  {
+    id: 6,
+    name: 'Velvet Charm Collar',
+    tagline: 'A touch of elegance',
+    price: '$18.50',
+    image: '/images/cat-page/collar.png',
+  },
+]
+
+export const catFooterLinks = {
+  shop: ['Dog Collection', 'Cat Collection', 'Small Pets'],
+  support: ['Shipping Policy', 'Return Center', 'Contact Vet'],
+  company: ['About Us', 'Privacy'],
+}
