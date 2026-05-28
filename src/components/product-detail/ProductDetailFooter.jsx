@@ -5,7 +5,7 @@ import { ArrowRightIcon, ShareIcon } from '../Icons'
 
 export default function ProductDetailFooter() {
   return (
-    <footer className="bg-[#F0E6DC] px-4 pt-14 sm:px-6 lg:px-8">
+    <footer className="bg-[#D9D6CE] px-4 pt-14 sm:px-6 lg:px-8">
       <div className="mx-auto max-w-7xl">
         <div className="grid gap-10 sm:grid-cols-2 lg:grid-cols-4">
           <div>
@@ -19,7 +19,7 @@ export default function ProductDetailFooter() {
             <button
               type="button"
               aria-label="Share"
-              className="mt-5 flex h-10 w-10 items-center justify-center rounded-full border border-gray-300 bg-white text-gray-600 transition hover:text-[#D14D4D]"
+              className="mt-5 flex h-10 w-10 items-center justify-center rounded-full border border-gray-300 bg-white text-gray-600 transition hover:text-[#64E0D2]"
             >
               <ShareIcon className="h-4 w-4" />
             </button>
@@ -32,7 +32,7 @@ export default function ProductDetailFooter() {
             <ul className="mt-4 space-y-2.5">
               {productDetailFooterLinks.careGuides.map((link) => (
                 <li key={link}>
-                  <a href="#" className="text-sm text-gray-600 transition hover:text-[#D14D4D]">
+                  <a href="#" className="text-sm text-gray-600 transition hover:text-[#64E0D2]">
                     {link}
                   </a>
                 </li>
@@ -45,7 +45,7 @@ export default function ProductDetailFooter() {
             <ul className="mt-4 space-y-2.5">
               {productDetailFooterLinks.company.map((link) => (
                 <li key={link}>
-                  <a href="#" className="text-sm text-gray-600 transition hover:text-[#D14D4D]">
+                  <a href="#" className="text-sm text-gray-600 transition hover:text-[#64E0D2]">
                     {link}
                   </a>
                 </li>
@@ -62,12 +62,12 @@ export default function ProductDetailFooter() {
               <input
                 type="email"
                 placeholder="Email"
-                className="min-w-0 flex-1 rounded-full border border-gray-200 bg-white px-4 py-2.5 text-sm outline-none focus:border-[#D14D4D] focus:ring-1 focus:ring-[#D14D4D]"
+                className="min-w-0 flex-1 rounded-full border border-gray-200 bg-white px-4 py-2.5 text-sm outline-none focus:border-[#64E0D2] focus:ring-1 focus:ring-[#64E0D2]"
               />
               <button
                 type="submit"
                 aria-label="Subscribe"
-                className="btn-zoom-hover flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-[#D14D4D] text-white hover:bg-[#b84242]"
+                className="btn-zoom-hover flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-[#64E0D2] text-gray-900 hover:bg-[#52CFC2]"
               >
                 <ArrowRightIcon className="h-4 w-4" />
               </button>

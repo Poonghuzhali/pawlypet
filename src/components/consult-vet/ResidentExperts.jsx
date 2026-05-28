@@ -16,7 +16,7 @@ export default function ResidentExperts() {
           </div>
           <button
             type="button"
-            className="rounded-full border border-gray-300 bg-white px-5 py-2.5 text-sm font-semibold text-gray-700 transition hover:border-[#005F54] hover:text-[#005F54]"
+            className="rounded-full border border-gray-300 bg-white px-5 py-2.5 text-sm font-semibold text-gray-700 transition hover:border-[#52CFC2] hover:text-[#52CFC2]"
           >
             See All Experts
           </button>
@@ -26,7 +26,7 @@ export default function ResidentExperts() {
           {residentExperts.map((expert) => (
             <article
               key={expert.name}
-              className="card-hover-lift rounded-3xl bg-[#F7F1EB] p-6 shadow-soft transition"
+              className="card-hover-lift rounded-3xl bg-[#E1D8D2] p-6 shadow-soft transition"
             >
               <div className="relative mx-auto w-fit">
                 <img
@@ -34,7 +34,7 @@ export default function ResidentExperts() {
                   alt={expert.name}
                   className="h-20 w-20 rounded-full object-cover grayscale"
                 />
-                <span className="absolute bottom-1 right-1 h-3.5 w-3.5 rounded-full border-2 border-[#F7F1EB] bg-green-500" />
+                <span className="absolute bottom-1 right-1 h-3.5 w-3.5 rounded-full border-2 border-[#E1D8D2] bg-green-500" />
               </div>
               <h3 className="mt-4 text-center text-sm font-bold text-gray-900">{expert.name}</h3>
               <p className="mt-1 text-center text-[10px] font-bold uppercase tracking-wider text-gray-500">
@@ -49,7 +49,7 @@ export default function ResidentExperts() {
             </article>
           ))}
 
-          <article className="flex flex-col items-center justify-center rounded-3xl bg-[#005F54] p-6 text-center shadow-soft">
+          <article className="flex flex-col items-center justify-center rounded-3xl bg-[#52CFC2] p-6 text-center shadow-soft">
             <DotsIcon className="h-6 w-6 text-white/80" />
             <p className="mt-4 text-sm font-bold leading-snug text-white">
               And 15 others.
@@ -59,7 +59,7 @@ export default function ResidentExperts() {
             </p>
             <button
               type="button"
-              className="btn-zoom-hover mt-5 rounded-full bg-white px-5 py-2.5 text-sm font-bold text-[#005F54] hover:bg-white/90"
+              className="btn-zoom-hover mt-5 rounded-full bg-white px-5 py-2.5 text-sm font-bold text-[#52CFC2] hover:bg-white/90"
             >
               Meet Team
             </button>

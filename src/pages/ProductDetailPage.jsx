@@ -9,7 +9,7 @@ export default function ProductDetailPage() {
   return (
     <>
       <Header compact />
-      <main className="bg-[#FAF9F6]">
+      <main className="bg-[#E1D8D2]">
         <ProductDetailMain />
         <IngredientsFeeding />
         <HappyTails />

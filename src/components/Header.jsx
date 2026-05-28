@@ -99,7 +99,7 @@ export default function Header({
               aria-label="Wishlist"
               className={`rounded-full p-2 transition ${
                 isFavoritesPage
-                  ? 'bg-[#FDE8E8] text-brand-red'
+                  ? 'bg-[#CFE1E0] text-brand-red'
                   : 'text-gray-600 hover:text-brand-red'
               }`}
             >
@@ -110,12 +110,12 @@ export default function Header({
               aria-label="Cart"
               className={`relative rounded-full p-2 transition ${
                 isCartPage
-                  ? 'bg-[#FDE8E8] text-brand-red'
+                  ? 'bg-[#CFE1E0] text-brand-red'
                   : 'text-gray-600 hover:text-teal'
               }`}
             >
               <CartIcon />
-              <span className="absolute -right-0.5 -top-0.5 flex h-4 w-4 items-center justify-center rounded-full bg-[#A33B3B] text-[10px] font-bold text-white">
+              <span className="absolute -right-0.5 -top-0.5 flex h-4 w-4 items-center justify-center rounded-full bg-[#64E0D2] text-[10px] font-bold text-white">
                 3
               </span>
             </Link>
@@ -124,7 +124,7 @@ export default function Header({
               aria-label="Profile"
               className={`rounded-full p-2 transition ${
                 isProfilePage
-                  ? 'bg-[#FDE8E8] text-brand-red'
+                  ? 'bg-[#CFE1E0] text-brand-red'
                   : 'text-gray-600 hover:text-teal'
               }`}
             >

@@ -11,7 +11,7 @@ export default function CatPageHero() {
         <div className="absolute inset-0 bg-gradient-to-r from-black/50 via-black/20 to-transparent" />
         <div className="absolute inset-0 flex items-center px-8 sm:px-12 lg:px-16">
           <div className="max-w-lg">
-            <span className="inline-flex rounded-lg bg-[#F2E27E] px-3 py-1 text-[10px] font-bold uppercase tracking-wider text-gray-900">
+            <span className="inline-flex rounded-lg bg-[#CFE1E0] px-3 py-1 text-[10px] font-bold uppercase tracking-wider text-gray-900">
               New Collection
             </span>
             <h1 className="mt-4 text-3xl font-extrabold leading-tight text-white sm:text-4xl lg:text-5xl">
@@ -25,7 +25,7 @@ export default function CatPageHero() {
             </p>
             <button
               type="button"
-              className="btn-zoom-hover mt-8 rounded-full bg-[#E85D5D] px-8 py-3.5 text-sm font-semibold text-white shadow-lg hover:bg-[#d14f4f]"
+              className="btn-zoom-hover mt-8 rounded-full bg-[#64E0D2] px-8 py-3.5 text-sm font-semibold text-white shadow-lg hover:bg-[#64E0D2]"
             >
               Explore Favorites
             </button>

@@ -4,7 +4,7 @@ import Logo from '../Logo'
 
 export default function CatShopFooter() {
   return (
-    <footer className="bg-[#FFF8F1] px-4 pt-14 sm:px-6 lg:px-8">
+    <footer className="bg-[#E1D8D2] px-4 pt-14 sm:px-6 lg:px-8">
       <div className="mx-auto max-w-7xl">
         <div className="grid gap-10 sm:grid-cols-2 lg:grid-cols-4">
           <div>
@@ -24,21 +24,21 @@ export default function CatShopFooter() {
                   {link === 'Cat Collection' ? (
                     <Link
                       to="/cat"
-                      className="text-sm font-semibold text-[#A33B3B] transition hover:underline"
+                      className="text-sm font-semibold text-[#64E0D2] transition hover:underline"
                     >
                       {link}
                     </Link>
                   ) : link === 'Dog Collection' ? (
                     <Link
                       to="/dog"
-                      className="text-sm text-gray-600 transition hover:text-[#A33B3B]"
+                      className="text-sm text-gray-600 transition hover:text-[#64E0D2]"
                     >
                       {link}
                     </Link>
                   ) : (
                     <Link
                       to="/small-pets"
-                      className="text-sm text-gray-600 transition hover:text-[#A33B3B]"
+                      className="text-sm text-gray-600 transition hover:text-[#64E0D2]"
                     >
                       {link}
                     </Link>
@@ -53,7 +53,7 @@ export default function CatShopFooter() {
             <ul className="mt-4 space-y-2.5">
               {catFooterLinks.support.map((link) => (
                 <li key={link}>
-                  <a href="#" className="text-sm text-gray-600 transition hover:text-[#A33B3B]">
+                  <a href="#" className="text-sm text-gray-600 transition hover:text-[#64E0D2]">
                     {link}
                   </a>
                 </li>
@@ -66,7 +66,7 @@ export default function CatShopFooter() {
             <ul className="mt-4 space-y-2.5">
               {catFooterLinks.company.map((link) => (
                 <li key={link}>
-                  <a href="#" className="text-sm text-gray-600 transition hover:text-[#A33B3B]">
+                  <a href="#" className="text-sm text-gray-600 transition hover:text-[#64E0D2]">
                     {link}
                   </a>
                 </li>

@@ -12,8 +12,8 @@ export default function IngredientsFeeding() {
   return (
     <section className="px-4 py-12 sm:px-6 lg:px-8">
       <div className="mx-auto grid max-w-7xl gap-6 lg:grid-cols-2">
-        <article className="relative overflow-hidden rounded-[2rem] bg-[#F5EDE4] p-8 shadow-soft">
-          <LeafIcon className="absolute -bottom-6 -right-6 h-40 w-40 text-[#E8DDD0]/80" />
+        <article className="relative overflow-hidden rounded-[2rem] bg-[#D9D6CE] p-8 shadow-soft">
+          <LeafIcon className="absolute -bottom-6 -right-6 h-40 w-40 text-[#D9D6CE]/80" />
           <h2 className="relative text-xl font-extrabold text-gray-900 sm:text-2xl">
             Pure Ingredients
           </h2>
@@ -36,7 +36,7 @@ export default function IngredientsFeeding() {
           </div>
         </article>
 
-        <article className="rounded-[2rem] bg-[#A7F3E8] p-8 shadow-soft">
+        <article className="rounded-[2rem] bg-[#CFE1E0] p-8 shadow-soft">
           <h2 className="text-xl font-extrabold text-gray-900 sm:text-2xl">Feeding Guide</h2>
           <p className="mt-3 text-sm leading-relaxed text-gray-700">
             Adjust portions based on your dog&apos;s activity level and weight goals.

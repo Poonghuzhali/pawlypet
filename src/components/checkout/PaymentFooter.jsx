@@ -4,7 +4,7 @@ import Logo from '../Logo'
 
 export default function PaymentFooter() {
   return (
-    <footer className="bg-[#FCF8F4] px-4 pt-14 sm:px-6 lg:px-8">
+    <footer className="bg-[#E1D8D2] px-4 pt-14 sm:px-6 lg:px-8">
       <div className="mx-auto max-w-7xl text-center">
         <Link to="/" className="inline-flex justify-center no-underline">
           <Logo serif />
@@ -15,7 +15,7 @@ export default function PaymentFooter() {
             <a
               key={link}
               href="#"
-              className="text-sm font-medium text-gray-600 transition hover:text-[#D15151]"
+              className="text-sm font-medium text-gray-600 transition hover:text-[#64E0D2]"
             >
               {link}
             </a>

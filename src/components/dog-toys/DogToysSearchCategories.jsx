@@ -25,7 +25,7 @@ export default function DogToysSearchCategories() {
           <input
             type="search"
             placeholder="Find treats..."
-            className="w-full rounded-full border border-gray-200 bg-[#F0EBE4] py-3.5 pl-12 pr-4 text-sm outline-none focus:border-[#2D6A64] focus:ring-1 focus:ring-[#2D6A64]"
+            className="w-full rounded-full border border-gray-200 bg-[#D9D6CE] py-3.5 pl-12 pr-4 text-sm outline-none focus:border-[#64E0D2] focus:ring-1 focus:ring-[#64E0D2]"
           />
         </div>
 
@@ -38,7 +38,7 @@ export default function DogToysSearchCategories() {
                 type="button"
                 className="card-hover-lift flex flex-col items-center rounded-2xl bg-white px-3 py-5 shadow-soft transition"
               >
-                <span className="flex h-11 w-11 items-center justify-center rounded-full bg-[#D4F5EF] text-[#2D6A64]">
+                <span className="flex h-11 w-11 items-center justify-center rounded-full bg-[#CFE1E0] text-[#64E0D2]">
                   <Icon className="h-5 w-5" />
                 </span>
                 <span className="mt-3 text-xs font-bold text-gray-800 sm:text-sm">{category.label}</span>

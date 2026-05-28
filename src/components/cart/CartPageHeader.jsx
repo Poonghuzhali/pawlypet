@@ -13,7 +13,7 @@ export default function CartPageHeader() {
 
         <div className="mt-8 rounded-3xl bg-white p-6 shadow-soft">
           <div className="flex flex-wrap items-center justify-between gap-2">
-            <span className="text-xs font-bold uppercase tracking-wider text-[#2D6A64]">
+            <span className="text-xs font-bold uppercase tracking-wider text-[#64E0D2]">
               Almost there!
             </span>
             <span className="text-sm font-semibold text-gray-700">
@@ -22,17 +22,17 @@ export default function CartPageHeader() {
           </div>
 
           <div className="relative mt-4">
-            <div className="h-3 overflow-hidden rounded-full bg-[#E8E8E8]">
+            <div className="h-3 overflow-hidden rounded-full bg-[#E5E5E5]">
               <div
-                className="h-full rounded-full bg-[#2D6A64] transition-all"
+                className="h-full rounded-full bg-[#64E0D2] transition-all"
                 style={{ width: `${shippingProgress.percent}%` }}
               />
             </div>
             <span
-              className="absolute top-1/2 flex h-7 w-7 -translate-y-1/2 items-center justify-center rounded-full border-2 border-[#2D6A64] bg-white shadow-sm"
+              className="absolute top-1/2 flex h-7 w-7 -translate-y-1/2 items-center justify-center rounded-full border-2 border-[#64E0D2] bg-white shadow-sm"
               style={{ left: `calc(${shippingProgress.percent}% - 14px)` }}
             >
-              <PawIcon className="h-3.5 w-3.5 text-[#2D6A64]" />
+              <PawIcon className="h-3.5 w-3.5 text-[#64E0D2]" />
             </span>
           </div>
 

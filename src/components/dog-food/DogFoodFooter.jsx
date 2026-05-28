@@ -5,7 +5,7 @@ import { FacebookIcon, InstagramIcon, TwitterIcon } from '../Icons'
 
 export default function DogFoodFooter() {
   return (
-    <footer className="bg-[#F0EBE4] px-4 pt-14 sm:px-6 lg:px-8">
+    <footer className="bg-[#D9D6CE] px-4 pt-14 sm:px-6 lg:px-8">
       <div className="mx-auto max-w-7xl">
         <div className="grid gap-10 sm:grid-cols-2 lg:grid-cols-4">
           <div>
@@ -19,21 +19,21 @@ export default function DogFoodFooter() {
               <a
                 href="#"
                 aria-label="Instagram"
-                className="flex h-9 w-9 items-center justify-center rounded-full bg-white text-gray-500 shadow-soft transition hover:text-[#D15151]"
+                className="flex h-9 w-9 items-center justify-center rounded-full bg-white text-gray-500 shadow-soft transition hover:text-[#64E0D2]"
               >
                 <InstagramIcon className="h-4 w-4" />
               </a>
               <a
                 href="#"
                 aria-label="Facebook"
-                className="flex h-9 w-9 items-center justify-center rounded-full bg-white text-gray-500 shadow-soft transition hover:text-[#D15151]"
+                className="flex h-9 w-9 items-center justify-center rounded-full bg-white text-gray-500 shadow-soft transition hover:text-[#64E0D2]"
               >
                 <FacebookIcon className="h-4 w-4" />
               </a>
               <a
                 href="#"
                 aria-label="Twitter"
-                className="flex h-9 w-9 items-center justify-center rounded-full bg-white text-gray-500 shadow-soft transition hover:text-[#D15151]"
+                className="flex h-9 w-9 items-center justify-center rounded-full bg-white text-gray-500 shadow-soft transition hover:text-[#64E0D2]"
               >
                 <TwitterIcon className="h-4 w-4" />
               </a>
@@ -45,7 +45,7 @@ export default function DogFoodFooter() {
             <ul className="mt-4 space-y-2.5">
               {dogFoodFooterLinks.shop.map((link) => (
                 <li key={link}>
-                  <a href="#" className="text-sm text-gray-600 transition hover:text-[#D15151]">
+                  <a href="#" className="text-sm text-gray-600 transition hover:text-[#64E0D2]">
                     {link}
                   </a>
                 </li>
@@ -58,7 +58,7 @@ export default function DogFoodFooter() {
             <ul className="mt-4 space-y-2.5">
               {dogFoodFooterLinks.support.map((link) => (
                 <li key={link}>
-                  <a href="#" className="text-sm text-gray-600 transition hover:text-[#D15151]">
+                  <a href="#" className="text-sm text-gray-600 transition hover:text-[#64E0D2]">
                     {link}
                   </a>
                 </li>
@@ -71,7 +71,7 @@ export default function DogFoodFooter() {
             <ul className="mt-4 space-y-2.5">
               {dogFoodFooterLinks.explore.map((link) => (
                 <li key={link}>
-                  <a href="#" className="text-sm text-gray-600 transition hover:text-[#D15151]">
+                  <a href="#" className="text-sm text-gray-600 transition hover:text-[#64E0D2]">
                     {link}
                   </a>
                 </li>
@@ -83,10 +83,10 @@ export default function DogFoodFooter() {
         <div className="mt-12 flex flex-col items-center justify-between gap-4 border-t border-gray-300/50 py-6 sm:flex-row">
           <p className="text-sm text-gray-500">© 2024 Pawly Pet Care. Created with love.</p>
           <div className="flex gap-4">
-            <a href="#" className="text-sm text-gray-500 transition hover:text-[#D15151]">
+            <a href="#" className="text-sm text-gray-500 transition hover:text-[#64E0D2]">
               Terms of Service
             </a>
-            <a href="#" className="text-sm text-gray-500 transition hover:text-[#D15151]">
+            <a href="#" className="text-sm text-gray-500 transition hover:text-[#64E0D2]">
               Sitemap
             </a>
           </div>

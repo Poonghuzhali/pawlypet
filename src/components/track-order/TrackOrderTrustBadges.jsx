@@ -14,8 +14,8 @@ export default function TrackOrderTrustBadges() {
         const Icon = badgeIcons[badge.icon]
         return (
           <div key={badge.id} className="flex items-center gap-2">
-            <Icon className="h-5 w-5 text-[#2D6A64]" />
-            <span className="text-[11px] font-bold uppercase tracking-[0.12em] text-[#2D6A64]">
+            <Icon className="h-5 w-5 text-[#64E0D2]" />
+            <span className="text-[11px] font-bold uppercase tracking-[0.12em] text-[#64E0D2]">
               {badge.label}
             </span>
           </div>

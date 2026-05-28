@@ -16,7 +16,7 @@ export default function OrderSummary() {
           </div>
           <div className="flex justify-between text-gray-600">
             <dt>Shipping</dt>
-            <dd className="font-semibold text-[#2D6A64]">${orderSummary.shipping.toFixed(2)}</dd>
+            <dd className="font-semibold text-[#64E0D2]">${orderSummary.shipping.toFixed(2)}</dd>
           </div>
           <div className="flex justify-between text-gray-600">
             <dt>Est. Tax</dt>
@@ -25,7 +25,7 @@ export default function OrderSummary() {
         </dl>
 
         <div className="mt-5 border-t border-gray-100 pt-5">
-          <p className="text-3xl font-extrabold text-[#A33B3B]">
+          <p className="text-3xl font-extrabold text-[#64E0D2]">
             ${orderSummary.total.toFixed(2)}
           </p>
           <p className="mt-1 text-[10px] font-bold uppercase tracking-wider text-gray-400">
@@ -37,7 +37,7 @@ export default function OrderSummary() {
           <input
             type="text"
             defaultValue="PAWLOVER20"
-            className="min-w-0 flex-1 rounded-full border border-gray-200 bg-[#FAFAFA] px-4 py-2.5 text-sm uppercase outline-none focus:border-[#A33B3B] focus:ring-1 focus:ring-[#A33B3B]"
+            className="min-w-0 flex-1 rounded-full border border-gray-200 bg-[#E1D8D2] px-4 py-2.5 text-sm uppercase outline-none focus:border-[#64E0D2] focus:ring-1 focus:ring-[#64E0D2]"
           />
           <button
             type="submit"
@@ -50,7 +50,7 @@ export default function OrderSummary() {
         <button
           type="button"
           onClick={() => navigate('/checkout')}
-          className="btn-zoom-hover mt-5 flex w-full items-center justify-center gap-2 rounded-full bg-[#A33B3B] px-6 py-3.5 text-sm font-bold text-white hover:bg-[#8f3232]"
+          className="btn-zoom-hover mt-5 flex w-full items-center justify-center gap-2 rounded-full bg-[#64E0D2] px-6 py-3.5 text-sm font-bold text-white hover:bg-[#52CFC2]"
         >
           Proceed to Checkout
           <ArrowRightIcon className="h-4 w-4" />
@@ -58,28 +58,28 @@ export default function OrderSummary() {
 
         <div className="mt-6 flex flex-wrap justify-center gap-4 border-t border-gray-100 pt-5">
           <span className="flex items-center gap-1.5 text-[11px] font-semibold text-gray-500">
-            <ShieldCheckIcon className="h-4 w-4 text-[#2D6A64]" />
+            <ShieldCheckIcon className="h-4 w-4 text-[#64E0D2]" />
             Secure
           </span>
           <span className="flex items-center gap-1.5 text-[11px] font-semibold text-gray-500">
-            <TruckIcon className="h-4 w-4 text-[#2D6A64]" />
+            <TruckIcon className="h-4 w-4 text-[#64E0D2]" />
             Fast Ship
           </span>
           <span className="flex items-center gap-1.5 text-[11px] font-semibold text-gray-500">
-            <CheckIcon className="h-4 w-4 text-[#2D6A64]" />
+            <CheckIcon className="h-4 w-4 text-[#64E0D2]" />
             30-Day Return
           </span>
         </div>
       </article>
 
-      <article className="relative overflow-hidden rounded-3xl bg-gradient-to-br from-[#4FD1C5] to-[#2D6A64] p-6 shadow-soft">
+      <article className="relative overflow-hidden rounded-3xl bg-gradient-to-br from-[#64E0D2] to-[#64E0D2] p-6 shadow-soft">
         <div className="relative z-10 max-w-[85%]">
           <p className="text-sm font-bold leading-snug text-white">
             Join Pawly Premium. Get 5% back on every order and free vet consults.
           </p>
           <button
             type="button"
-            className="btn-zoom-hover mt-4 rounded-full bg-white px-4 py-2 text-xs font-bold text-[#2D6A64] hover:bg-white/90"
+            className="btn-zoom-hover mt-4 rounded-full bg-white px-4 py-2 text-xs font-bold text-[#64E0D2] hover:bg-white/90"
           >
             Learn More
           </button>

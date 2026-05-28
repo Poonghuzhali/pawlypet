@@ -9,7 +9,7 @@ export default function DeleteAccountSection() {
       </p>
       <button
         type="button"
-        className="mt-3 inline-flex items-center gap-2 text-sm font-semibold text-gray-600 transition hover:text-[#D15151]"
+        className="mt-3 inline-flex items-center gap-2 text-sm font-semibold text-gray-600 transition hover:text-[#64E0D2]"
       >
         <TrashIcon className="h-4 w-4" />
         Delete Account

@@ -16,7 +16,7 @@ export default function NutritionHealth() {
                 <ul className="mt-5 space-y-3">
                   {recommendedFood.map((item) => (
                     <li key={item} className="flex items-start gap-3 text-sm text-gray-700">
-                      <span className="mt-0.5 flex h-5 w-5 shrink-0 items-center justify-center rounded-full bg-teal text-white">
+                      <span className="mt-0.5 flex h-5 w-5 shrink-0 items-center justify-center rounded-full bg-teal text-gray-900">
                         <CheckIcon className="h-3 w-3" />
                       </span>
                       {item}
@@ -40,7 +40,7 @@ export default function NutritionHealth() {
             </div>
           </article>
 
-          <article className="card-hover-lift flex flex-col justify-between rounded-[2rem] bg-[#F9E870] p-6 sm:p-8">
+          <article className="card-hover-lift flex flex-col justify-between rounded-[2rem] bg-[#CFE1E0] p-6 sm:p-8">
             <div>
               <h3 className="text-xl font-extrabold text-gray-900 sm:text-2xl">Health Check</h3>
               <p className="mt-4 text-sm leading-relaxed text-gray-800 sm:text-base">
@@ -48,7 +48,7 @@ export default function NutritionHealth() {
                 Omega-3 fatty acids and joint-support supplements for long-term mobility.
               </p>
             </div>
-            <div className="mt-6 rounded-2xl bg-[#F0D860] p-5">
+            <div className="mt-6 rounded-2xl bg-[#CFE1E0] p-5">
               <p className="text-[11px] font-bold uppercase tracking-wider text-gray-800">
                 Vet Tip
               </p>

@@ -13,7 +13,7 @@ export default function ProductDetailMain() {
   return (
     <section className="px-4 pt-8 sm:px-6 lg:px-8">
       <div className="mx-auto grid max-w-7xl gap-10 lg:grid-cols-2 lg:gap-14">
-        <div className="overflow-hidden rounded-[2rem] bg-[#E8D5C4] shadow-soft">
+        <div className="overflow-hidden rounded-[2rem] bg-[#D9D6CE] shadow-soft">
           <img
             src={assetUrl("/images/product-detail/main.png")}
             alt={product.title}
@@ -22,7 +22,7 @@ export default function ProductDetailMain() {
         </div>
 
         <div className="flex flex-col justify-center">
-          <span className="inline-flex w-fit rounded-lg bg-[#E6C547] px-3 py-1 text-[10px] font-bold uppercase tracking-wider text-gray-900">
+          <span className="inline-flex w-fit rounded-lg bg-[#CFE1E0] px-3 py-1 text-[10px] font-bold uppercase tracking-wider text-gray-900">
             {product.badge}
           </span>
 
@@ -40,7 +40,7 @@ export default function ProductDetailMain() {
           </div>
 
           <div className="mt-5 flex items-baseline gap-3">
-            <span className="text-3xl font-extrabold text-[#D14D4D]">
+            <span className="text-3xl font-extrabold text-[#64E0D2]">
               ${product.price.toFixed(2)}
             </span>
             <span className="text-lg text-gray-400 line-through">
@@ -64,8 +64,8 @@ export default function ProductDetailMain() {
                   onClick={() => setSelectedSize(size)}
                   className={`rounded-full px-5 py-2 text-sm font-semibold transition ${
                     selectedSize === size
-                      ? 'bg-[#D14D4D] text-white shadow-sm'
-                      : 'bg-[#F0F0F0] text-gray-700 hover:bg-[#E8E8E8]'
+                      ? 'bg-[#64E0D2] text-gray-900 shadow-sm'
+                      : 'bg-[#E5E5E5] text-gray-700 hover:bg-[#E5E5E5]'
                   }`}
                 >
                   {size}
@@ -75,7 +75,7 @@ export default function ProductDetailMain() {
           </div>
 
           <div className="mt-8 flex flex-wrap items-center gap-4">
-            <div className="flex items-center rounded-full border border-gray-200 bg-[#F5F5F5]">
+            <div className="flex items-center rounded-full border border-gray-200 bg-[#E5E5E5]">
               <button
                 type="button"
                 aria-label="Decrease quantity"
@@ -98,7 +98,7 @@ export default function ProductDetailMain() {
             <button
               type="button"
               onClick={() => navigate('/cart')}
-              className="btn-zoom-hover flex flex-1 items-center justify-center gap-2 rounded-full bg-[#D14D4D] px-8 py-3.5 text-sm font-bold uppercase tracking-wide text-white hover:bg-[#b84242] sm:flex-none sm:min-w-[220px]"
+              className="btn-zoom-hover flex flex-1 items-center justify-center gap-2 rounded-full bg-[#64E0D2] px-8 py-3.5 text-sm font-bold uppercase tracking-wide text-white hover:bg-[#52CFC2] sm:flex-none sm:min-w-[220px]"
             >
               <CartAddIcon className="h-5 w-5" />
               Add to Cart
@@ -106,11 +106,11 @@ export default function ProductDetailMain() {
           </div>
 
           <div className="mt-6 flex flex-wrap gap-3">
-            <span className="inline-flex items-center gap-2 rounded-full bg-[#D4F5EF] px-4 py-2 text-xs font-bold uppercase tracking-wide text-gray-800">
+            <span className="inline-flex items-center gap-2 rounded-full bg-[#CFE1E0] px-4 py-2 text-xs font-bold uppercase tracking-wide text-gray-800">
               <LeafIcon className="h-4 w-4 text-teal" />
               Organic
             </span>
-            <span className="inline-flex items-center gap-2 rounded-full bg-[#D4F5EF] px-4 py-2 text-xs font-bold uppercase tracking-wide text-gray-800">
+            <span className="inline-flex items-center gap-2 rounded-full bg-[#CFE1E0] px-4 py-2 text-xs font-bold uppercase tracking-wide text-gray-800">
               <TruckIcon className="h-4 w-4 text-teal" />
               Fast Delivery
             </span>

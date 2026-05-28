@@ -5,7 +5,7 @@ import { ArrowRightIcon } from '../Icons'
 
 export default function DogShopFooter() {
   return (
-    <footer className="bg-[#F5EDE4] px-4 pt-14 sm:px-6 lg:px-8">
+    <footer className="bg-[#D9D6CE] px-4 pt-14 sm:px-6 lg:px-8">
       <div className="mx-auto max-w-7xl">
         <div className="grid gap-10 sm:grid-cols-2 lg:grid-cols-4">
           <div>
@@ -23,7 +23,7 @@ export default function DogShopFooter() {
             <ul className="mt-4 space-y-2.5">
               {dogFooterLinks.categories.map((link) => (
                 <li key={link}>
-                  <a href="#" className="text-sm text-gray-600 transition hover:text-[#B03A3E]">
+                  <a href="#" className="text-sm text-gray-600 transition hover:text-[#64E0D2]">
                     {link}
                   </a>
                 </li>
@@ -36,7 +36,7 @@ export default function DogShopFooter() {
             <ul className="mt-4 space-y-2.5">
               {dogFooterLinks.company.map((link) => (
                 <li key={link}>
-                  <a href="#" className="text-sm text-gray-600 transition hover:text-[#B03A3E]">
+                  <a href="#" className="text-sm text-gray-600 transition hover:text-[#64E0D2]">
                     {link}
                   </a>
                 </li>
@@ -51,12 +51,12 @@ export default function DogShopFooter() {
               <input
                 type="email"
                 placeholder="Email"
-                className="min-w-0 flex-1 rounded-full border border-gray-200 bg-white px-4 py-2.5 text-sm outline-none focus:border-[#B03A3E] focus:ring-1 focus:ring-[#B03A3E]"
+                className="min-w-0 flex-1 rounded-full border border-gray-200 bg-white px-4 py-2.5 text-sm outline-none focus:border-[#64E0D2] focus:ring-1 focus:ring-[#64E0D2]"
               />
               <button
                 type="submit"
                 aria-label="Subscribe"
-                className="btn-zoom-hover flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-[#B03A3E] text-white hover:bg-[#9a3236]"
+                className="btn-zoom-hover flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-[#64E0D2] text-gray-900 hover:bg-[#52CFC2]"
               >
                 <ArrowRightIcon className="h-4 w-4" />
               </button>

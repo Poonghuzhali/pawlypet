@@ -23,7 +23,7 @@ export default function FAQ() {
             return (
               <div
                 key={faq.question}
-                className="overflow-hidden rounded-2xl bg-[#F5EDE4]/60"
+                className="overflow-hidden rounded-2xl bg-[#D9D6CE]/60"
               >
                 <button
                   type="button"

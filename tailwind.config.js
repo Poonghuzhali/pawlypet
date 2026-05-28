@@ -4,30 +4,36 @@ export default {
   theme: {
     extend: {
       colors: {
-        cream: '#FEF9F5',
+        cream: '#E1D8D2',
+        beige: '#D9D6CE',
+        neutral: {
+          DEFAULT: '#E5E5E5',
+          light: '#E5E5E5',
+        },
         teal: {
-          DEFAULT: '#1B6B6B',
-          light: '#238585',
-          pale: '#E0F2F1',
+          DEFAULT: '#64E0D2',
+          light: '#52CFC2',
+          pale: '#CFE1E0',
+          dark: '#4AB8AC',
         },
         coral: {
-          DEFAULT: '#D14D4D',
-          light: '#FFEBEE',
+          DEFAULT: '#64E0D2',
+          light: '#CFE1E0',
         },
         'brand-red': {
-          DEFAULT: '#8B2E2E',
-          dark: '#6E2424',
+          DEFAULT: '#4AB8AC',
+          dark: '#3DA899',
         },
         pastel: {
-          yellow: '#FFF8E1',
-          orange: '#FFF3E0',
-          blue: '#E3F2FD',
-          teal: '#E0F2F1',
+          yellow: '#CFE1E0',
+          orange: '#D9D6CE',
+          blue: '#CFE1E0',
+          teal: '#CFE1E0',
         },
       },
       fontFamily: {
         sans: ['Poppins', 'system-ui', 'sans-serif'],
-        serif: ['Playfair Display', 'Georgia', 'serif'],
+        serif: ['Poppins', 'system-ui', 'sans-serif'],
       },
       boxShadow: {
         card: '0 4px 24px rgba(0, 0, 0, 0.06)',

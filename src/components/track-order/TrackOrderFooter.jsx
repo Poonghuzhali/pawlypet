@@ -5,7 +5,7 @@ import { ArrowRightIcon } from '../Icons'
 
 export default function TrackOrderFooter() {
   return (
-    <footer className="bg-[#FCF8F4] px-4 pt-16 sm:px-6 lg:px-8">
+    <footer className="bg-[#E1D8D2] px-4 pt-16 sm:px-6 lg:px-8">
       <div className="mx-auto max-w-7xl">
         <div className="grid gap-10 sm:grid-cols-2 lg:grid-cols-4">
           <div>
@@ -25,7 +25,7 @@ export default function TrackOrderFooter() {
             <ul className="mt-4 space-y-2.5">
               {footerLinks.resources.map((link) => (
                 <li key={link}>
-                  <a href="#" className="text-sm text-gray-600 transition hover:text-[#D15151]">
+                  <a href="#" className="text-sm text-gray-600 transition hover:text-[#64E0D2]">
                     {link}
                   </a>
                 </li>
@@ -38,7 +38,7 @@ export default function TrackOrderFooter() {
             <ul className="mt-4 space-y-2.5">
               {footerLinks.help.map((link) => (
                 <li key={link}>
-                  <a href="#" className="text-sm text-gray-600 transition hover:text-[#D15151]">
+                  <a href="#" className="text-sm text-gray-600 transition hover:text-[#64E0D2]">
                     {link}
                   </a>
                 </li>
@@ -55,12 +55,12 @@ export default function TrackOrderFooter() {
               <input
                 type="email"
                 placeholder="Email"
-                className="min-w-0 flex-1 rounded-full border border-gray-200 bg-white px-4 py-2.5 text-sm outline-none focus:border-[#D15151] focus:ring-1 focus:ring-[#D15151]"
+                className="min-w-0 flex-1 rounded-full border border-gray-200 bg-white px-4 py-2.5 text-sm outline-none focus:border-[#64E0D2] focus:ring-1 focus:ring-[#64E0D2]"
               />
               <button
                 type="submit"
                 aria-label="Subscribe"
-                className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-[#D15151] text-white transition hover:bg-[#b84242]"
+                className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-[#64E0D2] text-gray-900 transition hover:bg-[#52CFC2]"
               >
                 <ArrowRightIcon className="h-4 w-4" />
               </button>

@@ -5,20 +5,20 @@ import { MinusIcon, PlusIcon, HeartIcon, TrashIcon } from '../Icons'
 function CartItemRow({ item, onUpdateQty, onRemove }) {
   return (
     <article className="flex flex-col gap-4 rounded-3xl bg-white p-5 shadow-soft sm:flex-row sm:items-center">
-      <div className="flex shrink-0 items-center justify-center rounded-2xl bg-[#FAFAFA] p-3 sm:h-28 sm:w-28">
+      <div className="flex shrink-0 items-center justify-center rounded-2xl bg-[#E1D8D2] p-3 sm:h-28 sm:w-28">
         <img src={item.image} alt={item.name} className="h-20 w-20 object-contain sm:h-24 sm:w-24" />
       </div>
 
       <div className="min-w-0 flex-1">
         <h3 className="font-bold text-gray-900">{item.name}</h3>
         <p className="mt-1 text-sm text-gray-500">{item.details}</p>
-        <p className="mt-2 text-lg font-extrabold text-[#A33B3B]">
+        <p className="mt-2 text-lg font-extrabold text-[#64E0D2]">
           ${item.price.toFixed(2)}
         </p>
       </div>
 
       <div className="flex flex-wrap items-center justify-between gap-4 sm:flex-col sm:items-end">
-        <div className="flex items-center rounded-full border border-gray-200 bg-[#F5F5F5]">
+        <div className="flex items-center rounded-full border border-gray-200 bg-[#E5E5E5]">
           <button
             type="button"
             aria-label="Decrease quantity"
@@ -41,7 +41,7 @@ function CartItemRow({ item, onUpdateQty, onRemove }) {
         <div className="flex items-center gap-4 text-sm">
           <button
             type="button"
-            className="inline-flex items-center gap-1.5 font-medium text-gray-500 transition hover:text-[#A33B3B]"
+            className="inline-flex items-center gap-1.5 font-medium text-gray-500 transition hover:text-[#64E0D2]"
           >
             <HeartIcon className="h-4 w-4" />
             Save
@@ -49,7 +49,7 @@ function CartItemRow({ item, onUpdateQty, onRemove }) {
           <button
             type="button"
             onClick={() => onRemove(item.id)}
-            className="inline-flex items-center gap-1.5 font-medium text-gray-500 transition hover:text-[#A33B3B]"
+            className="inline-flex items-center gap-1.5 font-medium text-gray-500 transition hover:text-[#64E0D2]"
           >
             <TrashIcon className="h-4 w-4" />
             Remove

@@ -21,7 +21,7 @@ export const toyProducts = [
     name: 'Tough Chew Bone',
     description: 'Heavy-duty rubber bone built for power chewers.',
     price: 18.5,
-    tag: { label: 'Super Durable', style: 'bg-[#D15151] text-white' },
+    tag: { label: 'Super Durable', style: 'bg-[#64E0D2] text-gray-900' },
     image: assetUrl('/images/dog-toys/product-1.png'),
   },
   {
@@ -29,7 +29,7 @@ export const toyProducts = [
     name: 'Brainy Treat Slider',
     description: 'Interactive puzzle that rewards curious pups.',
     price: 24.99,
-    tag: { label: "Pup's Favorite", style: 'bg-[#F2C94C] text-gray-900' },
+    tag: { label: "Pup's Favorite", style: 'bg-[#CFE1E0] text-gray-900' },
     image: assetUrl('/images/dog-toys/product-2.png'),
   },
   {
@@ -37,7 +37,7 @@ export const toyProducts = [
     name: 'Triple-Knot Tug Rope',
     description: 'Extra-thick cotton rope for tug-of-war fun.',
     price: 12.0,
-    tag: { label: 'Best Seller', style: 'bg-[#2D6A64] text-white' },
+    tag: { label: 'Best Seller', style: 'bg-[#64E0D2] text-gray-900' },
     image: assetUrl('/images/dog-toys/product-3.png'),
   },
   {
@@ -45,7 +45,7 @@ export const toyProducts = [
     name: 'Squeaky Squirrel',
     description: 'Soft plush with a playful squeaker inside.',
     price: 9.5,
-    tag: { label: 'Eco-Friendly', style: 'bg-[#F2C94C] text-gray-900' },
+    tag: { label: 'Eco-Friendly', style: 'bg-[#CFE1E0] text-gray-900' },
     image: assetUrl('/images/dog-toys/product-4.png'),
   },
   {

@@ -3,7 +3,7 @@ export default function CTABanner() {
   return (
     <section className="px-4 py-10 sm:px-6 lg:px-8">
       <div className="mx-auto max-w-7xl">
-        <div className="relative overflow-hidden rounded-4xl bg-gradient-to-r from-teal to-[#2a9d9d]">
+        <div className="relative overflow-hidden rounded-4xl bg-gradient-to-r from-teal to-[#64E0D2]">
           <div className="grid items-center gap-8 p-8 sm:p-10 lg:grid-cols-2 lg:gap-4 lg:p-14">
             <div className="relative z-10">
               <span className="inline-block rounded-full bg-white/20 px-4 py-1 text-[11px] font-bold uppercase tracking-[0.15em] text-white">
@@ -20,7 +20,7 @@ export default function CTABanner() {
               </p>
               <a
                 href="#consult-vet"
-                className="mt-6 inline-flex rounded-full bg-[#0f4f4f] px-8 py-3.5 text-sm font-semibold text-white transition hover:bg-[#0a3d3d]"
+                className="mt-6 inline-flex rounded-full bg-[#52CFC2] px-8 py-3.5 text-sm font-semibold text-white transition hover:bg-[#52CFC2]"
               >
                 Book a Call
               </a>

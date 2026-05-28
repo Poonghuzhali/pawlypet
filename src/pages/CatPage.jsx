@@ -8,7 +8,7 @@ export default function CatPage() {
   return (
     <>
       <Header compact />
-      <main className="bg-[#FFF8F1]">
+      <main className="bg-[#E1D8D2]">
         <CatPageHero />
         <CatCategoryLinks />
         <CatProductCatalog />

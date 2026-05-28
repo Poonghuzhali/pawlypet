@@ -25,7 +25,7 @@ export default function PairsPerfectly() {
               aria-label="Previous products"
               onClick={prev}
               disabled={startIndex === 0}
-              className="flex h-10 w-10 items-center justify-center rounded-full border border-gray-200 bg-white text-gray-600 transition hover:border-[#D14D4D] hover:text-[#D14D4D] disabled:opacity-40"
+              className="flex h-10 w-10 items-center justify-center rounded-full border border-gray-200 bg-white text-gray-600 transition hover:border-[#64E0D2] hover:text-[#64E0D2] disabled:opacity-40"
             >
               <ChevronLeftIcon className="h-5 w-5" />
             </button>
@@ -34,7 +34,7 @@ export default function PairsPerfectly() {
               aria-label="Next products"
               onClick={next}
               disabled={startIndex >= maxStart}
-              className="flex h-10 w-10 items-center justify-center rounded-full border border-gray-200 bg-white text-gray-600 transition hover:border-[#D14D4D] hover:text-[#D14D4D] disabled:opacity-40"
+              className="flex h-10 w-10 items-center justify-center rounded-full border border-gray-200 bg-white text-gray-600 transition hover:border-[#64E0D2] hover:text-[#64E0D2] disabled:opacity-40"
             >
               <ChevronRightIcon className="h-5 w-5" />
             </button>
@@ -47,7 +47,7 @@ export default function PairsPerfectly() {
               key={item.name}
               className="card-hover-lift overflow-hidden rounded-3xl bg-white shadow-soft transition"
             >
-              <div className="bg-[#FAFAFA] p-4">
+              <div className="bg-[#E1D8D2] p-4">
                 <img
                   src={item.image}
                   alt={item.name}
@@ -56,7 +56,7 @@ export default function PairsPerfectly() {
               </div>
               <div className="p-5">
                 <h3 className="font-bold text-gray-900">{item.name}</h3>
-                <p className="mt-1 text-lg font-extrabold text-[#D14D4D]">
+                <p className="mt-1 text-lg font-extrabold text-[#64E0D2]">
                   ${item.price.toFixed(2)}
                 </p>
               </div>

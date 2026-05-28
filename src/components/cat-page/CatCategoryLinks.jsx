@@ -25,7 +25,7 @@ export default function CatCategoryLinks() {
               >
                 <Icon className="h-6 w-6" />
               </span>
-              <span className="mt-4 text-center text-sm font-bold text-[#A33B3B]">{cat.label}</span>
+              <span className="mt-4 text-center text-sm font-bold text-[#64E0D2]">{cat.label}</span>
             </button>
           )
         })}

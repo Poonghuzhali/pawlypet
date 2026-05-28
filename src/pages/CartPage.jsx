@@ -9,7 +9,7 @@ export default function CartPage() {
   return (
     <>
       <Header compact cartActive />
-      <main className="bg-[#FFF9F5] pb-14">
+      <main className="bg-[#E1D8D2] pb-14">
         <CartPageHeader />
 
         <section className="px-4 pt-8 sm:px-6 lg:px-8">

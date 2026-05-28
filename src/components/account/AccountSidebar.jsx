@@ -18,7 +18,7 @@ const navIcons = {
 
 export default function AccountSidebar({ activeItem = 'personal-info' }) {
   return (
-    <aside className="bg-[#F5EDE4] p-6 lg:min-h-screen lg:rounded-br-[2rem] lg:p-8">
+    <aside className="bg-[#D9D6CE] p-6 lg:min-h-screen lg:rounded-br-[2rem] lg:p-8">
       <Link to="/" className="inline-flex no-underline">
         <Logo serif />
       </Link>
@@ -48,11 +48,11 @@ export default function AccountSidebar({ activeItem = 'personal-info' }) {
               to={item.path}
               className={`flex w-full items-center gap-3 rounded-2xl px-4 py-3 text-left text-sm font-semibold no-underline transition ${
                 isActive
-                  ? 'bg-white text-[#D15151] shadow-soft'
+                  ? 'bg-white text-[#64E0D2] shadow-soft'
                   : 'text-gray-600 hover:bg-white/60 hover:text-gray-900'
               }`}
             >
-              <Icon className={`h-5 w-5 shrink-0 ${isActive ? 'text-[#D15151]' : 'text-gray-500'}`} />
+              <Icon className={`h-5 w-5 shrink-0 ${isActive ? 'text-[#64E0D2]' : 'text-gray-500'}`} />
               {item.label}
             </Link>
           )

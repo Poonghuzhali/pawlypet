@@ -23,7 +23,7 @@ function PetCard({ pet }) {
       <div className="p-5 pt-4">
         <div className="flex items-center gap-2">
           <h3 className="text-lg font-extrabold text-gray-900">{pet.name}</h3>
-          <span className="text-base font-bold text-[#D15151]">{genderSymbols[pet.gender]}</span>
+          <span className="text-base font-bold text-[#64E0D2]">{genderSymbols[pet.gender]}</span>
         </div>
         <p className="mt-1 text-sm text-gray-500">
           {pet.breed} • {pet.age}
@@ -35,11 +35,11 @@ function PetCard({ pet }) {
 
 function AddPetCard() {
   return (
-    <article className="flex min-h-[280px] flex-col items-center justify-center rounded-[1.75rem] border-2 border-dashed border-[#E8C4C4] bg-[#FDE8E8]/40 p-6 text-center">
-      <span className="flex h-14 w-14 items-center justify-center rounded-full bg-[#D15151] text-white shadow-md">
+    <article className="flex min-h-[280px] flex-col items-center justify-center rounded-[1.75rem] border-2 border-dashed border-[#CFE1E0] bg-[#CFE1E0]/40 p-6 text-center">
+      <span className="flex h-14 w-14 items-center justify-center rounded-full bg-[#64E0D2] text-gray-900 shadow-md">
         <PlusIcon className="h-6 w-6" />
       </span>
-      <h3 className="mt-4 text-lg font-extrabold text-[#D15151]">New Arrival?</h3>
+      <h3 className="mt-4 text-lg font-extrabold text-[#64E0D2]">New Arrival?</h3>
       <p className="mt-2 max-w-[200px] text-sm leading-relaxed text-gray-500">
         Expand your digital pack with a few simple taps.
       </p>

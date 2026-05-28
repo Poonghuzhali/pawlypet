@@ -6,7 +6,7 @@ export default function LanguageSecurity() {
     <div className="mt-6 grid gap-6 lg:grid-cols-2">
       <article className="rounded-[2rem] bg-white p-6 shadow-soft sm:p-8">
         <div className="flex items-center gap-2">
-          <GlobeIcon className="h-5 w-5 text-[#D15151]" />
+          <GlobeIcon className="h-5 w-5 text-[#64E0D2]" />
           <h2 className="text-lg font-extrabold text-gray-900">Language</h2>
         </div>
 
@@ -17,7 +17,7 @@ export default function LanguageSecurity() {
           <div className="relative mt-2">
             <select
               defaultValue={languageOptions[0]}
-              className="w-full appearance-none rounded-2xl bg-[#EDE6DC] px-4 py-3.5 text-sm font-medium text-gray-800 outline-none focus:ring-2 focus:ring-[#D15151]/30"
+              className="w-full appearance-none rounded-2xl bg-[#D9D6CE] px-4 py-3.5 text-sm font-medium text-gray-800 outline-none focus:ring-2 focus:ring-[#64E0D2]/30"
             >
               {languageOptions.map((option) => (
                 <option key={option} value={option}>
@@ -32,7 +32,7 @@ export default function LanguageSecurity() {
 
       <article className="rounded-[2rem] bg-white p-6 shadow-soft sm:p-8">
         <div className="flex items-center gap-2">
-          <LockIcon className="h-5 w-5 text-[#D15151]" />
+          <LockIcon className="h-5 w-5 text-[#64E0D2]" />
           <h2 className="text-lg font-extrabold text-gray-900">Security</h2>
         </div>
 
@@ -40,7 +40,7 @@ export default function LanguageSecurity() {
 
         <button
           type="button"
-          className="btn-zoom-hover mt-6 inline-flex w-full items-center justify-center gap-2 rounded-full bg-gradient-to-r from-[#D15151] to-[#E56B6B] px-6 py-3.5 text-sm font-bold text-white hover:from-[#b84242] hover:to-[#d55a5a] sm:w-auto"
+          className="btn-zoom-hover mt-6 inline-flex w-full items-center justify-center gap-2 rounded-full bg-gradient-to-r from-[#64E0D2] to-[#64E0D2] px-6 py-3.5 text-sm font-bold text-white hover:from-[#52CFC2] hover:to-[#64E0D2] sm:w-auto"
         >
           Change Password
           <ArrowRightIcon className="h-4 w-4" />

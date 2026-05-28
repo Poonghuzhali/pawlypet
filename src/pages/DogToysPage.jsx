@@ -10,7 +10,7 @@ export default function DogToysPage() {
   return (
     <>
       <Header compact />
-      <main className="bg-[#FDF8F3] pb-16">
+      <main className="bg-[#E1D8D2] pb-16">
         <DogToysHero />
         <DogToysSearchCategories />
 

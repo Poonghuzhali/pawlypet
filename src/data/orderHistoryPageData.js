@@ -44,18 +44,18 @@ export const supportCards = [
     title: 'Need help with an order?',
     description: 'Our 24/7 support team is here to help with any questions about your recent purchases.',
     cta: 'Contact Support',
-    bg: 'bg-[#D4F5EF]',
+    bg: 'bg-[#CFE1E0]',
     icon: 'question',
-    ctaClass: 'text-[#2D6A64]',
+    ctaClass: 'text-[#64E0D2]',
   },
   {
     id: 'referral',
     title: 'Refer a Pet Parent',
     description: 'Give $20, get $20 when you refer a friend to Pawly. Share the love!',
     cta: 'Get Referral Link',
-    bg: 'bg-[#FDE8E8]',
+    bg: 'bg-[#CFE1E0]',
     icon: 'gift',
-    ctaClass: 'text-[#D15151]',
+    ctaClass: 'text-[#64E0D2]',
   },
 ]
 

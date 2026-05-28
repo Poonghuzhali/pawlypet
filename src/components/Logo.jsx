@@ -10,7 +10,7 @@ export default function Logo({ className = '', serif = false }) {
         aria-hidden="true"
         className="shrink-0"
       >
-        <circle cx="19" cy="19" r="19" fill="#8B2E2E" />
+        <circle cx="19" cy="19" r="19" fill="#64E0D2" />
         <ellipse cx="12.5" cy="11" rx="3.2" ry="3.8" fill="#FFFFFF" />
         <ellipse cx="25.5" cy="11" rx="3.2" ry="3.8" fill="#FFFFFF" />
         <ellipse cx="8.5" cy="18.5" rx="2.8" ry="3.4" fill="#FFFFFF" />
@@ -18,8 +18,7 @@ export default function Logo({ className = '', serif = false }) {
         <ellipse cx="19" cy="26.5" rx="6.5" ry="5.5" fill="#FFFFFF" />
       </svg>
       <span
-        className={`text-[1.65rem] font-extrabold leading-none tracking-tight ${serif ? 'font-serif' : 'font-sans'}`}
-        style={{ color: '#8B2E2E' }}
+        className="text-[1.65rem] font-extrabold leading-none tracking-tight text-gray-900"
       >
         Pawly
       </span>

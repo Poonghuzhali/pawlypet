@@ -6,7 +6,7 @@ export default function DogFoodFilters() {
   const [priceRange, setPriceRange] = useState(55)
 
   return (
-    <aside className="space-y-8 rounded-3xl bg-[#F5EDE4] p-6 lg:sticky lg:top-24 lg:self-start">
+    <aside className="space-y-8 rounded-3xl bg-[#D9D6CE] p-6 lg:sticky lg:top-24 lg:self-start">
       <div>
         <h3 className="text-xs font-bold uppercase tracking-wider text-gray-900">Life Stage</h3>
         <ul className="mt-4 space-y-3">

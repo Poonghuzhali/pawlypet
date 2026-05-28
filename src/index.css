@@ -9,6 +9,11 @@
 
   body {
     @apply bg-cream font-sans text-gray-900 antialiased;
+    font-family: 'Poppins', system-ui, sans-serif;
+  }
+
+  * {
+    font-family: inherit;
   }
 
   a {
@@ -43,7 +48,7 @@
     appearance: none;
     height: 4px;
     border-radius: 9999px;
-    background: #e5e7eb;
+    background: #E5E5E5;
     outline: none;
   }
 
@@ -53,7 +58,7 @@
     width: 18px;
     height: 18px;
     border-radius: 50%;
-    background: #B03A3E;
+    background: #64E0D2;
     cursor: pointer;
     border: 2px solid white;
     box-shadow: 0 1px 4px rgba(0, 0, 0, 0.15);
@@ -63,14 +68,14 @@
     width: 18px;
     height: 18px;
     border-radius: 50%;
-    background: #B03A3E;
+    background: #64E0D2;
     cursor: pointer;
     border: 2px solid white;
     box-shadow: 0 1px 4px rgba(0, 0, 0, 0.15);
   }
 
   .dog-checkbox {
-    accent-color: #B03A3E;
+    accent-color: #64E0D2;
   }
 
   .cat-range {
@@ -78,7 +83,7 @@
     appearance: none;
     height: 4px;
     border-radius: 9999px;
-    background: #e5e7eb;
+    background: #E5E5E5;
     outline: none;
   }
 
@@ -88,7 +93,7 @@
     width: 18px;
     height: 18px;
     border-radius: 50%;
-    background: #A33B3B;
+    background: #64E0D2;
     cursor: pointer;
     border: 2px solid white;
     box-shadow: 0 1px 4px rgba(0, 0, 0, 0.15);
@@ -98,14 +103,14 @@
     width: 18px;
     height: 18px;
     border-radius: 50%;
-    background: #A33B3B;
+    background: #64E0D2;
     cursor: pointer;
     border: 2px solid white;
     box-shadow: 0 1px 4px rgba(0, 0, 0, 0.15);
   }
 
   .cat-checkbox {
-    accent-color: #A33B3B;
+    accent-color: #64E0D2;
   }
 
   .small-pets-range {
@@ -113,7 +118,7 @@
     appearance: none;
     height: 4px;
     border-radius: 9999px;
-    background: #e5e7eb;
+    background: #E5E5E5;
     outline: none;
   }
 
@@ -123,7 +128,7 @@
     width: 18px;
     height: 18px;
     border-radius: 50%;
-    background: #2D7A7A;
+    background: #64E0D2;
     cursor: pointer;
     border: 2px solid white;
     box-shadow: 0 1px 4px rgba(0, 0, 0, 0.15);
@@ -133,17 +138,17 @@
     width: 18px;
     height: 18px;
     border-radius: 50%;
-    background: #2D7A7A;
+    background: #64E0D2;
     cursor: pointer;
     border: 2px solid white;
     box-shadow: 0 1px 4px rgba(0, 0, 0, 0.15);
   }
 
   .small-pets-checkbox {
-    accent-color: #2D7A7A;
+    accent-color: #64E0D2;
   }
 
   .small-pets-radio {
-    accent-color: #2D7A7A;
+    accent-color: #64E0D2;
   }
 }

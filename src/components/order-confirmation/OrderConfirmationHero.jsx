@@ -20,14 +20,14 @@ export default function OrderConfirmationHero() {
           <p className="text-[10px] font-bold uppercase tracking-[0.15em] text-gray-400">
             Order ID
           </p>
-          <p className="mt-1 text-lg font-extrabold text-[#A33B3B]">{orderDetails.orderId}</p>
+          <p className="mt-1 text-lg font-extrabold text-[#64E0D2]">{orderDetails.orderId}</p>
         </div>
         <div className="hidden h-10 w-px bg-gray-200 sm:block" />
         <div className="sm:flex-1 sm:text-right">
           <p className="text-[10px] font-bold uppercase tracking-[0.15em] text-gray-400">
             Estimated Delivery
           </p>
-          <p className="mt-1 text-lg font-extrabold text-[#2D6A64]">
+          <p className="mt-1 text-lg font-extrabold text-[#64E0D2]">
             {orderDetails.estimatedDelivery}
           </p>
         </div>

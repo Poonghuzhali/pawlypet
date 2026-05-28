@@ -5,7 +5,7 @@ import { ArrowRightIcon, FacebookIcon, InstagramIcon, TwitterIcon } from './Icon
 
 export default function Footer() {
   return (
-    <footer className="bg-[#F5EDE4] px-4 pt-14 sm:px-6 lg:px-8">
+    <footer className="bg-[#D9D6CE] px-4 pt-14 sm:px-6 lg:px-8">
       <div className="mx-auto max-w-7xl">
         <div className="grid gap-10 sm:grid-cols-2 lg:grid-cols-4">
           <div>
@@ -91,7 +91,7 @@ export default function Footer() {
               <button
                 type="submit"
                 aria-label="Subscribe"
-                className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-coral text-white transition hover:bg-[#b84242]"
+                className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-coral text-gray-900 transition hover:bg-[#52CFC2]"
               >
                 <ArrowRightIcon className="h-4 w-4" />
               </button>

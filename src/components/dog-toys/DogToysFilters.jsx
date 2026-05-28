@@ -24,7 +24,7 @@ export default function DogToysFilters() {
                   <span
                     className={`flex h-5 w-5 items-center justify-center rounded-full border-2 ${
                       selected
-                        ? 'border-[#2D6A64] bg-[#2D6A64] text-white'
+                        ? 'border-[#64E0D2] bg-[#64E0D2] text-gray-900'
                         : 'border-gray-300 bg-white'
                     }`}
                   >
@@ -48,8 +48,8 @@ export default function DogToysFilters() {
               onClick={() => setMaterial(item)}
               className={`rounded-full px-4 py-2 text-xs font-semibold transition ${
                 material === item
-                  ? 'bg-[#D15151] text-white'
-                  : 'bg-[#F5F0EB] text-gray-600 hover:bg-[#ebe4dc]'
+                  ? 'bg-[#64E0D2] text-gray-900'
+                  : 'bg-[#E1D8D2] text-gray-600 hover:bg-[#D9D6CE]'
               }`}
             >
               {item}
@@ -76,8 +76,8 @@ export default function DogToysFilters() {
         </div>
       </div>
 
-      <div className="rounded-3xl bg-[#D4F5EF] p-5">
-        <p className="text-sm leading-relaxed text-[#2D6A64]">
+      <div className="rounded-3xl bg-[#CFE1E0] p-5">
+        <p className="text-sm leading-relaxed text-[#64E0D2]">
           <span className="font-bold">Expert Tip:</span> Rubber toys are best for aggressive
           chewers, while plushies are perfect for snugglers!
         </p>

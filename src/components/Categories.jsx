@@ -16,7 +16,7 @@ export default function Categories() {
         <div className="grid gap-5 lg:grid-cols-2 lg:grid-rows-2 lg:gap-6">
           <div
             id="dog"
-            className="relative min-h-[320px] overflow-hidden rounded-3xl bg-[#F5EDE4] p-6 sm:p-8 lg:row-span-2"
+            className="relative min-h-[320px] overflow-hidden rounded-3xl bg-[#D9D6CE] p-6 sm:p-8 lg:row-span-2"
           >
             <span className="text-6xl font-extrabold text-gray-900/10 sm:text-8xl">01</span>
             <h3 className="mt-2 text-2xl font-extrabold text-gray-900 sm:text-3xl">
@@ -32,7 +32,7 @@ export default function Categories() {
             </ul>
             <Link
               to="/dog"
-              className="relative z-10 mt-6 inline-flex rounded-full bg-coral px-6 py-2.5 text-sm font-semibold text-white transition hover:bg-[#b84242]"
+              className="relative z-10 mt-6 inline-flex rounded-full bg-coral px-6 py-2.5 text-sm font-semibold text-white transition hover:bg-[#52CFC2]"
             >
               Shop Now
             </Link>
@@ -63,7 +63,7 @@ export default function Categories() {
 
           <div
             id="small-pets"
-            className="relative min-h-[200px] overflow-hidden rounded-3xl bg-[#FFF8E1] p-6 sm:p-8"
+            className="relative min-h-[200px] overflow-hidden rounded-3xl bg-[#CFE1E0] p-6 sm:p-8"
           >
             <h3 className="text-xl font-extrabold text-gray-900 sm:text-2xl">Small Pet Kingdom</h3>
             <p className="mt-2 max-w-xs text-sm text-gray-600">

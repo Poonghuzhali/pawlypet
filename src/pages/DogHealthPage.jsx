@@ -10,7 +10,7 @@ export default function DogHealthPage() {
   return (
     <>
       <Header compact />
-      <main className="bg-[#FDF8F3]">
+      <main className="bg-[#E1D8D2]">
         <DogHealthHero />
         <DogHealthSearchFilters />
 
