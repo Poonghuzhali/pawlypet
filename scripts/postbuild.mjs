@@ -2,6 +2,7 @@ import fs from 'fs'
 import path from 'path'
 
 const outDir = 'docs'
+const repoBase = '/pawlypet'
 
 const spaRecoveryScript = `<script type="text/javascript">
   (function(l) {
@@ -20,7 +21,7 @@ const spa404Html = `<!DOCTYPE html>
     <meta charset="utf-8" />
     <title>Pawly — Everything Your Pet Needs</title>
     <script type="text/javascript">
-      var pathSegmentsToKeep = 1;
+      var pathSegmentsToKeep = 2;
       var l = window.location;
       l.replace(
         l.protocol + '//' + l.hostname + (l.port ? ':' + l.port : '') +
@@ -35,8 +36,28 @@ const spa404Html = `<!DOCTYPE html>
 </html>
 `
 
+const root404Html = `<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Pawly — Everything Your Pet Needs</title>
+    <script type="text/javascript">
+      var l = window.location;
+      var path = l.pathname.replace('${repoBase}', '').replace(/^\\/+/, '');
+      if (path && path !== 'docs' && !path.startsWith('docs/')) {
+        l.replace('${repoBase}/docs/#/' + path + l.search + l.hash);
+      } else {
+        l.replace('${repoBase}/docs/');
+      }
+    </script>
+  </head>
+  <body></body>
+</html>
+`
+
 fs.writeFileSync(path.join(outDir, '.nojekyll'), '')
 fs.writeFileSync(path.join(outDir, '404.html'), spa404Html)
+fs.writeFileSync('404.html', root404Html)
 
 const indexPath = path.join(outDir, 'index.html')
 let indexHtml = fs.readFileSync(indexPath, 'utf8')

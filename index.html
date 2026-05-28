@@ -11,6 +11,13 @@
       rel="stylesheet"
     />
     <title>Pawly — Everything Your Pet Needs</title>
+    <script>
+      if (location.hostname.endsWith('github.io') && !location.pathname.includes('/docs')) {
+        location.replace(
+          location.pathname.replace(/\/?$/, '') + '/docs/' + location.hash + location.search
+        )
+      }
+    </script>
   </head>
   <body>
     <div id="root"></div>

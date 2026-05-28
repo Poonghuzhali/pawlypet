@@ -1,4 +1,4 @@
-import { BrowserRouter, Routes, Route } from 'react-router-dom'
+import { HashRouter, Routes, Route } from 'react-router-dom'
 import HomePage from './pages/HomePage'
 import ShopByBreedPage from './pages/ShopByBreedPage'
 import DogPage from './pages/DogPage'
@@ -22,7 +22,7 @@ import ProductDetailPage from './pages/ProductDetailPage'
 
 export default function App() {
   return (
-    <BrowserRouter basename={import.meta.env.BASE_URL.replace(/\/$/, '')}>
+    <HashRouter>
       <Routes>
         <Route path="/" element={<HomePage />} />
         <Route path="/shop-by-breed" element={<ShopByBreedPage />} />
@@ -45,6 +45,6 @@ export default function App() {
         <Route path="/account/settings" element={<SettingsPage />} />
         <Route path="/dog/product/wilderness-salmon" element={<ProductDetailPage />} />
       </Routes>
-    </BrowserRouter>
+    </HashRouter>
   )
 }

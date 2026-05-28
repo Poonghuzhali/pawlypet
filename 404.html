@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Pawly — Everything Your Pet Needs</title>
+    <script type="text/javascript">
+      var l = window.location;
+      var path = l.pathname.replace('/pawlypet', '').replace(/^\/+/, '');
+      if (path && path !== 'docs' && !path.startsWith('docs/')) {
+        l.replace('/pawlypet/docs/#/' + path + l.search + l.hash);
+      } else {
+        l.replace('/pawlypet/docs/');
+      }
+    </script>
+  </head>
+  <body></body>
+</html>

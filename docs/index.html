@@ -12,7 +12,7 @@
   }(window.location))
 </script>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/pawlypet/vite.svg" />
+    <link rel="icon" type="image/svg+xml" href="/pawlypet/docs/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -21,8 +21,15 @@
       rel="stylesheet"
     />
     <title>Pawly — Everything Your Pet Needs</title>
-    <script type="module" crossorigin src="/pawlypet/assets/index-CPGV2UNL.js"></script>
-    <link rel="stylesheet" crossorigin href="/pawlypet/assets/index-CCigqncQ.css">
+    <script>
+      if (location.hostname.endsWith('github.io') && !location.pathname.includes('/docs')) {
+        location.replace(
+          location.pathname.replace(/\/?$/, '') + '/docs/' + location.hash + location.search
+        )
+      }
+    </script>
+    <script type="module" crossorigin src="/pawlypet/docs/assets/index-BH6vFr9C.js"></script>
+    <link rel="stylesheet" crossorigin href="/pawlypet/docs/assets/index-CCigqncQ.css">
   </head>
   <body>
     <div id="root"></div>
