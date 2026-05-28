@@ -10,32 +10,32 @@ export const navLinks = [
 
 export const features = [
   {
-    title: '24/7 Care Support',
-    description: 'Round-the-clock assistance whenever your pet needs help.',
-    bg: 'bg-pastel-yellow',
-    iconBg: 'bg-yellow-300/60',
-    icon: 'support',
+    title: 'Vet-Vetted Products',
+    description:
+      'Every snack and toy is hand-picked and approved by our expert veterinary panel.',
+    variant: 'yellow',
+    icon: 'vet-kit',
   },
   {
-    title: 'Easy Online Booking',
-    description: 'Schedule vet visits and grooming in just a few clicks.',
-    bg: 'bg-pastel-teal',
-    iconBg: 'bg-teal-200/70',
-    icon: 'booking',
+    title: 'Fast Paw-Delivery',
+    description:
+      'Swift shipping to your doorstep, because we know someone is waiting for their treats.',
+    variant: 'teal',
+    icon: 'speedometer',
   },
   {
-    title: 'Professional Groomers',
-    description: 'Certified groomers who treat every pet like family.',
-    bg: 'bg-pastel-orange',
-    iconBg: 'bg-orange-200/70',
-    icon: 'grooming',
+    title: '24/7 Expert Support',
+    description:
+      'Real humans (and animal lovers) available day and night for all your pet queries.',
+    variant: 'yellow',
+    icon: 'headset',
   },
   {
-    title: 'Trusted Veterinarians',
-    description: 'Experienced vets dedicated to your pet\'s health and happiness.',
-    bg: 'bg-pastel-blue',
-    iconBg: 'bg-blue-200/70',
-    icon: 'vet',
+    title: 'Happy Tail Guarantee',
+    description:
+      "Not happy? No wagging tail? We'll make it right with our 30-day easy return policy.",
+    variant: 'teal',
+    icon: 'thumbs-up',
   },
 ]
 

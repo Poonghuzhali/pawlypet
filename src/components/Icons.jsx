@@ -159,6 +159,45 @@ export function VetIcon({ className = 'w-5 h-5' }) {
   )
 }
 
+export function VetKitIcon({ className = 'w-5 h-5' }) {
+  return (
+    <svg className={className} fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.8}>
+      <path strokeLinecap="round" strokeLinejoin="round" d="M8 8h8l1 3v8a1 1 0 01-1 1H8a1 1 0 01-1-1v-8l1-3z" />
+      <path strokeLinecap="round" strokeLinejoin="round" d="M9 8V6a3 3 0 016 0v2" />
+      <path strokeLinecap="round" strokeLinejoin="round" d="M12 11v4M10 13h4" />
+    </svg>
+  )
+}
+
+export function SpeedometerIcon({ className = 'w-5 h-5' }) {
+  return (
+    <svg className={className} fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.8}>
+      <path strokeLinecap="round" strokeLinejoin="round" d="M12 4a8 8 0 108 8" />
+      <path strokeLinecap="round" strokeLinejoin="round" d="M12 12l3.2-3.2" />
+      <path strokeLinecap="round" strokeLinejoin="round" d="M6.5 17.5c1.6 1.4 3.5 2.1 5.5 2.1s3.9-.7 5.5-2.1" />
+    </svg>
+  )
+}
+
+export function HeadsetIcon({ className = 'w-5 h-5' }) {
+  return (
+    <svg className={className} fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.8}>
+      <path strokeLinecap="round" strokeLinejoin="round" d="M12 3a5 5 0 00-5 5v4a2 2 0 002 2h1v-6a4 4 0 018 0v6h1a2 2 0 002-2V8a5 5 0 00-5-5z" />
+      <path strokeLinecap="round" strokeLinejoin="round" d="M7 14v2a2 2 0 002 2h1" />
+      <path strokeLinecap="round" strokeLinejoin="round" d="M17 14v2a2 2 0 01-2 2h-1" />
+    </svg>
+  )
+}
+
+export function ThumbsUpIcon({ className = 'w-5 h-5' }) {
+  return (
+    <svg className={className} fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.8}>
+      <path strokeLinecap="round" strokeLinejoin="round" d="M7 10v9a1 1 0 001 1h2.2a1 1 0 001-1v-4.2a1 1 0 011-1H14l1.2-5.4A1.2 1.2 0 0014 8.2l-2.8.8" />
+      <path strokeLinecap="round" strokeLinejoin="round" d="M7 10H5.5A1.5 1.5 0 004 11.5v5A1.5 1.5 0 005.5 18H7" />
+    </svg>
+  )
+}
+
 export function PawIcon({ className = 'w-5 h-5' }) {
   return (
     <svg className={className} fill="currentColor" viewBox="0 0 24 24">
