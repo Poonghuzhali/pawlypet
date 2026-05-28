@@ -24,7 +24,7 @@ export default function OrderConfirmationActions() {
           Track My Treats
         </button>
         <Link
-          to="/dog"
+          to="/shop-by-breed"
           className="btn-zoom-hover inline-flex flex-1 items-center justify-center rounded-full bg-[#F7F1EB] px-6 py-3.5 text-sm font-bold text-gray-700 no-underline transition hover:bg-[#efe8e0]"
         >
           Continue Shopping
