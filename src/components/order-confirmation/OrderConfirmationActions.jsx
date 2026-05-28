@@ -1,8 +1,12 @@
 import { Link } from 'react-router-dom'
-import { orderDetails } from '../../data/orderConfirmationData'
+import { getLastOrder } from '../../utils/lastOrder'
+import { orderDetails as fallbackOrderDetails } from '../../data/orderConfirmationData'
 import { TruckIcon, GiftIcon } from '../Icons'
 
 export default function OrderConfirmationActions() {
+  const order = getLastOrder()
+  const pawPointsEarned = order?.totals?.pawPoints ?? fallbackOrderDetails.pawPointsEarned
+
   return (
     <div className="mx-auto mt-8 max-w-lg">
       <div className="flex flex-col gap-3 sm:flex-row">
@@ -26,7 +30,7 @@ export default function OrderConfirmationActions() {
           <GiftIcon className="h-5 w-5 text-[#B8860B]" />
         </span>
         <p className="text-left text-sm text-gray-800">
-          <span className="font-bold">{orderDetails.pawPointsEarned} Paw Points Earned!</span>
+          <span className="font-bold">{pawPointsEarned} Paw Points Earned!</span>
           <span className="mt-0.5 block text-xs text-gray-600 sm:inline sm:ml-1 sm:mt-0">
             You&apos;re getting closer to a free treat!
           </span>

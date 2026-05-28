@@ -1,15 +1,16 @@
 import { Link, useNavigate } from 'react-router-dom'
 import { useCart } from '../../context/CartContext'
+import { saveLastOrder } from '../../utils/lastOrder'
 import { ArrowRightIcon } from '../Icons'
 
 export default function CheckoutActions() {
   const navigate = useNavigate()
-  const { items, clearCart } = useCart()
+  const { items, totals } = useCart()
 
   const handleCompleteOrder = () => {
     if (items.length === 0) return
-    clearCart()
-    navigate('/order-confirmation')
+    saveLastOrder({ items, totals })
+    navigate('/order-confirmation', { state: { orderPlaced: true } })
   }
 
   return (

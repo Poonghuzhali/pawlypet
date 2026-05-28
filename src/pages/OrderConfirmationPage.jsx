@@ -1,7 +1,11 @@
+import { useEffect } from 'react'
+import { useLocation, useNavigate } from 'react-router-dom'
 import OrderConfirmationHeader from '../components/order-confirmation/OrderConfirmationHeader'
 import OrderConfirmationHero from '../components/order-confirmation/OrderConfirmationHero'
 import OrderConfirmationActions from '../components/order-confirmation/OrderConfirmationActions'
 import OrderConfirmationFooter from '../components/order-confirmation/OrderConfirmationFooter'
+import { useCart } from '../context/CartContext'
+import { getLastOrder } from '../utils/lastOrder'
 
 function BackgroundDecor() {
   return (
@@ -15,6 +19,26 @@ function BackgroundDecor() {
 }
 
 export default function OrderConfirmationPage() {
+  const navigate = useNavigate()
+  const location = useLocation()
+  const { clearCart } = useCart()
+  const order = getLastOrder()
+
+  useEffect(() => {
+    if (location.state?.orderPlaced) {
+      clearCart()
+      return
+    }
+
+    if (!getLastOrder()) {
+      navigate('/cart', { replace: true })
+    }
+  }, [location.state?.orderPlaced, clearCart, navigate])
+
+  if (!order && !location.state?.orderPlaced) {
+    return null
+  }
+
   return (
     <div className="relative min-h-screen bg-[#FCF8F4]">
       <BackgroundDecor />

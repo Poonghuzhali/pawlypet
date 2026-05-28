@@ -1,7 +1,12 @@
 import { assetUrl } from '@/utils/assetUrl'
-import { orderDetails } from '../../data/orderConfirmationData'
+import { getLastOrder } from '../../utils/lastOrder'
+import { orderDetails as fallbackOrderDetails } from '../../data/orderConfirmationData'
 
 export default function OrderConfirmationHero() {
+  const order = getLastOrder()
+  const orderId = order?.orderId ?? fallbackOrderDetails.orderId
+  const estimatedDelivery = order?.estimatedDelivery ?? fallbackOrderDetails.estimatedDelivery
+
   return (
     <div className="text-center">
       <div className="mx-auto w-fit rounded-[2rem] bg-white p-2 shadow-[0_8px_40px_rgba(209,81,81,0.15)]">
@@ -20,7 +25,7 @@ export default function OrderConfirmationHero() {
           <p className="text-[10px] font-bold uppercase tracking-[0.15em] text-gray-400">
             Order ID
           </p>
-          <p className="mt-1 text-lg font-extrabold text-[#A33B3B]">{orderDetails.orderId}</p>
+          <p className="mt-1 text-lg font-extrabold text-[#A33B3B]">{orderId}</p>
         </div>
         <div className="hidden h-10 w-px bg-gray-200 sm:block" />
         <div className="sm:flex-1 sm:text-right">
@@ -28,7 +33,7 @@ export default function OrderConfirmationHero() {
             Estimated Delivery
           </p>
           <p className="mt-1 text-lg font-extrabold text-[#2D6A64]">
-            {orderDetails.estimatedDelivery}
+            {estimatedDelivery}
           </p>
         </div>
       </div>

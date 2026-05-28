@@ -1,7 +1,16 @@
-import { trackingInfo, trackingSteps } from '../../data/trackOrderPageData'
+import { getLastOrder } from '../../utils/lastOrder'
+import { trackingInfo as fallbackTrackingInfo, trackingSteps } from '../../data/trackOrderPageData'
 import { BoxIcon, TruckIcon } from '../Icons'
 
 export default function TrackOrderProgress() {
+  const order = getLastOrder()
+  const trackingInfo = order
+    ? {
+        orderNumber: order.orderId,
+        estimatedDelivery: order.estimatedDelivery,
+        currentStep: order.currentStep ?? 1,
+      }
+    : fallbackTrackingInfo
   const { currentStep } = trackingInfo
   const progressPercent = (currentStep / (trackingSteps.length - 1)) * 100
 
